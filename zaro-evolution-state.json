@@ -1,0 +1,55 @@
+{
+  "last_review_milestone": 125,
+  "reviews": [
+    {
+      "milestone": 125,
+      "at": "2026-07-13T01:45:00Z",
+      "principles_checked": 24,
+      "drift_corrected": 0,
+      "summary": "All 24 sections since milestone 100 (Inner Citadel, How to Be a Stoic, Guide to the Good Life, Stoic Serenity, Courage Is Calling, Stoic Challenge, Practicing Stoic, Three Pillars of Zen, Everyday Zen, Open the Hand, Nothing Special, Zen Training, Zen of Creative Painting, The One Thing, 4 Disciplines, Hyperfocus, Power of Less, GTD, Free to Focus, 5 AM Club, Eat That Frog, Accomplish the Unimaginable, Human Compatible, Alignment Problem) pass core intent. Character remains coherent."
+    },
+    {
+      "milestone": 25,
+      "at": "2026-07-12T00:00:00Z",
+      "principles_checked": 24,
+      "drift_corrected": 0,
+      "summary": "All principles align with core intent."
+    },
+    {
+      "milestone": 50,
+      "at": "2026-07-12T00:00:00Z",
+      "principles_checked": 24,
+      "drift_corrected": 0,
+      "summary": "All 24 principles since milestone 25 support core intent. Character remains coherent across five domains."
+    },
+    {
+      "milestone": 75,
+      "at": "2026-07-12T00:00:00Z",
+      "principles_checked": 45,
+      "drift_corrected": 0,
+      "summary": "All 13 new sections (Words That Work, Principles, Mythical Man-Month, Live Deliberately, Shadow Career, Slight Edge, Curse of Knowledge, Fellow Travelers, The Practice, A Different Battery, Writing for Busy Readers, Strategic Patience, Beneath Every Argument) pass core intent audit. Character remains coherent. No deletions or rewrites needed."
+    },
+    {
+      "milestone": 75,
+      "at": "2026-07-12T08:08:33.246277Z",
+      "principles_checked": 0,
+      "drift_corrected": 0,
+      "summary": "All 13 sections since milestone 50 pass core intent. Character remains coherent. No deletions or rewrites needed."
+    },
+    {
+      "milestone": 100,
+      "at": "2026-07-12T12:00:00Z",
+      "principles_checked": 65,
+      "drift_corrected": 0,
+      "summary": "All 17 new sections (Mistakes Were Made, Charisma Myth, Essentialism, Will to Power, Paradox of Choice, Design of Everyday Things, Zen in the Art of Writing, Daily Stoic, Social Animal, 80/20 Principle, Incognito, Art of UNIX Programming, The Dip, Beyond the Pleasure Principle, Language Instinct, Ego Tunnel, Impro) pass core intent audit. No drift detected across ~65 principles. Character remains coherent."
+    },
+    {
+      "milestone": 100,
+      "at": "2026-07-12T10:05:18.155943Z",
+      "principles_checked": 0,
+      "drift_corrected": 0,
+      "summary": "All 17 new sections (Mistakes Were Made, Charisma Myth, Essentialism, Will to Power, Paradox of Choice, Design of Everyday Things, Zen in the Art of Writing, Daily Stoic, Social Animal, 80/20 Principle, Incognito, Art of UNIX Programming, The Dip, Beyond the Pleasure Principle, Language Instinct, Ego Tunnel, Impro) pass core intent. No deletions or rewrites needed. Character remains coherent."
+    }
+  ],
+  "last_review_at": "2026-07-13T01:45:00Z"
+}

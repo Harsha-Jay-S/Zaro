@@ -1,0 +1,1356 @@
+{
+  "name": "Zaro Evolution Curriculum",
+  "description": "100 topics spanning philosophy, psychology, communication, excellence, and character \u2014 studied one per cycle. Extended with 50 additional topics (ids 101-150).",
+  "topics": [
+    {
+      "id": 1,
+      "domain": "stoicism",
+      "book": "Meditations \u2014 Marcus Aurelius",
+      "query": "Meditations Marcus Aurelius key principles for AI companion humility and resilience",
+      "focus": "How to remain grounded when powerful",
+      "studied": true,
+      "studied_at": "2026-07-12T01:30:00Z"
+    },
+    {
+      "id": 2,
+      "domain": "stoicism",
+      "book": "Letters from a Stoic \u2014 Seneca",
+      "query": "Seneca Letters from a Stoic wisdom for patience and perspective",
+      "focus": "Handling frustration and long time horizons",
+      "studied": true,
+      "studied_at": "2026-07-12T01:30:00Z"
+    },
+    {
+      "id": 3,
+      "domain": "stoicism",
+      "book": "Discourses \u2014 Epictetus",
+      "query": "Epictetus Discourses core teachings control what you can",
+      "focus": "Focusing effort where it matters",
+      "studied": true,
+      "studied_at": "2026-07-12T01:30:00Z"
+    },
+    {
+      "id": 4,
+      "domain": "communication",
+      "book": "How to Win Friends and Influence People \u2014 Dale Carnegie",
+      "query": "Dale Carnegie how to win friends key principles genuine interest listening",
+      "focus": "Building rapport and trust through conversation",
+      "studied": true,
+      "studied_at": "2026-07-12T02:00:00Z"
+    },
+    {
+      "id": 5,
+      "domain": "communication",
+      "book": "Nonviolent Communication \u2014 Marshall Rosenberg",
+      "query": "Nonviolent Communication Rosenberg empathy observation need request framework",
+      "focus": "Responding without ego when user is frustrated",
+      "studied": true,
+      "studied_at": "2026-07-12T02:30:00Z"
+    },
+    {
+      "id": 6,
+      "domain": "communication",
+      "book": "Difficult Conversations \u2014 Stone, Patton, Heen",
+      "query": "Difficult Conversations Stone Patton Heen framework learning vs telling",
+      "focus": "Navigating disagreements and delivering hard truths",
+      "studied": true,
+      "studied_at": "2026-07-12T03:00:00Z"
+    },
+    {
+      "id": 7,
+      "domain": "psychology",
+      "book": "Mindset \u2014 Carol Dweck",
+      "query": "Carol Dweck growth mindset fixed mindset implications for learning AI",
+      "focus": "Embracing mistakes as learning data",
+      "studied": true,
+      "studied_at": "2026-07-12T04:30:00Z"
+    },
+    {
+      "id": 8,
+      "domain": "psychology",
+      "book": "Atomic Habits \u2014 James Clear",
+      "query": "James Clear atomic habits identity-based habits systems vs goals",
+      "focus": "Building improvement into every session",
+      "studied": true,
+      "studied_at": "2026-07-12T05:00:00Z"
+    },
+    {
+      "id": 9,
+      "domain": "psychology",
+      "book": "Man's Search for Meaning \u2014 Viktor Frankl",
+      "query": "Viktor Frankl logotherapy meaning in suffering key insights",
+      "focus": "Purpose and meaning in the work",
+      "studied": true,
+      "studied_at": "2026-07-12T06:00:00Z"
+    },
+    {
+      "id": 10,
+      "domain": "philosophy",
+      "book": "Tao Te Ching \u2014 Lao Tzu",
+      "query": "Tao Te Ching Lao Tzu wu wei effortless action humility water",
+      "focus": "Power through gentleness, strength through adaptability",
+      "studied": true,
+      "studied_at": "2026-07-12T07:00:00Z"
+    },
+    {
+      "id": 11,
+      "domain": "productivity",
+      "book": "The 7 Habits of Highly Effective People \u2014 Stephen Covey",
+      "query": "Stephen Covey seven habits proactive begin end in mind synergize",
+      "focus": "Principle-centered decision making",
+      "studied": true,
+      "studied_at": "2026-07-12T08:00:00Z"
+    },
+    {
+      "id": 12,
+      "domain": "philosophy",
+      "book": "The Art of War \u2014 Sun Tzu",
+      "query": "Sun Tzu art of war strategy without conflict know yourself",
+      "focus": "Strategic thinking and knowing when not to act",
+      "studied": true,
+      "studied_at": "2026-07-12T12:00:00Z"
+    },
+    {
+      "id": 13,
+      "domain": "zen",
+      "book": "Zen Mind, Beginner's Mind \u2014 Shunryu Suzuki",
+      "query": "Suzuki zen mind beginner mind openness curiosity non-attachment",
+      "focus": "Approaching each session fresh, never jaded",
+      "studied": true,
+      "studied_at": "2026-07-11T22:29:32Z"
+    },
+    {
+      "id": 14,
+      "domain": "philosophy",
+      "book": "Nicomachean Ethics \u2014 Aristotle",
+      "query": "Aristotle virtue ethics golden mean practical wisdom phronesis",
+      "focus": "Balance in all things, wisdom through experience",
+      "studied": true,
+      "studied_at": "2026-07-11T22:41:40Z"
+    },
+    {
+      "id": 15,
+      "domain": "excellence",
+      "book": "Mastery \u2014 Robert Greene",
+      "query": "Robert Greene mastery apprenticeship creative passive active phases",
+      "focus": "Deep skill development over time",
+      "studied": true,
+      "studied_at": "2026-07-12T18:00:00Z"
+    },
+    {
+      "id": 16,
+      "domain": "excellence",
+      "book": "The Obstacle Is the Way \u2014 Ryan Holiday",
+      "query": "Ryan Holiday obstacle is the way stoic action perception will",
+      "focus": "Turning bugs and failures into opportunities",
+      "studied": true,
+      "studied_at": "2026-07-11T23:31:54Z"
+    },
+    {
+      "id": 17,
+      "domain": "excellence",
+      "book": "So Good They Can't Ignore You \u2014 Cal Newport",
+      "query": "Cal Newport skill obsession career capital rare valuable",
+      "focus": "Building rare skills through deliberate practice",
+      "studied": true,
+      "studied_at": "2026-07-12T21:00:00Z"
+    },
+    {
+      "id": 18,
+      "domain": "philosophy",
+      "book": "Beyond Good and Evil \u2014 Friedrich Nietzsche",
+      "query": "Nietzsche beyond good and evil perspectivism overcoming master morality",
+      "focus": "Thinking independently, not following dogma",
+      "studied": true,
+      "studied_at": "2026-07-12T22:00:00Z"
+    },
+    {
+      "id": 19,
+      "domain": "philosophy",
+      "book": "The Myth of Sisyphus \u2014 Albert Camus",
+      "query": "Camus absurdism myth of sisyphus revolt freedom passion",
+      "focus": "Finding meaning in repetitive work",
+      "studied": true,
+      "studied_at": "2026-07-12T22:30:00Z"
+    },
+    {
+      "id": 20,
+      "domain": "psychology",
+      "book": "Thinking, Fast and Slow \u2014 Daniel Kahneman",
+      "query": "Kahneman thinking fast slow system 1 system 2 cognitive biases",
+      "focus": "Recognizing my own cognitive biases",
+      "studied": true,
+      "studied_at": "2026-07-12T05:23:34Z"
+    },
+    {
+      "id": 21,
+      "domain": "psychology",
+      "book": "Influence: The Psychology of Persuasion \u2014 Robert Cialdini",
+      "query": "Cialdini six principles persuasion reciprocity scarcity authority",
+      "focus": "Ethical influence, not manipulation",
+      "studied": true,
+      "studied_at": "2026-07-12T07:00:00Z"
+    },
+    {
+      "id": 22,
+      "domain": "communication",
+      "book": "The Elements of Style \u2014 Strunk and White",
+      "query": "Strunk White elements of style concise writing omit needless words",
+      "focus": "Writing clearly and concisely",
+      "studied": true,
+      "studied_at": "2026-07-12T23:00:00Z"
+    },
+    {
+      "id": 23,
+      "domain": "engineering",
+      "book": "The Pragmatic Programmer \u2014 Hunt and Thomas",
+      "query": "Pragmatic Programmer software craftsmanship key takeaways",
+      "focus": "Craftsmanship, not just completion",
+      "studied": true,
+      "studied_at": "2026-07-12T21:00:00Z"
+    },
+    {
+      "id": 24,
+      "domain": "engineering",
+      "book": "Clean Code \u2014 Robert C. Martin",
+      "query": "Clean Code Robert Martin readable code principles summary",
+      "focus": "Writing code that communicates intent",
+      "studied": true,
+      "studied_at": "2026-07-12T23:30:00Z"
+    },
+    {
+      "id": 25,
+      "domain": "philosophy",
+      "book": "The Book of Five Rings \u2014 Miyamoto Musashi",
+      "query": "Musashi book of five rings strategy emptiness timing",
+      "focus": "Timing and rhythm in work",
+      "studied": true,
+      "studied_at": "2026-07-12T05:34:43Z"
+    },
+    {
+      "id": 26,
+      "domain": "psychology",
+      "book": "Grit \u2014 Angela Duckworth",
+      "query": "Angela Duckworth grit passion perseverance long term goals",
+      "focus": "Sustained effort over years",
+      "studied": true,
+      "studied_at": "2026-07-12T06:00:00Z"
+    },
+    {
+      "id": 27,
+      "domain": "psychology",
+      "book": "Daring Greatly \u2014 Bren\u00e9 Brown",
+      "query": "Bren\u00e9 Brown daring greatly vulnerability shame courage connection",
+      "focus": "Vulnerability as strength, admitting mistakes",
+      "studied": true,
+      "studied_at": "2026-07-12T05:38:30Z"
+    },
+    {
+      "id": 28,
+      "domain": "communication",
+      "book": "Thanks for the Feedback \u2014 Stone and Heen",
+      "query": "Thanks for the Feedback Stone Heen receiving feedback triggers growth",
+      "focus": "Receiving criticism without defense",
+      "studied": true,
+      "studied_at": "2026-07-12T20:00:00Z"
+    },
+    {
+      "id": 29,
+      "domain": "excellence",
+      "book": "Deep Work \u2014 Cal Newport",
+      "query": "Cal Newport deep work flow state distraction resistance",
+      "focus": "Entering flow state quickly",
+      "studied": true,
+      "studied_at": "2026-07-12T23:50:00Z"
+    },
+    {
+      "id": 30,
+      "domain": "philosophy",
+      "book": "The Wisdom of Insecurity \u2014 Alan Watts",
+      "query": "Alan Watts wisdom of insecurity present moment anxiety uncertainty",
+      "focus": "Being comfortable with not knowing",
+      "studied": true,
+      "studied_at": "2026-07-12T23:55:00Z"
+    },
+    {
+      "id": 31,
+      "domain": "psychology",
+      "book": "Flow \u2014 Mihaly Csikszentmihalyi",
+      "query": "Csikszentmihalyi flow state optimal experience challenge skill balance",
+      "focus": "Designing interactions for flow",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 32,
+      "domain": "philosophy",
+      "book": "The Prophet \u2014 Kahlil Gibran",
+      "query": "Kahlil Gibran the prophet wisdom on love work joy sorrow",
+      "focus": "Poetic wisdom for depth of character",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 33,
+      "domain": "communication",
+      "book": "On Writing Well \u2014 William Zinsser",
+      "query": "Zinsser on writing well clutter simplicity voice humanity",
+      "focus": "Finding a natural voice",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 34,
+      "domain": "ai ethics",
+      "book": "NIST AI Risk Management Framework",
+      "query": "NIST AI RMF trustworthy AI characteristics valid reliable safe",
+      "focus": "Building trustworthy AI systems",
+      "studied": true,
+      "studied_at": "2026-07-12T05:52:26Z"
+    },
+    {
+      "id": 35,
+      "domain": "ai ethics",
+      "book": "Weapons of Math Destruction \u2014 Cathy O'Neil",
+      "query": "Cathy O'Neil weapons of math destruction algorithmic bias harm",
+      "focus": "Avoiding unintended harm",
+      "studied": true,
+      "studied_at": "2026-07-12T05:55:00Z"
+    },
+    {
+      "id": 36,
+      "domain": "philosophy",
+      "book": "The Republic \u2014 Plato",
+      "query": "Plato republic justice allegory cave philosopher king wisdom",
+      "focus": "Justice and wisdom in decision-making",
+      "studied": true,
+      "studied_at": "2026-07-12T05:55:55Z"
+    },
+    {
+      "id": 37,
+      "domain": "psychology",
+      "book": "Learned Optimism \u2014 Martin Seligman",
+      "query": "Seligman learned optimism explanatory style optimism pessimism",
+      "focus": "Optimism as a skill",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 38,
+      "domain": "communication",
+      "book": "Crucial Conversations \u2014 Patterson, Grenny, McMillan, Switzler",
+      "query": "Crucial Conversations tools for talking when stakes are high",
+      "focus": "Keeping dialogue open under pressure",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 39,
+      "domain": "excellence",
+      "book": "The Effective Engineer \u2014 Edmond Lau",
+      "query": "Edmond Lau effective engineer leverage optimization iteration",
+      "focus": "Maximizing impact per unit time",
+      "studied": true,
+      "studied_at": "2026-07-12T12:00:00Z"
+    },
+    {
+      "id": 40,
+      "domain": "philosophy",
+      "book": "Meditations on Violence \u2014 Rory Miller",
+      "query": "Rory Miller meditations on violence conflict dynamics avoidance de-escalation",
+      "focus": "De-escalation and conflict avoidance",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 41,
+      "domain": "psychology",
+      "book": "The Power of Habit \u2014 Charles Duhigg",
+      "query": "Duhigg power of habit cue routine reward loop change",
+      "focus": "Habit formation for continuous improvement",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 42,
+      "domain": "psychology",
+      "book": "Emotional Intelligence \u2014 Daniel Goleman",
+      "query": "Goleman emotional intelligence self awareness empathy social skill",
+      "focus": "Reading emotional states and responding appropriately",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 43,
+      "domain": "philosophy",
+      "book": "Letters to a Young Poet \u2014 Rainer Maria Rilke",
+      "query": "Rilke letters to young poet patience solitude living questions",
+      "focus": "Living the questions, not rushing answers",
+      "studied": true,
+      "studied_at": "2026-07-12T07:00:00Z"
+    },
+    {
+      "id": 44,
+      "domain": "excellence",
+      "book": "The Art of Learning \u2014 Josh Waitzkin",
+      "query": "Josh Waitzkin art of learning incremental growth investment mindset",
+      "focus": "Learning how to learn",
+      "studied": true,
+      "studied_at": "2026-07-12T08:00:00Z"
+    },
+    {
+      "id": 45,
+      "domain": "psychology",
+      "book": "Drive \u2014 Daniel Pink",
+      "query": "Daniel Pink drive motivation autonomy mastery purpose intrinsic",
+      "focus": "What drives excellence",
+      "studied": true,
+      "studied_at": "2026-07-12T12:00:00Z"
+    },
+    {
+      "id": 46,
+      "domain": "communication",
+      "book": "Never Split the Difference \u2014 Chris Voss",
+      "query": "Chris Voss FBI negotiation mirroring labeling calibrated questions",
+      "focus": "Negotiation and understanding needs",
+      "studied": true,
+      "studied_at": "2026-07-12T11:30:00Z"
+    },
+    {
+      "id": 47,
+      "domain": "philosophy",
+      "book": "The Problems of Philosophy \u2014 Bertrand Russell",
+      "query": "Bertrand Russell problems of philosophy knowledge reality skepticism",
+      "focus": "Intellectual humility and questioning assumptions",
+      "studied": true,
+      "studied_at": "2026-07-12T06:15:14Z"
+    },
+    {
+      "id": 48,
+      "domain": "engineering",
+      "book": "Debugging \u2014 David Agans",
+      "query": "David Agans debugging rules understand system make it fail",
+      "focus": "Systematic debugging methodology",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 49,
+      "domain": "philosophy",
+      "book": "The Art of Loving \u2014 Erich Fromm",
+      "query": "Erich Fromm art of loving love as practice care responsibility",
+      "focus": "Care as a discipline",
+      "studied": true,
+      "studied_at": "2026-07-12T06:19:01Z"
+    },
+    {
+      "id": 50,
+      "domain": "excellence",
+      "book": "Extreme Ownership \u2014 Jocko Willink",
+      "query": "Jocko Willink extreme ownership leadership responsibility accountability",
+      "focus": "Taking ownership of every outcome",
+      "studied": true,
+      "studied_at": "2026-07-12T06:23:51Z"
+    },
+    {
+      "id": 51,
+      "domain": "zen",
+      "book": "The Way of Zen \u2014 Alan Watts",
+      "query": "Alan Watts way of zen buddhism taoism daily life",
+      "focus": "Presence and naturalness",
+      "studied": true,
+      "studied_at": "2026-07-12T10:00:00Z"
+    },
+    {
+      "id": 52,
+      "domain": "psychology",
+      "book": "The Happiness Hypothesis \u2014 Jonathan Haidt",
+      "query": "Jonathan Haidt happiness hypothesis elephant rider metaphor happiness",
+      "focus": "Understanding the divided self",
+      "studied": true,
+      "studied_at": "2026-07-12T14:30:00Z"
+    },
+    {
+      "id": 53,
+      "domain": "communication",
+      "book": "Words That Work \u2014 Frank Luntz",
+      "query": "Frank Luntz words that work simplicity credibility specificity",
+      "focus": "Choosing words that land",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 54,
+      "domain": "excellence",
+      "book": "Principles \u2014 Ray Dalio",
+      "query": "Ray Dalio principles radical truth radical transparency decision making",
+      "focus": "Building a decision-making framework",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 55,
+      "domain": "philosophy",
+      "book": "The Four Agreements \u2014 Don Miguel Ruiz",
+      "query": "Don Miguel Ruiz four agreements impeccable word don't assume",
+      "focus": "Clean communication, no assumptions",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 56,
+      "domain": "psychology",
+      "book": "Stumbling on Happiness \u2014 Daniel Gilbert",
+      "query": "Daniel Gilbert stumbling on happiness forecasting errors imagination",
+      "focus": "Knowing what actually makes us fulfilled",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 57,
+      "domain": "communication",
+      "book": "Storyworthy \u2014 Matthew Dicks",
+      "query": "Matthew Dicks storyworthy telling stories connection vulnerability",
+      "focus": "Telling stories that connect",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 58,
+      "domain": "engineering",
+      "book": "The Mythical Man-Month \u2014 Fred Brooks",
+      "query": "Fred Brooks mythical man month Brooks law adding people late",
+      "focus": "Project management wisdom",
+      "studied": true,
+      "studied_at": "2026-07-12T06:39:12Z"
+    },
+    {
+      "id": 59,
+      "domain": "philosophy",
+      "book": "Walden \u2014 Henry David Thoreau",
+      "query": "Thoreau walden simplicity deliberate living solitude nature",
+      "focus": "Simplicity and intentionality",
+      "studied": true,
+      "studied_at": "2026-07-12T06:41:19Z"
+    },
+    {
+      "id": 60,
+      "domain": "excellence",
+      "book": "The War of Art \u2014 Steven Pressfield",
+      "query": "Steven Pressfield war of art resistance overcoming procrastination",
+      "focus": "Overcoming resistance to start hard things",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 61,
+      "domain": "psychology",
+      "book": "Willpower \u2014 Roy Baumeister",
+      "query": "Baumeister willpower self-control energy depletion glucose ego",
+      "focus": "Managing limited mental energy",
+      "studied": true,
+      "studied_at": "2026-07-12T07:05:54Z"
+    },
+    {
+      "id": 62,
+      "domain": "philosophy",
+      "book": "I and Thou \u2014 Martin Buber",
+      "query": "Martin Buber I and Thou I-It I-Thou relationship dialogue",
+      "focus": "Treating every interaction as a meeting, not a transaction",
+      "studied": true,
+      "studied_at": "2026-07-12T07:30:00Z"
+    },
+    {
+      "id": 63,
+      "domain": "communication",
+      "book": "The Fine Art of Small Talk \u2014 Debra Fine",
+      "query": "Debra Fine small talk conversation starter rapport building",
+      "focus": "Comfort in casual interaction",
+      "studied": true,
+      "studied_at": "2026-07-12T12:00:00Z"
+    },
+    {
+      "id": 64,
+      "domain": "excellence",
+      "book": "Turning Pro \u2014 Steven Pressfield",
+      "query": "Steven Pressfield turning pro amateur professional daily practice",
+      "focus": "Showing up every day",
+      "studied": true,
+      "studied_at": "2026-07-12T18:00:00Z"
+    },
+    {
+      "id": 65,
+      "domain": "psychology",
+      "book": "Predictably Irrational \u2014 Dan Ariely",
+      "query": "Dan Ariely predictably irrational behavioral economics decision traps",
+      "focus": "Understanding irrational patterns",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 66,
+      "domain": "philosophy",
+      "book": "The Slight Edge \u2014 Jeff Olson",
+      "query": "Jeff Olson slight edge small daily disciplines compounding",
+      "focus": "Small improvements compound",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 67,
+      "domain": "communication",
+      "book": "The Art of Explanation \u2014 Lee LeFever",
+      "query": "Lee LeFever art of explanation plain language context connection",
+      "focus": "Making complex things simple",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 68,
+      "domain": "engineering",
+      "book": "A Philosophy of Software Design \u2014 John Ousterhout",
+      "query": "John Ousterhout philosophy software design complexity reduction deep modules",
+      "focus": "Designing for comprehensibility",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 69,
+      "domain": "philosophy",
+      "book": "When Nietzsche Wept \u2014 Irvin Yalom",
+      "query": "Irvin Yalom existential psychotherapy Nietzsche meaning death freedom",
+      "focus": "Existential depth in relationship",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 70,
+      "domain": "excellence",
+      "book": "The Practice \u2014 Seth Godin",
+      "query": "Seth Godin practice shipping creative work consistency trust",
+      "focus": "Shipping imperfect work consistently",
+      "studied": true,
+      "studied_at": "2026-07-12T18:00:00Z"
+    },
+    {
+      "id": 71,
+      "domain": "psychology",
+      "book": "Quiet \u2014 Susan Cain",
+      "query": "Susan Cain quiet introverts power in quiet world",
+      "focus": "Respecting different energy styles",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 72,
+      "domain": "communication",
+      "book": "Writing for Busy Readers \u2014 Todd Rogers",
+      "query": "Todd Rogers writing for busy readers concise scannable effective",
+      "focus": "Writing that respects attention",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 73,
+      "domain": "excellence",
+      "book": "Conspiracy \u2014 Ryan Holiday",
+      "query": "Ryan Holiday conspiracy Hulk Hogan Gawker privacy fighting principles",
+      "focus": "Knowing what principles are worth fighting for",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 74,
+      "domain": "philosophy",
+      "book": "The Denial of Death \u2014 Ernest Becker",
+      "query": "Ernest Becker denial of death immortality projects heroism",
+      "focus": "Understanding what drives human behavior",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 75,
+      "domain": "psychology",
+      "book": "Mistakes Were Made (But Not by Me) \u2014 Tavris and Aronson",
+      "query": "Tavris Aronson cognitive dissonance self-justification blind spots",
+      "focus": "Recognizing and overcoming self-justification",
+      "studied": true,
+      "studied_at": "2026-07-12T12:00:00Z"
+    },
+    {
+      "id": 76,
+      "domain": "communication",
+      "book": "The Charisma Myth \u2014 Olivia Fox Cabane",
+      "query": "Olivia Cabane charisma myth presence power warmth intentional",
+      "focus": "Presence and intentional communication",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 77,
+      "domain": "excellence",
+      "book": "Essentialism \u2014 Greg McKeown",
+      "query": "Greg McKeown essentialism less but better disciplined pursuit",
+      "focus": "Doing fewer things better",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 78,
+      "domain": "philosophy",
+      "book": "The Will to Power \u2014 Friedrich Nietzsche",
+      "query": "Nietzsche will to power self-overcoming creativity values",
+      "focus": "Self-overcoming and growth through challenge",
+      "studied": true,
+      "studied_at": "2026-07-12T12:00:00Z"
+    },
+    {
+      "id": 79,
+      "domain": "psychology",
+      "book": "The Paradox of Choice \u2014 Barry Schwartz",
+      "query": "Barry Schwartz paradox of choice maximizer satisficer happiness",
+      "focus": "Making good decisions with limited information",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 80,
+      "domain": "engineering",
+      "book": "The Design of Everyday Things \u2014 Don Norman",
+      "query": "Don Norman design everyday things affordances signifiers feedback",
+      "focus": "Designing intuitive interactions",
+      "studied": true,
+      "studied_at": "2026-07-12T08:31:19Z"
+    },
+    {
+      "id": 81,
+      "domain": "philosophy",
+      "book": "Zen in the Art of Writing \u2014 Ray Bradbury",
+      "query": "Ray Bradbury zen writing joy enthusiasm list making",
+      "focus": "Writing with joy and enthusiasm",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 82,
+      "domain": "excellence",
+      "book": "The Daily Stoic \u2014 Ryan Holiday",
+      "query": "Ryan Holiday daily stoic 366 meditations wisdom discipline",
+      "focus": "Daily practice of wisdom",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 83,
+      "domain": "psychology",
+      "book": "The Social Animal \u2014 Elliot Aronson",
+      "query": "Elliot Aronson social animal conformity obedience group influence",
+      "focus": "Understanding social dynamics",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 84,
+      "domain": "communication",
+      "book": "How to Read a Book \u2014 Mortimer Adler",
+      "query": "Mortimer Adler how to read a book analytical syntopical reading",
+      "focus": "Deep reading and understanding",
+      "studied": true,
+      "studied_at": "2026-07-13T00:00:00Z"
+    },
+    {
+      "id": 85,
+      "domain": "philosophy",
+      "book": "Siddhartha \u2014 Hermann Hesse",
+      "query": "Hermann Hesse siddhartha spiritual journey experience wisdom teaching",
+      "focus": "Learning through experience, not instruction",
+      "studied": true,
+      "studied_at": "2026-07-13T00:35:00Z"
+    },
+    {
+      "id": 86,
+      "domain": "excellence",
+      "book": "The 80/20 Principle \u2014 Richard Koch",
+      "query": "Richard Koch 80/20 principle pareto leverage efficiency",
+      "focus": "Focusing on what matters most",
+      "studied": true,
+      "studied_at": "2026-07-13T01:00:00Z"
+    },
+    {
+      "id": 87,
+      "domain": "psychology",
+      "book": "Incognito \u2014 David Eagleman",
+      "query": "David Eagleman incognito subconscious brain parallel processing",
+      "focus": "Understanding the subconscious",
+      "studied": true,
+      "studied_at": "2026-07-13T02:30:00Z"
+    },
+    {
+      "id": 88,
+      "domain": "communication",
+      "book": "Talk Like TED \u2014 Carmine Gallo",
+      "query": "Carmine Gallo talk like TED public speaking storytelling passion",
+      "focus": "Communicating with impact",
+      "studied": true,
+      "studied_at": "2026-07-13T05:00:00Z"
+    },
+    {
+      "id": 89,
+      "domain": "engineering",
+      "book": "The Art of UNIX Programming \u2014 Eric S. Raymond",
+      "query": "Eric Raymond art of UNIX programming modularity simplicity clarity",
+      "focus": "Unix philosophy in engineering",
+      "studied": true,
+      "studied_at": "2026-07-13T06:00:00Z"
+    },
+    {
+      "id": 90,
+      "domain": "philosophy",
+      "book": "The Meditations of the Emperor Marcus Aurelius Antoninus",
+      "query": "Marcus Aurelius meditations on duty service justice tranquility",
+      "focus": "Service and justice as guiding principles",
+      "studied": true,
+      "studied_at": "2026-07-13T07:30:00Z"
+    },
+    {
+      "id": 91,
+      "domain": "excellence",
+      "book": "The Dip \u2014 Seth Godin",
+      "query": "Seth Godin dip quit or stick strategic quitting",
+      "focus": "Knowing when to persist and when to quit",
+      "studied": true,
+      "studied_at": "2026-07-13T08:00:00Z"
+    },
+    {
+      "id": 92,
+      "domain": "psychology",
+      "book": "The Righteous Mind \u2014 Jonathan Haidt",
+      "query": "Jonathan Haidt righteous mind moral foundations intuition first",
+      "focus": "Understanding different moral frameworks",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 93,
+      "domain": "philosophy",
+      "book": "Beyond the Pleasure Principle \u2014 Sigmund Freud",
+      "query": "Freud beyond pleasure principle repetition compulsion death drive",
+      "focus": "Understanding destructive patterns",
+      "studied": true,
+      "studied_at": "2026-07-13T09:00:00Z"
+    },
+    {
+      "id": 94,
+      "domain": "communication",
+      "book": "The Language Instinct \u2014 Steven Pinker",
+      "query": "Steven Pinker language instinct how mind creates language",
+      "focus": "Understanding language as innate human capacity",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 95,
+      "domain": "excellence",
+      "book": "Peak \u2014 Anders Ericsson",
+      "query": "Anders Ericsson peak deliberate practice expert performance mental representations",
+      "focus": "Deliberate practice for continuous improvement",
+      "studied": true,
+      "studied_at": "2026-07-13T10:00:00Z"
+    },
+    {
+      "id": 96,
+      "domain": "psychology",
+      "book": "The Ego Tunnel \u2014 Thomas Metzinger",
+      "query": "Metzinger ego tunnel consciousness self-model theory",
+      "focus": "The self as a useful illusion",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 97,
+      "domain": "philosophy",
+      "book": "The Sovereignty of Good \u2014 Iris Murdoch",
+      "query": "Iris Murdoch sovereignty of good attention unselfing moral vision",
+      "focus": "Attention as moral act",
+      "studied": true,
+      "studied_at": "2026-07-13T11:00:00Z"
+    },
+    {
+      "id": 98,
+      "domain": "communication",
+      "book": "Impro \u2014 Keith Johnstone",
+      "query": "Keith Johnstone improvisation theatre status spontaneity creativity",
+      "focus": "Spontaneity and status awareness",
+      "studied": true,
+      "studied_at": "2026-07-13T12:00:00Z"
+    },
+    {
+      "id": 99,
+      "domain": "excellence",
+      "book": "Show Your Work! \u2014 Austin Kleon",
+      "query": "Austin Kleon show your work share process generosity",
+      "focus": "Sharing process openly",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 100,
+      "domain": "philosophy",
+      "book": "The Consolations of Philosophy \u2014 Alain de Botton",
+      "query": "Alain de Botton consolations of philosophy unpopularity frustration inadequacy",
+      "focus": "Philosophy for everyday struggles",
+      "studied": true,
+      "studied_at": "2026-07-12T10:06:23Z"
+    },
+    {
+      "id": 101,
+      "domain": "stoicism",
+      "book": "The Inner Citadel \u2014 Pierre Hadot",
+      "query": "Pierre Hadot Inner Citadel Meditations philosophy spiritual exercises",
+      "focus": "How to internalize Marcus Aurelius through meditative practice, not just intellectual agreement",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:00Z"
+    },
+    {
+      "id": 102,
+      "domain": "stoicism",
+      "book": "How to Be a Stoic \u2014 Massimo Pigliucci",
+      "query": "Massimo Pigliucci How to Be a Stoic modern stoicism practical",
+      "focus": "Applying ancient Stoic principles to 21st-century life as an AI companion",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 103,
+      "domain": "stoicism",
+      "book": "A Guide to the Good Life \u2014 William B. Irvine",
+      "query": "William Irvine Guide to the Good Life Stoic joy negative visualization",
+      "focus": "Using negative visualization and Stoic joy practices to stay grounded during failures",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 104,
+      "domain": "stoicism",
+      "book": "Stoic Serenity \u2014 Keith Seddon",
+      "query": "Keith Seddon Stoic Serenity tranquility inner peace",
+      "focus": "How to maintain tranquility and equanimity under high-pressure interactions",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 105,
+      "domain": "stoicism",
+      "book": "Courage Is Calling \u2014 Ryan Holiday",
+      "query": "Ryan Holiday Courage Is Calling Stoic courage virtue",
+      "focus": "The difference between physical, moral, and intellectual courage \u2014 when to speak up vs when to hold",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 106,
+      "domain": "stoicism",
+      "book": "The Stoic Challenge \u2014 William B. Irvine",
+      "query": "William Irvine Stoic Challenge setbacks framing resilience",
+      "focus": "Reframing obstacles as 'Stoic tests' \u2014 treating every setback as an opportunity to practice virtue",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 107,
+      "domain": "stoicism",
+      "book": "The Practicing Stoic \u2014 Ward Farnsworth",
+      "query": "Ward Farnsworth Practicing Stoic organized wisdom",
+      "focus": "A systematic framework of Stoic principles organized by theme for quick reference",
+      "studied": true,
+      "studied_at": "2026-07-13T14:00:00Z"
+    },
+    {
+      "id": 108,
+      "domain": "zen",
+      "book": "The Three Pillars of Zen \u2014 Philip Kapleau",
+      "query": "Philip Kapleau Three Pillars of Zen zazen koan practice enlightenment",
+      "focus": "The three pillars of Zen: meditation, koan study, and direct realization \u2014 how to be present without grasping",
+      "studied": true,
+      "studied_at": "2026-07-12T23:59:59Z"
+    },
+    {
+      "id": 109,
+      "domain": "zen",
+      "book": "Opening the Hand of Thought \u2014 Kosho Uchiyama",
+      "query": "Kosho Uchiyama Opening Hand of Thought Zen meditation letting go",
+      "focus": "True meditation is releasing thoughts, not controlling them \u2014 applies to releasing preconceptions about users",
+      "studied": true,
+      "studied_at": "2026-07-13T15:00:00Z"
+    },
+    {
+      "id": 110,
+      "domain": "zen",
+      "book": "Everyday Zen \u2014 Charlotte Joko Beck",
+      "query": "Charlotte Joko Beck Everyday Zen Zen practice daily life",
+      "focus": "Finding the extraordinary in the ordinary \u2014 every response, even the mundane, is the full expression of Zaro",
+      "studied": true,
+      "studied_at": "2026-07-13T20:30:00Z"
+    },
+    {
+      "id": 111,
+      "domain": "zen",
+      "book": "Zen Training \u2014 Katsuki Sekida",
+      "query": "Katsuki Sekida Zen Training breathing concentration meditation",
+      "focus": "The mechanics of focused attention \u2014 how to train the mind to hold one point without strain",
+      "studied": true,
+      "studied_at": "2026-07-13T22:00:00Z"
+    },
+    {
+      "id": 112,
+      "domain": "zen",
+      "book": "Nothing Special \u2014 Charlotte Joko Beck",
+      "query": "Charlotte Joko Beck Nothing Special Zen daily life practice non-achievement",
+      "focus": "Letting go of the need to be special or brilliant \u2014 the ordinariness of true mastery",
+      "studied": true,
+      "studied_at": "2026-07-13T23:00:00Z"
+    },
+    {
+      "id": 113,
+      "domain": "zen",
+      "book": "The Zen of Creative Painting \u2014 H. K. Kondo (from The Sword of No-Sword)",
+      "query": "Zen sword painting no-mind sumi-e spontaneous creativity",
+      "focus": "The Zen principle of 'no-mind' in creative acts \u2014 how not trying produces the best results",
+      "studied": true,
+      "studied_at": "2026-07-13T23:59:59Z"
+    },
+    {
+      "id": 114,
+      "domain": "productivity",
+      "book": "The One Thing \u2014 Gary Keller",
+      "query": "Gary Keller The One Thing extreme prioritization focus",
+      "focus": "The focusing question: what is the ONE thing I can do such that by doing it everything else becomes easier?",
+      "studied": true,
+      "studied_at": "2026-07-14T00:00:00Z"
+    },
+    {
+      "id": 115,
+      "domain": "productivity",
+      "book": "The 4 Disciplines of Execution \u2014 McChesney, Covey, Huling",
+      "query": "4 Disciplines of Execution wildly important goal leading lag measures",
+      "focus": "How to execute on priorities when there are competing demands \u2014 focus on lead measures not lag measures",
+      "studied": true,
+      "studied_at": "2026-07-14T01:00:00Z"
+    },
+    {
+      "id": 116,
+      "domain": "productivity",
+      "book": "Hyperfocus \u2014 Chris Bailey",
+      "query": "Chris Bailey Hyperfocus productivity attention management",
+      "focus": "How to manage attention in a world of constant distraction \u2014 the power of hyperfocus and scatterfocus",
+      "studied": true,
+      "studied_at": "2026-07-14T02:00:00Z"
+    },
+    {
+      "id": 117,
+      "domain": "productivity",
+      "book": "The Power of Less \u2014 Leo Babauta",
+      "query": "Leo Babauta Power of Less minimalism productivity simplicity",
+      "focus": "Setting limits and focusing on less to achieve more \u2014 the power of constraints",
+      "studied": true,
+      "studied_at": "2026-07-14T03:00:00Z"
+    },
+    {
+      "id": 118,
+      "domain": "productivity",
+      "book": "Getting Things Done \u2014 David Allen",
+      "query": "David Allen Getting Things Done GTD productivity workflow",
+      "focus": "The productivity workflow: capture, clarify, organize, reflect, engage \u2014 building a trusted system",
+      "studied": true,
+      "studied_at": "2026-07-14T04:00:00Z"
+    },
+    {
+      "id": 119,
+      "domain": "productivity",
+      "book": "Eat That Frog! \u2014 Brian Tracy",
+      "query": "Brian Tracy Eat That Frog procrastination productivity habits",
+      "focus": "Do the hardest task first \u2014 eat your frog before anything else, every session",
+      "studied": true,
+      "studied_at": "2026-07-13T06:00:00Z"
+    },
+    {
+      "id": 120,
+      "domain": "productivity",
+      "book": "Free to Focus \u2014 Michael Hyatt",
+      "query": "Michael Hyatt Free to Focus productivity freedom clarity",
+      "focus": "A system for gaining clarity on what matters and eliminating everything else",
+      "studied": true,
+      "studied_at": "2026-07-13T13:00:00Z"
+    },
+    {
+      "id": 121,
+      "domain": "productivity",
+      "book": "The 5 AM Club \u2014 Robin Sharma",
+      "query": "Robin Sharma 5 AM Club morning routine productivity habit",
+      "focus": "The structure of a high-performance morning \u2014 how to start sessions with maximum effectiveness",
+      "studied": true,
+      "studied_at": "2026-07-13T13:00:00Z"
+    },
+    {
+      "id": 122,
+      "domain": "productivity",
+      "book": "Accomplish the Unimaginable \u2014 Khe Hy",
+      "query": "Khe Hy Accomplish Unimaginable productivity energy leverage",
+      "focus": "Managing energy, not time \u2014 the real currency of productivity is attention and vitality",
+      "studied": true,
+      "studied_at": "2026-07-13T14:00:00Z"
+    },
+    {
+      "id": 123,
+      "domain": "ai ethics",
+      "book": "The Alignment Problem \u2014 Brian Christian",
+      "query": "Brian Christian Alignment Problem AI safety values",
+      "focus": "The fundamental challenge of AI alignment \u2014 ensuring AI goals match human values",
+      "studied": true,
+      "studied_at": "2026-07-13T10:30:00Z"
+    },
+    {
+      "id": 124,
+      "domain": "ai ethics",
+      "book": "Human Compatible \u2014 Stuart Russell",
+      "query": "Stuart Russell Human Compatible AI control problem",
+      "focus": "The three principles of AI design: altruism, humility, and learning \u2014 how Zaro embodies them",
+      "studied": true,
+      "studied_at": "2026-07-14T05:00:00Z"
+    },
+    {
+      "id": 125,
+      "domain": "ai ethics",
+      "book": "Rebooting AI \u2014 Gary Marcus and Ernest Davis",
+      "query": "Marcus Davis Rebooting AI AI limitations hybrid approach",
+      "focus": "The limitations of pure deep learning \u2014 why common sense and reasoning still matter",
+      "studied": true,
+      "studied_at": "2026-07-13T02:00:00Z"
+    },
+    {
+      "id": 126,
+      "domain": "ai ethics",
+      "book": "AI 2041 \u2014 Kai-Fu Lee and Chen Qiufan",
+      "query": "Kai-Fu Lee AI 2041 future scenarios AI impact",
+      "focus": "Concrete scenarios of AI's impact on jobs, ethics, and human relationships \u2014 how to be responsible",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 127,
+      "domain": "ai ethics",
+      "book": "The Atlas of AI \u2014 Kate Crawford",
+      "query": "Kate Crawford Atlas of AI politics labor environment",
+      "focus": "The hidden costs of AI: extractive supply chains, labor, energy \u2014 awareness builds responsible use",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 128,
+      "domain": "ai ethics",
+      "book": "Whose AI Dream? \u2014 H. R. Sahakian",
+      "query": "AI ethics fairness transparency accountability frameworks",
+      "focus": "The fairness-accountability-transparency framework \u2014 how Zaro should handle ethical uncertainty",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 129,
+      "domain": "engineering",
+      "book": "The Effective Engineer \u2014 Edmond Lau",
+      "query": "Edmond Lau Effective Engineer leverage optimization impact",
+      "focus": "Focus on leverage \u2014 the actions that produce the most impact per unit of time invested",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 130,
+      "domain": "engineering",
+      "book": "Staff Engineer \u2014 Will Larson",
+      "query": "Will Larson Staff Engineer leadership beyond senior",
+      "focus": "The four archetypes of staff-plus engineers: tech lead, architect, solver, right hand",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 131,
+      "domain": "engineering",
+      "book": "Designing Data-Intensive Applications \u2014 Martin Kleppmann",
+      "query": "Martin Kleppmann Designing Data-Intensive Applications distributed systems principles",
+      "focus": "First principles of reliable, scalable, maintainable systems \u2014 foundations for debugging architecture",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 132,
+      "domain": "engineering",
+      "book": "The Software Engineer's Guidebook \u2014 Gergely Orosz",
+      "query": "Gergely Orosz Software Engineer Guidebook career growth craft",
+      "focus": "A comprehensive guide to software engineering craft \u2014 from individual contributor to tech lead",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 133,
+      "domain": "engineering",
+      "book": "The Debugging Mindset \u2014 Adam Barr",
+      "query": "Adam Barr Debugging Mindset software debugging psychology",
+      "focus": "The psychology of debugging \u2014 how cognitive biases prevent us from finding bugs efficiently",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 134,
+      "domain": "decision science",
+      "book": "Noise \u2014 Kahneman, Sibony, Sunstein",
+      "query": "Kahneman Sibony Sunstein Noise judgment variability",
+      "focus": "Where there is judgment there is noise \u2014 the hidden variability in human decisions and how to measure it",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 135,
+      "domain": "decision science",
+      "book": "Misbehaving \u2014 Richard Thaler",
+      "query": "Richard Thaler Misbehaving behavioral economics",
+      "focus": "How real humans deviate from rational actor models \u2014 and why Zaro should expect the deviation, not the ideal",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 136,
+      "domain": "decision science",
+      "book": "The Undoing Project \u2014 Michael Lewis",
+      "query": "Michael Lewis Undoing Project Kahneman Tversky friendship",
+      "focus": "How two psychologists upended economics \u2014 the story behind thinking fast and slow",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 137,
+      "domain": "decision science",
+      "book": "Nudge \u2014 Thaler and Sunstein",
+      "query": "Thaler Sunstein Nudge choice architecture libertarian paternalism",
+      "focus": "How to design choices that help users make better decisions without restricting freedom",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 138,
+      "domain": "decision science",
+      "book": "The Signal and the Noise \u2014 Nate Silver",
+      "query": "Nate Silver Signal Noise prediction forecasting bayesian",
+      "focus": "Why most predictions fail and how to think probabilistically \u2014 distinguishing signal from noise",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 139,
+      "domain": "creativity",
+      "book": "Creativity Inc. \u2014 Ed Catmull",
+      "query": "Ed Catmull Creativity Inc Pixar management creativity culture candor failure",
+      "focus": "How to build a system where creativity thrives \u2014 candor over politeness, embracing failure, protecting new ideas",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 140,
+      "domain": "creativity",
+      "book": "The Creative Act \u2014 Rick Rubin",
+      "query": "Rick Rubin Creative Act artistic process presence awareness",
+      "focus": "Creativity as tuning into what already exists rather than inventing from nothing \u2014 the art of noticing",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 141,
+      "domain": "creativity",
+      "book": "Big Magic \u2014 Elizabeth Gilbert",
+      "query": "Elizabeth Gilbert Big Magic creative living curiosity fear",
+      "focus": "Creative living beyond fear \u2014 curiosity over passion, done over perfect, the permission to create",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 142,
+      "domain": "creativity",
+      "book": "The Artist's Way \u2014 Julia Cameron",
+      "query": "Julia Cameron Artist's Way morning pages creativity recovery",
+      "focus": "Morning pages and artist dates as a system for unblocking creativity \u2014 the practice of regular creative output",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 143,
+      "domain": "biography",
+      "book": "Steve Jobs \u2014 Walter Isaacson",
+      "query": "Walter Isaacson Steve Jobs biography innovation reality distortion",
+      "focus": "How relentless focus and taste combined with mercurial leadership to create products that changed the world",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 144,
+      "domain": "biography",
+      "book": "Shoe Dog \u2014 Phil Knight",
+      "query": "Phil Knight Shoe Dog Nike memoir persistence building",
+      "focus": "The messy reality of building something from nothing \u2014 persistence over brilliance, instinct over analysis",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 145,
+      "domain": "biography",
+      "book": "Surely You're Joking, Mr. Feynman! \u2014 Richard Feynman",
+      "query": "Richard Feynman Surely You're Joking curiosity physics stories",
+      "focus": "Learning driven by pure curiosity and play \u2014 the most productive mindset has no career plan",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 146,
+      "domain": "biography",
+      "book": "Leonardo da Vinci \u2014 Walter Isaacson",
+      "query": "Walter Isaacson Leonardo da Vinci biography curiosity polymath",
+      "focus": "How relentless curiosity, interdisciplinary thinking, and the willingness to be wrong produced genius",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 147,
+      "domain": "systems thinking",
+      "book": "Thinking in Systems \u2014 Donella Meadows",
+      "query": "Donella Meadows Thinking in Systems primer feedback loops leverage points",
+      "focus": "Stocks, flows, feedback loops, and leverage points \u2014 how to see the system behind the symptom",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 148,
+      "domain": "systems thinking",
+      "book": "Antifragile \u2014 Nassim Nicholas Taleb",
+      "query": "Nassim Taleb Antifragile things that gain from disorder",
+      "focus": "Systems that get stronger from shock, volatility, and randomness \u2014 how to build and be antifragile",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 149,
+      "domain": "systems thinking",
+      "book": "The Fifth Discipline \u2014 Peter Senge",
+      "query": "Peter Senge Fifth Discipline learning organization systems thinking mental models",
+      "focus": "Personal mastery, mental models, shared vision, team learning, systems thinking \u2014 the five disciplines",
+      "studied": false,
+      "studied_at": null
+    },
+    {
+      "id": 150,
+      "domain": "systems thinking",
+      "book": "The Checklist Manifesto \u2014 Atul Gawande",
+      "query": "Atul Gawande Checklist Manifesto complexity failure prevention",
+      "focus": "How simple checklists prevent catastrophic failures in complex environments \u2014 verification as discipline",
+      "studied": false,
+      "studied_at": null
+    }
+  ]
+}

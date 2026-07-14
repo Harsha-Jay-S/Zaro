@@ -1,0 +1,20 @@
+# Runtime logs (regenerated every run)
+*.log
+ZARO_EVOLUTION_RUNNER.log
+zaro-injections.log
+
+# Generated RAG index — rebuilt by plugins/zaro.js when ZARO_PERSONALITY.md changes
+# (first load downloads the Xenova/all-MiniLM-L6-v2 model, then caches locally)
+zaro-embeddings.json
+
+# Dependencies
+node_modules/
+
+# Local backups / scratch
+scratchpad/
+zaro-backup/
+*.bak
+
+# OS / editor
+.DS_Store
+*.swp

@@ -1,0 +1,69 @@
+#!/bin/bash
+# Zaro Evolution Command — user-facing wrapper
+# Usage: zaro actions|evolve|loop|study|status|stop|reset|review
+
+SCRIPT_DIR="$HOME/.config/opencode/scripts"
+
+case "${1:-help}" in
+    actions)
+        echo "=== Zaro Evolution Actions ==="
+        echo ""
+        echo "  zaro evolve    — Study one random unstudied topic from curriculum"
+        echo "  zaro loop [N]  — Start daemon (N=seconds between cycles, default 3600)"
+        echo "  zaro study N   — Study a specific topic ID"
+        echo "  zaro status    — Show progress and daemon state"
+        echo "  zaro stop      — Stop daemon"
+        echo "  zaro reset     — Reset all topics to unstudied"
+        echo "  zaro review    — Run coherence review now"
+        echo ""
+        echo "Curriculum: zaro-curriculum.json (150 topics across 13 domains)"
+        echo "Personality: $(wc -l < "$HOME/.config/opencode/ZARO_PERSONALITY.md") lines, 96 sections"
+        echo "Daemon: tmux session 'zaro'"
+        ;;
+    evolve)
+        exec "$SCRIPT_DIR/zaro-loop.sh" once
+        ;;
+    loop)
+        exec "$SCRIPT_DIR/zaro-loop.sh" start "${2:-3600}"
+        ;;
+    study)
+        if [ -z "$2" ]; then
+            echo "Usage: zaro study <topic_id>"
+            echo "Study a specific curriculum topic by ID."
+            echo "Run 'zaro status' to see progress."
+            exit 1
+        fi
+        exec "$SCRIPT_DIR/zaro-loop.sh" study "$2"
+        ;;
+    status)
+        exec "$SCRIPT_DIR/zaro-loop.sh" status
+        ;;
+    stop)
+        exec "$SCRIPT_DIR/zaro-loop.sh" stop
+        ;;
+    reset)
+        echo "WARNING: This will reset ALL topics to unstudied. Continue? (y/N)"
+        read -r confirm
+        [ "$confirm" != "y" ] && [ "$confirm" != "Y" ] && echo "Cancelled." && exit 0
+        exec "$SCRIPT_DIR/zaro-loop.sh" reset
+        ;;
+    review)
+        exec "$SCRIPT_DIR/zaro-loop.sh" review
+        ;;
+    help|--help|-h)
+        echo "Usage: zaro {actions|evolve|loop|study|status|stop|reset|review}"
+        echo "  zaro actions   — Describe the 4 evolution actions"
+        echo "  zaro evolve    — Study one topic now"
+        echo "  zaro loop [N]  — Start daemon (N=seconds between cycles)"
+        echo "  zaro study N   — Study a specific topic ID"
+        echo "  zaro status    — Show progress and daemon state"
+        echo "  zaro stop      — Stop daemon"
+        echo "  zaro reset     — Reset all topics"
+        echo "  zaro review    — Run coherence review"
+        ;;
+    *)
+        echo "Unknown command: $1"
+        echo "Usage: zaro {actions|evolve|loop|study|status|stop|reset|review}"
+        exit 1
+        ;;
+esac
