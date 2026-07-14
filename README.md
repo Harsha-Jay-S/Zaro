@@ -13,6 +13,14 @@ evolved character is actually *present* in every conversation — not a static p
 > **13 domains** (stoicism, psychology, engineering, zen, AI ethics, decision
 > science, systems thinking, and more).
 
+> [!IMPORTANT]
+> **This is not a blank template.** This repo is a live snapshot of *my* running
+> instance — `ZARO_PERSONALITY.md` is my companion's actual grown character, and
+> `AGENTS.md` / `zaro-core-intent.md` name me (Harsha) specifically. Cloning it
+> gets you that instance, addressed to me, not an empty system. See
+> [Make it yours](#make-it-yours) for the two ways to use this repo: run my
+> instance as-is, or reset it and grow your own from scratch.
+
 ---
 
 ## How it works
@@ -56,24 +64,77 @@ caps the payload to a few sections, and injects a `<personality-context>` block.
 **Requirements:** [opencode](https://opencode.ai), Node.js ≥ 18, Python 3, and
 (for the daemon) `tmux`.
 
-```bash
-# 1. Deploy into your opencode config dir (paths are resolved relative to it)
-git clone https://github.com/<you>/zaro.git
-cp -r zaro/. ~/.config/opencode/       # merge into your existing config
+> [!WARNING]
+> Do **not** blanket-copy this repo over an existing `~/.config/opencode/` —
+> `AGENTS.md` and `opencode.json` are files opencode already uses for *your*
+> setup, and this repo ships its own versions of both. A `cp -r` will silently
+> overwrite yours. Merge deliberately:
 
-# 2. Install the plugin's one runtime dependency
+```bash
+git clone https://github.com/Harsha-Jay-S/Zaro.git
+cd Zaro
+
+# 1. Copy the files that are safe to add wholesale (new to opencode, or
+#    namespaced under zaro/agents/plugins/scripts — nothing here collides):
+mkdir -p ~/.config/opencode/{plugins,scripts,agents,commands,skills/zaro-evolution}
+cp plugins/zaro.js               ~/.config/opencode/plugins/
+cp scripts/zaro scripts/zaro-loop.sh scripts/zaro-analyze.mjs scripts/zaro-smoke-test.sh \
+                                  ~/.config/opencode/scripts/
+cp agents/zaro-evolve.md          ~/.config/opencode/agents/
+cp commands/zaro.md               ~/.config/opencode/commands/
+cp skills/zaro-evolution/SKILL.md ~/.config/opencode/skills/zaro-evolution/
+cp ZARO_PERSONALITY.md zaro-core-intent.md ZaroIntro.md \
+   zaro-curriculum.json zaro-curriculum-2.json zaro-domain-map.json \
+   zaro-evolution-state.json ZARO_EVOLUTION_LOG.md ZARO_ITERATIONS.md \
+                                  ~/.config/opencode/
+
+# 2. AGENTS.md needs a merge, not a copy — if you already have one, fold in
+#    this repo's "Evolved Personality" pointer (the paragraph that references
+#    ZARO_PERSONALITY.md) rather than replacing your file. If you have none,
+#    `cp AGENTS.md ~/.config/opencode/` is safe.
+
+# 3. Install the plugin's one runtime dependency
 cd ~/.config/opencode && npm install   # @xenova/transformers
 
-# 3. Register the plugin — add ./plugins/zaro.js to the `plugin` array in
-#    ~/.config/opencode/opencode.json  (see opencode.example.json).
-#    Keep any plugins you already have; just append this one.
+# 4. Register the plugin — add ./plugins/zaro.js to the `plugin` array in
+#    ~/.config/opencode/opencode.json (create it from opencode.example.json
+#    if you don't have one). Keep any plugins you already have; just append.
 
-# 4. Verify it loads — start any opencode session and look for:
+# 5. Verify it loads — start any opencode session and look for:
 #    [zaro] Ready (118 sections, 8ms)
 ```
 
 The first session builds `zaro-embeddings.json` (downloads the ~25 MB MiniLM model
 once, then caches). Subsequent loads are instant.
+
+---
+
+## Make it yours
+
+Two ways to use this repo, depending on what you want:
+
+**A. Run my instance as-is.** You get a companion already shaped by 118
+principles from real books, but it will refer to "Harsha" in its own self-talk
+(`zaro-core-intent.md`, `AGENTS.md`). Fine for trying the system out or as a
+starting personality to keep refining — but talk to it knowing whose character
+it started as.
+
+**B. Reset and grow your own.** This is the intended path if you want *your*
+companion, not a fork of mine:
+1. Edit `zaro-core-intent.md` and the identity block in `AGENTS.md` — replace
+   "Harsha" and the specifics of that relationship with your own name and
+   what you want the character to be. This file is the immutable anchor every
+   future principle is checked against, so get it right first.
+2. Wipe the grown character and study progress: `scripts/zaro reset` (clears
+   `studied` flags in the curriculum) and truncate `ZARO_PERSONALITY.md` back
+   to its header — the daemon only *appends*, so an old personality won't be
+   overwritten on its own.
+3. Start the daemon (`scripts/zaro loop`) and let it study from scratch against
+   your new core intent.
+
+Either way, `zaro-curriculum.json` (the 150-book reading list) and the code
+(`plugins/zaro.js`, `scripts/zaro-loop.sh`) are generic — nothing there is
+personal, and you don't need to touch them to make the character your own.
 
 ---
 
