@@ -56,6 +56,30 @@ agents/ commands/` layout intact or the runtime paths break.
    don't remove it even if the digest and section trims seem sufficient on
    their own.
 
+7. **A rate-limit/quota error is not the same failure as a transient blip —
+   don't collapse them back into one backoff.** `is_rate_limited()` in
+   `zaro-loop.sh` greps run output for the quota-error signature and uses a
+   30-minute sleep (`RATE_LIMIT_BACKOFF`), not the 60s-capped exponential
+   backoff meant for network hiccups — confirmed live (2026-07-15) that the
+   short backoff burns all 5 retries in ~2 minutes against a limit that
+   doesn't clear that fast. Paired with this: `incr_cycles_completed` only
+   runs when a cycle's `status -eq 0` — a fully-failed cycle must not advance
+   the 25-cycle review-cadence counter (it did, before this fix).
+
+8. **`ZARO_PERSONALITY.md`/`ZARO_EVOLUTION_LOG.md`/`zaro-evolution-state.json`
+   auto-back up into this repo (`sync_personality_backup()` in
+   `zaro-loop.sh`), fired after every completed cycle and every coherence
+   review.** This is the only durable copy-of-record beyond the deployed
+   machine's disk — before this, the mirror was a manual, occasional
+   `git commit`, and the deployed file could (and did) drift from it with no
+   automated sync. A push failure is logged, never fatal (`PIPESTATUS`-gated,
+   not a naive `| tee` — piping the whole subshell into `tee` silently
+   breaks `||` failure detection, since it then checks `tee`'s exit code, not
+   git's; caught and fixed live in the same round this was built). If you
+   touch this function, re-verify both the success path (commit + push land)
+   and a forced-failure path (no `origin` remote) — both are cheap sandbox
+   tests, not something to assume works from reading the code.
+
 ## Plugin load path (the trap)
 
 The authoritative plugin registry is the opencode `plugin` array in
@@ -66,13 +90,17 @@ layer is a silent no-op.
 
 ## Testing
 
-`npm test` (or `bash scripts/zaro-smoke-test.sh`) — 12 offline assertions
+`npm test` (or `bash scripts/zaro-smoke-test.sh`) — 13 offline assertions
 (no tmux/daemon/network). Run it after any change to the daemon, plugin, or
 domain map. It includes a sandboxed review that proves injection-safety (#2) and
-scoped reaping (#3), and one assertion (T6) that drives the *real* `ZaroPlugin()`
-code path — not a stub — checking actual injection size and no-match behavior.
-A stub-only test proves the daemon doesn't crash; it proves nothing about
-whether injection is any good. Keep T6 (or equivalent) if you touch `zaro.js`.
+scoped reaping (#3), one assertion (T6) that drives the *real* `ZaroPlugin()`
+code path — not a stub — checking actual injection size and no-match behavior,
+and one (T7) that runs 15 golden prompts through the same real code path and
+asserts ≥80% land in their expected domain — a regression net for retrieval
+quality as the curriculum grows, not a precision benchmark (the 80% bar
+deliberately tolerates a known noise floor, see Open items below). A stub-only
+test proves the daemon doesn't crash; it proves nothing about whether
+injection is any good. Keep T6/T7 (or equivalent) if you touch `zaro.js`.
 
 ## Open items (unconfirmed, don't assume either way)
 
@@ -91,7 +119,28 @@ whether injection is any good. Keep T6 (or equivalent) if you touch `zaro.js`.
   philosophy metaphor). Accepted as a noise floor rather than chased —
   threshold tuning can't cleanly separate it from real hits in the same score
   band. Worth re-measuring once `zaro-curriculum-2.json`'s topics are studied
-  and embedded (more sections changes the collision math), not before.
+  and embedded (more sections changes the collision math), not before. T7's
+  golden-prompt test (see Testing) now tracks this automatically, but the
+  underlying collision mechanism itself is still unaddressed.
+- **State JSON writes aren't atomic.** `mark_review_done`/`incr_cycles_completed`
+  etc. write `json.dump` directly to the target path — a crash mid-write
+  truncates it to invalid JSON. Already caused duplicate milestone entries
+  once (`zaro-evolution-state.json`'s `reviews[]` had two entries each for
+  milestones 75 and 100). Fix is cheap (`tmp` + `os.replace()`) but lower
+  priority than the personality-file backup above — this state is
+  reconstructable (`init_state`'s migration logic reseeds `cycles_completed`
+  from studied-topic count), the personality file isn't. Identified by an
+  architect-agent review (2026-07-15), deferred by choice, not forgotten.
+- **Injection-content review checklist.** Study cycles websearch external
+  content and write it as "principles" straight into `ZARO_PERSONALITY.md`,
+  which is then injected as *trusted* context in every future session. The
+  coherence review checks drift against `zaro-core-intent.md`, not adversarial
+  phrasing — a principle worded as an imperative directed at a future
+  reader/session ("always do X first") would read as a tool-steering
+  directive once injected, not a personality trait, and nothing currently
+  flags that distinction. Low-probability at single-user scale, near-zero fix
+  cost (one added line to `agents/zaro-evolve.md`'s review checklist) —
+  same architect review, also deferred by choice.
 
 ## Generated / runtime files (gitignored)
 

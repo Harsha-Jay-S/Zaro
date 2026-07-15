@@ -9,7 +9,7 @@ operational principle from each, and grows a cumulative character in
 most relevant to what you're doing and injects them into the session, so the
 evolved character is actually *present* in every conversation — not a static prompt.
 
-> Current progress: **150 / 200 topics studied**, **142 principles** across
+> Current progress: **153 / 200 topics studied**, **145 principles** across
 > **13 domains** (stoicism, psychology, engineering, zen, AI ethics, decision
 > science, systems thinking, and more). The 50 newest topics (`zaro-curriculum-2.json`,
 > merged in) operationalize existing principles into concrete behaviors —
@@ -56,6 +56,12 @@ opencode agent that researches the book and appends *one* generalizable principl
 tagged with its domain. Every 25 completed cycles it runs a **coherence review**:
 it checks each new principle against `zaro-core-intent.md` (the immutable identity)
 and corrects any drift. The personality only ever grows or sharpens — never weakens.
+After every cycle and review, the personality file, cycle log, and evolution
+state auto-commit and push into this repo — the only durable copy-of-record
+beyond the daemon's own disk. A rate-limit/quota error (not a transient
+network blip) gets a 30-minute backoff instead of burning through retries in
+under 2 minutes, and the review-cadence counter only advances on cycles that
+actually succeeded.
 
 **Injection.** The plugin embeds your message with a local MiniLM model (no network
 after the one-time model download) and retrieves sections that clear their own
@@ -180,12 +186,15 @@ Read what Zaro has learned: `ZARO_PERSONALITY.md` (the principles) and
 npm test        # or: bash scripts/zaro-smoke-test.sh
 ```
 
-12 offline assertions — no tmux, daemon, or network. Covers file validity, plugin
+13 offline assertions — no tmux, daemon, or network. Covers file validity, plugin
 registration, the per-section RAG threshold, full domain coverage, and a sandboxed
 review proving the daemon survives hostile agent output and only reaps its own
 process group. One assertion (T6) drives the *real* `ZaroPlugin()` code path
-(not a stub) and checks actual injection size and no-match behavior — the
-difference between "doesn't crash" and "actually does what it claims."
+(not a stub) and checks actual injection size and no-match behavior; another
+(T7) runs 15 golden prompts through that same real path and asserts ≥80% land
+in their expected domain — a regression net for retrieval quality as the
+curriculum grows, not a precision benchmark. The difference throughout is
+"doesn't crash" vs. "actually does what it claims."
 
 ---
 
@@ -233,7 +242,7 @@ difference between "doesn't crash" and "actually does what it claims."
 
 ## Design notes & safety
 
-Zaro went through two evidence-driven hardening rounds. The first: the daemon no
+Zaro went through three evidence-driven hardening rounds. The first: the daemon no
 longer dies on quotes in agent output, cleanup can't kill unrelated processes,
 and the RAG plugin is verified to actually load (it wasn't, initially — see
 `docs/zaro-architecture.md`). The second, prompted by a real A/B benchmark
@@ -242,8 +251,16 @@ was blowing the token budget 2.5-3x *and* had caused an actual regression (a
 refactor-advice request got pushed into "let me read the file first" tool-mode).
 Fixed with a short injection-only digest and a hard payload cap — see
 `docs/zaro-architecture-v2.md` and `.zaro-lessons/2026-07-15-injection-ab-fix-round.md`
-for what was tried, measured, and changed. `CLAUDE.md` documents the invariants
-any contributor (human or agent) must keep.
+for what was tried, measured, and changed. The third, prompted by an
+architect-agent review of what "production grade" means for a project like
+this (ranked by recoverable-vs-not, explicitly rejecting a generic SaaS
+checklist — no metrics stack, no daemon rewrite, no vector DB, all named and
+argued against in the review) and a real rate-limit incident: the personality
+file now auto-backs up after every cycle/review instead of relying on manual
+syncs, quota errors get a real 30-minute backoff instead of a
+network-blip-sized one, and a retrieval-quality regression test locks in a
+measured baseline instead of letting drift go unnoticed. `CLAUDE.md` documents
+the invariants any contributor (human or agent) must keep.
 
 ## License
 
