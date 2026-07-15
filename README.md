@@ -73,6 +73,10 @@ The whole payload is hard-capped near ~500 tokens regardless of composition.
 **Requirements:** [opencode](https://opencode.ai), Node.js ≥ 18, Python 3, and
 (for the daemon) `tmux`.
 
+> [!TIP]
+> **Fastest path:** open opencode in this repo and ask it to read the codebase
+> and set itself up — it can walk through steps 1-4 below for you.
+
 > [!WARNING]
 > Do **not** blanket-copy this repo over an existing `~/.config/opencode/` —
 > `AGENTS.md` and `opencode.json` are files opencode already uses for *your*
@@ -188,30 +192,41 @@ difference between "doesn't crash" and "actually does what it claims."
 ## Project structure
 
 ```
-plugins/zaro.js            Runtime RAG personality-injection plugin
-scripts/zaro               User-facing CLI wrapper
-scripts/zaro-loop.sh       The evolution daemon (study + review loop)
-scripts/zaro-analyze.mjs   Injection-log analysis / recommendations
-scripts/zaro-smoke-test.sh Offline test harness
-agents/zaro-evolve.md      Evolution agent prompt (study & review modes)
-commands/zaro.md           opencode /zaro command
-skills/zaro-evolution/     Skill doc for the evolution system
-
-ZARO_PERSONALITY.md          The evolved character (append-only) ← the heart
-zaro-core-intent.md          Full immutable identity (source of truth, never injected verbatim)
-zaro-core-intent-digest.md   Short (~170-word) identity digest — what's actually injected
-AGENTS.md                    Global agent identity that references the personality
-zaro-curriculum.json         200 study topics across 13 domains (150 original + 50 merged)
-zaro-curriculum-2.json       The 50-topic set above, kept as historical source — already merged
-zaro-domain-map.json         Keyword → domain routing table
-zaro-evolution-state.json    Review milestones + monotonic cycle counter
-
-docs/zaro-architecture.md      Actual runtime architecture as of the initial hardening pass
-                                (pre-digest-fix snapshot — see docs/zaro-architecture-v2.md for
-                                what changed since)
-docs/zaro-architecture-v2.md   Recommendations + a log of what's since been implemented and verified
-ZARO_ARCHITECTURE.md           Original design vision
-.zaro-lessons/                 Engineering lessons from each hardening/fix round
+.
+├── plugins/zaro.js               Runtime RAG personality-injection plugin
+├── scripts/
+│   ├── zaro                      User-facing CLI wrapper
+│   ├── zaro-loop.sh              The evolution daemon (study + review loop)
+│   ├── zaro-analyze.mjs          Injection-log analysis / recommendations
+│   └── zaro-smoke-test.sh        Offline test harness
+├── agents/zaro-evolve.md         Evolution agent prompt (study & review modes)
+├── commands/zaro.md              opencode /zaro command
+├── skills/zaro-evolution/        Skill doc for the evolution system
+│
+├── ZARO_PERSONALITY.md           The evolved character (append-only) ← the heart
+├── zaro-core-intent.md           Full immutable identity (source of truth, never injected verbatim)
+├── zaro-core-intent-digest.md    Short (~170-word) identity digest — what's actually injected
+├── AGENTS.md                     Global agent identity that references the personality
+├── zaro-curriculum.json          200 study topics across 13 domains (150 original + 50 merged)
+├── zaro-curriculum-2.json        The 50-topic set above, kept as historical source — already merged
+├── zaro-domain-map.json          Keyword → domain routing table
+├── zaro-evolution-state.json     Review milestones + monotonic cycle counter
+├── ZARO_EVOLUTION_LOG.md         Cycle-by-cycle study log
+│
+├── docs/
+│   ├── zaro-architecture.md      Actual runtime architecture as of the initial hardening pass
+│   │                             (pre-digest-fix snapshot — see zaro-architecture-v2.md for what changed)
+│   └── zaro-architecture-v2.md   Recommendations + a log of what's since been implemented and verified
+├── ZARO_ARCHITECTURE.md          Original design vision
+├── .zaro-lessons/                Engineering lessons from each hardening/fix round
+│
+├── ZaroIntro.md
+├── ZARO_ITERATIONS.md
+├── CLAUDE.md                     Invariants + open items for anyone (human or agent) editing this repo
+├── opencode.example.json         Template plugin registration for opencode.json
+├── package.json
+├── LICENSE
+└── README.md
 ```
 
 ---
