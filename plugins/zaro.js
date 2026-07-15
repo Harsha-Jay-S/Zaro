@@ -306,7 +306,7 @@ function collectSectionsByDomain(content, targetDomains) {
 
 // ─── Injection ──────────────────────────────────────────────────
 
-function trimBody(body, max = 300) {
+function trimBody(body, max = 400) {
   if (!body || body.length <= max) return body || '';
   const truncated = body.slice(0, max);
   const lastPeriod = truncated.lastIndexOf('.');
@@ -329,7 +329,7 @@ function formatInjection(sections, coreIntent) {
   if (sections && sections.length > 0) {
     const sectionParts = sections.slice(0, MAX_SECTIONS).map(s => {
       const h = s.heading || '';
-      const b = trimBody(s.body, 300);
+      const b = trimBody(s.body, 400);
       const score = s.score !== undefined
         ? `<!-- relevance: ${(s.score * 100).toFixed(0)}% -->`
         : '';
@@ -338,11 +338,17 @@ function formatInjection(sections, coreIntent) {
     parts.push(...sectionParts);
   }
   if (parts.length === 0) return '';
-  let injection = `<personality-context>\n${parts.join('\n\n')}\n</personality-context>`;
-  if (injection.length > MAX_INJECTION_CHARS) {
-    injection = injection.slice(0, MAX_INJECTION_CHARS) + '\n</personality-context>';
+  // Section-aware trim: drop lowest-ranked sections from the end until the
+  // payload fits — preserves complete sections instead of cutting mid-sentence.
+  // Sections are already score-ordered, so this drops least-relevant first;
+  // at least one part (the digest, or a lone section if coreIntent is ever
+  // empty) always survives since the loop stops at parts.length === 1.
+  while (parts.length > 1) {
+    const injection = `<personality-context>\n${parts.join('\n\n')}\n</personality-context>`;
+    if (injection.length <= MAX_INJECTION_CHARS) return injection;
+    parts.pop();
   }
-  return injection;
+  return `<personality-context>\n${parts.join('\n\n')}\n</personality-context>`;
 }
 
 // ─── RAG query ──────────────────────────────────────────────────
