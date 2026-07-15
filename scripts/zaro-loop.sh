@@ -12,17 +12,61 @@ LOG="$CONFIG_DIR/ZARO_EVOLUTION_RUNNER.log"
 AGENT_FILE="$CONFIG_DIR/agents/zaro-evolve.md"
 PID_FILE="${TMPDIR:-/tmp}/zaro-daemon.pid"
 RUN_PGID_FILE="${TMPDIR:-/tmp}/zaro-run.pgid"   # process group of the in-flight opencode run
+ZARO_REPO="$HOME/Zaro"                    # public mirror — auto-synced after each cycle/review
 MODEL="opencode/deepseek-v4-flash-free"
 SESSION="zaro"
 MAX_CYCLES="${MAX_CYCLES:-200}"
 REVIEW_INTERVAL="${REVIEW_INTERVAL:-25}"
 RUN_TIMEOUT="${RUN_TIMEOUT:-600}"        # max seconds per opencode run (prevents hang)
 MCP_KILL_DELAY="${MCP_KILL_DELAY:-1}"    # seconds between SIGTERM and SIGKILL
+RATE_LIMIT_BACKOFF="${RATE_LIMIT_BACKOFF:-1800}"  # seconds to wait on a quota/rate-limit error (not a transient blip)
 
 mkdir -p "$CONFIG_DIR"
 touch "$LOG"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" | tee -a "$LOG"; }
+
+# A dead daemon in a detached tmux session is otherwise silent until someone
+# thinks to run `zaro status`. Best-effort desktop notification — never fatal
+# if there's no graphical session (e.g. notify-send unavailable/DBUS missing).
+notify_daemon_exit() {
+    command -v notify-send >/dev/null 2>&1 && notify-send "Zaro daemon stopped" "$1" 2>/dev/null || true
+}
+
+# Snapshot the irreplaceable, hand-grown state (personality, log, review state)
+# into the public git mirror after every completed cycle/review. This is the
+# only durable copy-of-record beyond this one machine's disk — the mirror was
+# previously synced manually and could lag by days. A push failure (offline,
+# network blip) must never be fatal: log and move on, next cycle catches up.
+sync_personality_backup() {
+    local label="$1"
+    if [ ! -d "$ZARO_REPO/.git" ]; then
+        return 0   # mirror not present on this machine — nothing to sync
+    fi
+    cp -p "$CONFIG_DIR/ZARO_PERSONALITY.md" "$CONFIG_DIR/ZARO_EVOLUTION_LOG.md" "$STATE_FILE" "$ZARO_REPO/" 2>/dev/null || {
+        log "WARNING: backup sync copy failed (non-fatal)"
+        return 0
+    }
+    ( cd "$ZARO_REPO" && \
+      git add ZARO_PERSONALITY.md ZARO_EVOLUTION_LOG.md zaro-evolution-state.json && \
+      if ! git diff --cached --quiet; then
+          git commit -q -m "auto-sync: $label" && \
+          echo "[backup] committed and pushing: auto-sync: $label" && \
+          git push -q origin main 2>&1
+      fi
+    ) 2>&1 | tee -a "$LOG"
+    local backup_status="${PIPESTATUS[0]}"
+    [ "$backup_status" -ne 0 ] && log "WARNING: personality auto-backup failed (non-fatal, will retry next cycle)"
+    return 0
+}
+
+# Distinguish a quota/rate-limit error from a transient network blip. A 60s-
+# capped exponential backoff never clears a rate limit — confirmed live
+# (2026-07-15): the daemon burned through all 5 retries in ~2 minutes against
+# an hourly/daily quota that only clears on its own schedule.
+is_rate_limited() {
+    echo "$1" | grep -qiE "rate limit exceeded|AI_APICallError.*[Rr]ate limit"
+}
 
 # Reap a whole process group (TERM then KILL). Scoped to ONE opencode run's
 # group — catches orphaned MCP children reparented to init, but never touches
@@ -221,9 +265,15 @@ run_cycle() {
 
     while [ "$status" -ne 0 ] && [ "$retries" -le "$max_retries" ]; do
         if [ "$retries" -gt 0 ]; then
-            local backoff=$(( 2 ** (retries - 1) ))
-            [ "$backoff" -gt 60 ] && backoff=60
-            log "Retry $retries/$max_retries after ${backoff}s backoff..."
+            local backoff
+            if is_rate_limited "$run_output"; then
+                backoff="$RATE_LIMIT_BACKOFF"
+                log "Rate limit detected (not transient) — waiting ${backoff}s before retry $retries/$max_retries..."
+            else
+                backoff=$(( 2 ** (retries - 1) ))
+                [ "$backoff" -gt 60 ] && backoff=60
+                log "Retry $retries/$max_retries after ${backoff}s backoff..."
+            fi
             sleep "$backoff"
         fi
 
@@ -243,19 +293,22 @@ $AGENT_INSTRUCTIONS" || status=$?
         retries=$((retries + 1))
     done
 
-    if [ "$status" -ne 0 ]; then
-        log "WARNING: Cycle $id failed after $max_retries retries"
-    fi
-
     # Cleanup session from DB to prevent bloat
     if [ -n "$session_id" ]; then
         log "Cleaning up session $session_id from database"
         delete_session "$session_id"
     fi
 
-    # Advance the monotonic cycle counter that drives review cadence (#4).
-    # A failed state write must not kill the daemon (set -e decoupling, #2).
-    incr_cycles_completed || log "WARNING: cycle-counter update failed (non-fatal)"
+    # Advance the monotonic cycle counter (#4) and back up the personality
+    # file (production-hardening round) ONLY on a genuinely successful cycle —
+    # a cycle that failed all retries produced nothing and must not count
+    # toward the 25-cycle review cadence, nor trigger an empty sync.
+    if [ "$status" -eq 0 ]; then
+        incr_cycles_completed || log "WARNING: cycle-counter update failed (non-fatal)"
+        sync_personality_backup "cycle $id ($book)"
+    else
+        log "WARNING: Cycle $id failed after $max_retries retries — not advancing review counter"
+    fi
 
     log "Cycle #$id complete. Progress: $(count_done)"
 }
@@ -299,9 +352,15 @@ _run_coherence_review() {
     local review_output=""
     while [ "$status" -ne 0 ] && [ "$retries" -le "$max_retries" ]; do
         if [ "$retries" -gt 0 ]; then
-            local backoff=$(( 2 ** (retries - 1) ))
-            [ "$backoff" -gt 60 ] && backoff=60
-            log "Review retry $retries/$max_retries after ${backoff}s backoff..."
+            local backoff
+            if is_rate_limited "$review_output"; then
+                backoff="$RATE_LIMIT_BACKOFF"
+                log "Rate limit detected (not transient) — waiting ${backoff}s before review retry $retries/$max_retries..."
+            else
+                backoff=$(( 2 ** (retries - 1) ))
+                [ "$backoff" -gt 60 ] && backoff=60
+                log "Review retry $retries/$max_retries after ${backoff}s backoff..."
+            fi
             sleep "$backoff"
         fi
 
@@ -336,6 +395,7 @@ $AGENT_INSTRUCTIONS" || status=$?
 
     mark_review_done "$milestone" "$checked" "$corrected" "$summary" \
         || log "WARNING: review state write failed (non-fatal)"
+    sync_personality_backup "review milestone $milestone"
     log "Coherence review at milestone $milestone complete. Checked: $checked, Corrected: $corrected"
 }
 
@@ -475,7 +535,7 @@ _run_loop() {
 
     # Self-cleanup on interrupt: reap the in-flight run's process group (scoped),
     # then kill the tmux session.
-    trap 'log "Daemon interrupted."; [ -f "$RUN_PGID_FILE" ] && reap_process_group "$(cat "$RUN_PGID_FILE")"; rm -f "$RUN_PGID_FILE"; tmux kill-session -t "$SESSION" 2>/dev/null; exit 1' INT TERM
+    trap 'log "Daemon interrupted."; notify_daemon_exit "Interrupted (INT/TERM) at cycle $cycle."; [ -f "$RUN_PGID_FILE" ] && reap_process_group "$(cat "$RUN_PGID_FILE")"; rm -f "$RUN_PGID_FILE"; tmux kill-session -t "$SESSION" 2>/dev/null; exit 1' INT TERM
 
     init_state
 
@@ -491,6 +551,7 @@ _run_loop() {
         if [ "$topic" = "DONE" ] || [ -z "$topic" ]; then
             log "All topics complete! Zaro evolution finished."
             log "Total daemon cycles: $cycle"
+            notify_daemon_exit "All topics studied — evolution finished ($cycle cycles this run)."
             tmux kill-session -t "$SESSION" 2>/dev/null
             exit 0
         fi
@@ -509,6 +570,7 @@ _run_loop() {
     done
 
     log "Reached max $MAX_CYCLES cycles. Stopping."
+    notify_daemon_exit "Reached max $MAX_CYCLES cycles for this run."
     tmux kill-session -t "$SESSION" 2>/dev/null
 }
 

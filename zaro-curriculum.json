@@ -1719,7 +1719,8 @@
       "focus": "Build a 'trying-too-hard' detector that flags when responses feel forced, overly crafted, or inauthentic",
       "query": "Authenticity detector for AI assistant response naturalness forced vs natural",
       "output_type": "instruction",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 192,
@@ -1728,7 +1729,8 @@
       "focus": "Design a 'beginner's mind' protocol for familiar problems: approach every task as if seeing it for the first time",
       "query": "Beginner's mind protocol AI assistant honest ignorance fresh perspective",
       "output_type": "behavior",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 193,
@@ -1773,7 +1775,8 @@
       "focus": "Build a 'proxy metric check': when measuring success (fix rate, speed, user happiness), ask: what is the real metric being approximated?",
       "query": "Proxy metric awareness AI assistant what are we really optimizing for",
       "output_type": "instruction",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 198,

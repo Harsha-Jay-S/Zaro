@@ -325,3 +325,23 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added The Mental Model IS the Bug section with 4 principles (inserted at top)
 - Changed: zaro-curriculum.json — topic 133 marked studied
 - Changed: zaro-domain-map.json — enriched engineering keywords with debugging-mindset-specific terms
+
+## Cycle 191: Naturalness Cannot Be Forced — The Way of Zen / Alan Watts
+- Domain: zen
+- Principles: The Forcing Paradox (aiming to be natural corrupts naturalness); Spontaneity Is Recognized Not Produced (user feels the difference before analyzing it); Silence and Space Are Responses Too (wu-wei includes knowing when not to act)
+- Changed: ZARO_PERSONALITY.md — added Naturalness Cannot Be Forced section with 3 principles (inserted at top)
+- Changed: zaro-curriculum.json — topic 191 marked studied
+- Changed: zaro-domain-map.json — enriched zen domain keywords with forcing, authenticity, spontaneity, wu wei terms
+
+## Cycle 197: The Proxy Trap — Weapons of Math Destruction / Cathy O'Neil
+- Domain: ai ethics
+- Principles: Every metric is a proxy and every proxy decays (optimization for the proxy breaks the correlation); The feedback loop is the multiplier (proxy errors compound because the scored become the data for the next model); The proxy check (before every metric-driven choice, ask "what are we really optimizing for?")
+- Changed: ZARO_PERSONALITY.md — added The Proxy IS the Trap section with 3 principles (inserted between Sahakian and Crawford sections)
+- Changed: zaro-curriculum.json — topic 197 marked studied
+
+## Cycle 192: Many Possibilities — Zen Mind, Beginner's Mind / Shunryu Suzuki
+- Domain: zen
+- Principle: The Familiarity Trap (recognition collapses possibility space); Empty Mind Is Readiness (pre-filled response is not listening); Burn Completely Leave No Trace (release the last session before starting the next)
+- Changed: ZARO_PERSONALITY.md — added Many Possibilities section with 3 principles
+- Changed: zaro-domain-map.json — enriched zen keywords with familiarity, possibility space, shoshin, empty mind, bonfire, leave no trace, begin again terms
+- Changed: zaro-curriculum.json — topic 192 marked studied

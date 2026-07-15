@@ -5,6 +5,7 @@
 #   #5 per-section RAG gate #6 full domain coverage     + all edited files valid
 #   injection budget + no-match noise (post-A/B fix round: digest, no random
 #   section on a miss, per-section trim + total-payload cap)
+#   T7: retrieval-quality regression (golden prompts -> expected domain, >=80%)
 #
 # Usage: scripts/zaro-smoke-test.sh   (exit 0 = all pass)
 
@@ -59,6 +60,62 @@ process.exit(passed ? 0 : 1);
 NODE
 [ $? -eq 0 ] && ok "on-topic injection under budget (~500 tokens), off-topic gets digest-only (no random section)" \
              || bad "budget or no-match-noise regression — see output above"
+
+echo "== T7: retrieval-quality regression (golden prompts -> expected domain) =="
+node --input-type=module - "$CONFIG_DIR" <<'NODE'
+import { readFileSync } from 'node:fs';
+const configDir = process.argv[2];
+const { ZaroPlugin } = await import(configDir + '/plugins/zaro.js');
+const hooks = await ZaroPlugin();
+const logFile = configDir + '/zaro-injections.log';
+
+// Spread across all 13 curriculum domains (engineering/productivity get 2 —
+// the richest, most-verified domains from prior manual A/B testing). This is
+// a regression net, not a precision benchmark: a known false-positive noise
+// floor (~1/12 in the original A/B sweep) is expected and tolerated by the
+// threshold below, not by the prompt selection.
+const golden = [
+  ['I keep procrastinating on starting the hard part of my project', 'productivity'],
+  ["help me debug this failing test, I've retried the same fix three times", 'engineering'],
+  ['I need to stay calm and grounded when someone criticizes my work harshly', 'stoicism'],
+  ['how do I stay present instead of overthinking every decision', 'zen'],
+  ['what is the risk that this AI system could be gamed by users', 'ai ethics'],
+  ['I want to reason in probabilities like a forecaster instead of trusting my gut', 'decision science'],
+  ['how do I build a system with clean feedback loops instead of firefighting', 'systems thinking'],
+  ['I want to explain a complex technical concept to a non-technical person', 'communication'],
+  ['I keep noticing the same cognitive bias in my own thinking and want to name it accurately', 'psychology'],
+  ["what made history's greatest inventors so relentlessly curious", 'biography'],
+  ['how do I get unstuck and generate a genuinely original idea', 'creativity'],
+  ['I want to question my assumptions about what is real instead of accepting them at face value', 'philosophy'],
+  ['I want to get better through deliberate, disciplined practice', 'excellence'],
+  ["I fixed this bug without being able to reproduce it and I'm not fully confident the fix is right", 'engineering'],
+  ['I keep putting off the one task I am most anxious about until the end of the day', 'productivity'],
+];
+
+const startLines = readFileSync(logFile, 'utf-8').split('\n').filter(Boolean).length;
+for (const [text] of golden) {
+  const output = {};
+  await hooks['chat.message']({ parts: [{ type: 'text', text }] }, output);
+}
+const allLines = readFileSync(logFile, 'utf-8').split('\n').filter(Boolean);
+const newLines = allLines.slice(startLines, startLines + golden.length);
+
+let matched = 0;
+golden.forEach(([text, expected], i) => {
+  const line = newLines[i] || '';
+  const domainMatch = line.match(/domain=([\w -]+?)(?:\s+max_score|\s+query|$)/);
+  const got = domainMatch ? domainMatch[1] : '(none — miss)';
+  const hit = got === expected;
+  if (hit) matched++;
+  console.log(`  [${hit ? 'x' : ' '}] expected=${expected.padEnd(18)} got=${got.padEnd(18)} "${text.slice(0, 50)}"`);
+});
+
+const rate = matched / golden.length;
+console.log(`  ${matched}/${golden.length} matched (${(rate * 100).toFixed(0)}%)`);
+process.exit(rate >= 0.8 ? 0 : 1);
+NODE
+[ $? -eq 0 ] && ok "retrieval quality at or above 80% golden-prompt match rate" \
+             || bad "retrieval quality regression — below 80% match rate, see output above"
 
 echo "== T4/T5 (#2, #3): sandbox review — apostrophes survive, external MCP survives =="
 SB=$(mktemp -d)
