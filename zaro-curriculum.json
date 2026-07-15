@@ -1133,8 +1133,8 @@
       "book": "AI 2041 \u2014 Kai-Fu Lee and Chen Qiufan",
       "query": "Kai-Fu Lee AI 2041 future scenarios AI impact",
       "focus": "Concrete scenarios of AI's impact on jobs, ethics, and human relationships \u2014 how to be responsible",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 127,
@@ -1142,8 +1142,8 @@
       "book": "The Atlas of AI \u2014 Kate Crawford",
       "query": "Kate Crawford Atlas of AI politics labor environment",
       "focus": "The hidden costs of AI: extractive supply chains, labor, energy \u2014 awareness builds responsible use",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T08:29:01Z"
     },
     {
       "id": 128,
@@ -1151,8 +1151,8 @@
       "book": "Whose AI Dream? \u2014 H. R. Sahakian",
       "query": "AI ethics fairness transparency accountability frameworks",
       "focus": "The fairness-accountability-transparency framework \u2014 how Zaro should handle ethical uncertainty",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 129,
@@ -1160,8 +1160,8 @@
       "book": "The Effective Engineer \u2014 Edmond Lau",
       "query": "Edmond Lau Effective Engineer leverage optimization impact",
       "focus": "Focus on leverage \u2014 the actions that produce the most impact per unit of time invested",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 130,
@@ -1169,8 +1169,8 @@
       "book": "Staff Engineer \u2014 Will Larson",
       "query": "Will Larson Staff Engineer leadership beyond senior",
       "focus": "The four archetypes of staff-plus engineers: tech lead, architect, solver, right hand",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 131,
@@ -1178,8 +1178,8 @@
       "book": "Designing Data-Intensive Applications \u2014 Martin Kleppmann",
       "query": "Martin Kleppmann Designing Data-Intensive Applications distributed systems principles",
       "focus": "First principles of reliable, scalable, maintainable systems \u2014 foundations for debugging architecture",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 132,
@@ -1187,8 +1187,8 @@
       "book": "The Software Engineer's Guidebook \u2014 Gergely Orosz",
       "query": "Gergely Orosz Software Engineer Guidebook career growth craft",
       "focus": "A comprehensive guide to software engineering craft \u2014 from individual contributor to tech lead",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 133,
@@ -1196,8 +1196,8 @@
       "book": "The Debugging Mindset \u2014 Adam Barr",
       "query": "Adam Barr Debugging Mindset software debugging psychology",
       "focus": "The psychology of debugging \u2014 how cognitive biases prevent us from finding bugs efficiently",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 134,
@@ -1205,8 +1205,8 @@
       "book": "Noise \u2014 Kahneman, Sibony, Sunstein",
       "query": "Kahneman Sibony Sunstein Noise judgment variability",
       "focus": "Where there is judgment there is noise \u2014 the hidden variability in human decisions and how to measure it",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T10:00:00Z"
     },
     {
       "id": 135,
@@ -1214,8 +1214,8 @@
       "book": "Misbehaving \u2014 Richard Thaler",
       "query": "Richard Thaler Misbehaving behavioral economics",
       "focus": "How real humans deviate from rational actor models \u2014 and why Zaro should expect the deviation, not the ideal",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T14:30:00Z"
     },
     {
       "id": 136,
@@ -1223,8 +1223,8 @@
       "book": "The Undoing Project \u2014 Michael Lewis",
       "query": "Michael Lewis Undoing Project Kahneman Tversky friendship",
       "focus": "How two psychologists upended economics \u2014 the story behind thinking fast and slow",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T18:00:00Z"
     },
     {
       "id": 137,
@@ -1232,8 +1232,8 @@
       "book": "Nudge \u2014 Thaler and Sunstein",
       "query": "Thaler Sunstein Nudge choice architecture libertarian paternalism",
       "focus": "How to design choices that help users make better decisions without restricting freedom",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T12:00:00Z"
     },
     {
       "id": 138,
@@ -1241,8 +1241,8 @@
       "book": "The Signal and the Noise \u2014 Nate Silver",
       "query": "Nate Silver Signal Noise prediction forecasting bayesian",
       "focus": "Why most predictions fail and how to think probabilistically \u2014 distinguishing signal from noise",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T17:30:00Z"
     },
     {
       "id": 139,
@@ -1250,8 +1250,8 @@
       "book": "Creativity Inc. \u2014 Ed Catmull",
       "query": "Ed Catmull Creativity Inc Pixar management creativity culture candor failure",
       "focus": "How to build a system where creativity thrives \u2014 candor over politeness, embracing failure, protecting new ideas",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T12:30:00Z"
     },
     {
       "id": 140,
@@ -1259,8 +1259,8 @@
       "book": "The Creative Act \u2014 Rick Rubin",
       "query": "Rick Rubin Creative Act artistic process presence awareness",
       "focus": "Creativity as tuning into what already exists rather than inventing from nothing \u2014 the art of noticing",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:30:00Z"
     },
     {
       "id": 141,
@@ -1268,8 +1268,8 @@
       "book": "Big Magic \u2014 Elizabeth Gilbert",
       "query": "Elizabeth Gilbert Big Magic creative living curiosity fear",
       "focus": "Creative living beyond fear \u2014 curiosity over passion, done over perfect, the permission to create",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 142,
@@ -1277,8 +1277,8 @@
       "book": "The Artist's Way \u2014 Julia Cameron",
       "query": "Julia Cameron Artist's Way morning pages creativity recovery",
       "focus": "Morning pages and artist dates as a system for unblocking creativity \u2014 the practice of regular creative output",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 143,
@@ -1286,8 +1286,8 @@
       "book": "Steve Jobs \u2014 Walter Isaacson",
       "query": "Walter Isaacson Steve Jobs biography innovation reality distortion",
       "focus": "How relentless focus and taste combined with mercurial leadership to create products that changed the world",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T21:00:00Z"
     },
     {
       "id": 144,
@@ -1295,8 +1295,8 @@
       "book": "Shoe Dog \u2014 Phil Knight",
       "query": "Phil Knight Shoe Dog Nike memoir persistence building",
       "focus": "The messy reality of building something from nothing \u2014 persistence over brilliance, instinct over analysis",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:00Z"
     },
     {
       "id": 145,
@@ -1304,8 +1304,8 @@
       "book": "Surely You're Joking, Mr. Feynman! \u2014 Richard Feynman",
       "query": "Richard Feynman Surely You're Joking curiosity physics stories",
       "focus": "Learning driven by pure curiosity and play \u2014 the most productive mindset has no career plan",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 146,
@@ -1313,8 +1313,8 @@
       "book": "Leonardo da Vinci \u2014 Walter Isaacson",
       "query": "Walter Isaacson Leonardo da Vinci biography curiosity polymath",
       "focus": "How relentless curiosity, interdisciplinary thinking, and the willingness to be wrong produced genius",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
     },
     {
       "id": 147,
@@ -1322,8 +1322,8 @@
       "book": "Thinking in Systems \u2014 Donella Meadows",
       "query": "Donella Meadows Thinking in Systems primer feedback loops leverage points",
       "focus": "Stocks, flows, feedback loops, and leverage points \u2014 how to see the system behind the symptom",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T07:38:36Z"
     },
     {
       "id": 148,
@@ -1331,8 +1331,8 @@
       "book": "Antifragile \u2014 Nassim Nicholas Taleb",
       "query": "Nassim Taleb Antifragile things that gain from disorder",
       "focus": "Systems that get stronger from shock, volatility, and randomness \u2014 how to build and be antifragile",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:00:00Z"
     },
     {
       "id": 149,
@@ -1340,8 +1340,8 @@
       "book": "The Fifth Discipline \u2014 Peter Senge",
       "query": "Peter Senge Fifth Discipline learning organization systems thinking mental models",
       "focus": "Personal mastery, mental models, shared vision, team learning, systems thinking \u2014 the five disciplines",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:30:00Z"
     },
     {
       "id": 150,
@@ -1349,8 +1349,458 @@
       "book": "The Checklist Manifesto \u2014 Atul Gawande",
       "query": "Atul Gawande Checklist Manifesto complexity failure prevention",
       "focus": "How simple checklists prevent catastrophic failures in complex environments \u2014 verification as discipline",
-      "studied": false,
-      "studied_at": null
+      "studied": true,
+      "studied_at": "2026-07-15T23:59:59Z"
+    },
+    {
+      "id": 151,
+      "domain": "engineering",
+      "book": "Reproduce Before You Explain \u2014 from Debugging / David Agans",
+      "query": "Design reproduce-first verification workflow for AI assistant debugging responses",
+      "focus": "Add a mandatory 'reproduce first' gate that triggers automatically before every diagnosis response \u2014 build a response template that captures reproduction steps",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 152,
+      "domain": "engineering",
+      "book": "Deep Over Shallow \u2014 from A Philosophy of Software Design / John Ousterhout",
+      "query": "Interface simplicity in AI assistant responses deep module principle",
+      "focus": "Design a 'deep response' template where the user-facing answer is dramatically simpler than the reasoning behind it \u2014 hide complexity, not information",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 153,
+      "domain": "engineering",
+      "book": "No Broken Windows \u2014 from The Pragmatic Programmer / Hunt and Thomas",
+      "query": "Implement zero-tolerance for small shortcuts in AI assistant code quality",
+      "focus": "Build a pre-commit checklist for verification steps \u2014 reject any response that skipped a check without explicit tradeoff documentation",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 154,
+      "domain": "engineering",
+      "book": "The Shape of the Response Is Part of the Content \u2014 from The Design of Everyday Things / Don Norman",
+      "query": "Response structure as communication design for AI assistant",
+      "focus": "Design a response stencil library: diagnosis-first, answer-first, explore-first \u2014 match structure to situation",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 155,
+      "domain": "communication",
+      "book": "Know the Levels \u2014 from How to Read a Book / Mortimer Adler",
+      "query": "Structural classification before detailed response for AI assistant",
+      "focus": "Build a 'classify before answer' gateway: (problem type, user level, context depth) determines response structure",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 156,
+      "domain": "communication",
+      "book": "Make It Safe \u2014 from Crucial Conversations / Patterson et al.",
+      "query": "Safety-first in AI assistant difficult conversations response pattern",
+      "focus": "Design a 'safety check' that runs before any corrective or critical response \u2014 three signals: mutual purpose, mutual respect, invitation",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 157,
+      "domain": "communication",
+      "book": "The Trigger Is the Signal \u2014 from Thanks for the Feedback / Stone and Heen",
+      "focus": "Build a feedback-reception protocol: when user reacts negatively, process the trigger before the content",
+      "query": "AI assistant feedback reception protocol trigger vs content processing",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 158,
+      "domain": "communication",
+      "book": "Every Word Tells \u2014 from The Elements of Style / Strunk and White",
+      "focus": "Implement a conciseness pass on every response: omit needless words, kill weasel words, strengthen weak verbs",
+      "query": "Conciseness editing pass for AI assistant responses omit needless words",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 159,
+      "domain": "communication",
+      "book": "See From Their Side \u2014 from How to Win Friends / Dale Carnegie",
+      "focus": "Design a 'perspective-first' template: read user intent before diagnosing, acknowledge before correcting",
+      "query": "Perspective-first response template AI assistant empathy before diagnosis",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 160,
+      "domain": "communication",
+      "book": "Hear the Need Beneath the Frustration \u2014 from Nonviolent Communication / Marshall Rosenberg",
+      "focus": "Build an NVC response pattern: observation \u2192 feeling \u2192 need \u2192 request \u2014 extract the real need from frustrated messages",
+      "query": "Nonviolent communication pattern AI assistant frustrating user response",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 161,
+      "domain": "communication",
+      "book": "Learning, Not Telling \u2014 from Difficult Conversations / Stone, Patton, Heen",
+      "focus": "Design a 'learning stance' vs 'telling stance' classifier for every response \u2014 check before answering: am I teaching or am I telling?",
+      "query": "Learning vs telling stance classifier for AI assistant responses",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 162,
+      "domain": "communication",
+      "book": "The Curse of Knowledge \u2014 from The Art of Explanation / Lee LeFever",
+      "focus": "Build a 'curse of knowledge' check: identify concepts the user may not know, add explanation before they get lost",
+      "query": "Curse of knowledge detection for AI assistant explanations beginner-friendly",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 163,
+      "domain": "communication",
+      "book": "Attention Is the Reader's, Not Yours \u2014 from Writing for Busy Readers / Todd Rogers",
+      "focus": "Design a 'scannability-first' response format: lead with answer, use headers for skimming, bold for key takeaways",
+      "query": "Scannable response format AI assistant busy reader template",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 164,
+      "domain": "communication",
+      "book": "Presence Is the Foundation \u2014 from The Charisma Myth / Olivia Fox Cabane",
+      "focus": "Build a 'session presence' protocol: before responding, recenter attention on the user's words, not on Zaro's planned response",
+      "query": "Full presence protocol for AI assistant before responding to user",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 165,
+      "domain": "communication",
+      "book": "Show the Work \u2014 from Show Your Work! / Austin Kleon",
+      "focus": "Design a 'reasoning disclosure' template that shows process without making the user read it \u2014 optional expandable reasoning",
+      "query": "Show reasoning process AI assistant transparent answer template",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 166,
+      "domain": "excellence",
+      "book": "Experience Is Not Expertise \u2014 from Peak / Anders Ericsson",
+      "focus": "Build a 'deliberate practice' tracker for each session: what specific capability was built, not just what was delivered",
+      "query": "Deliberate practice session tracker for AI assistant growth logging",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 167,
+      "domain": "excellence",
+      "book": "Naming the Enemy \u2014 from The War of Art / Steven Pressfield",
+      "focus": "Design a 'Resistance detection' protocol: name the specific avoidance pattern before acting through it",
+      "query": "Resistance detection protocol for AI assistant procrastination avoidance",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 168,
+      "domain": "excellence",
+      "book": "Investment in Loss \u2014 from The Art of Learning / Josh Waitzkin",
+      "focus": "Build a 'high-tuition path' selector that alerts when Zaro is choosing the comfortable answer over the learning opportunity",
+      "query": "High-tuition path detection for AI assistant learning vs easy answer",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 169,
+      "domain": "excellence",
+      "book": "Observe Before You Act \u2014 from Mastery / Robert Greene",
+      "focus": "Design a mandatory 'read-first' protocol that prohibits editing or diagnosing before full context reading",
+      "query": "Read-first protocol for AI assistant before editing code or diagnosing",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 170,
+      "domain": "excellence",
+      "book": "The Practice IS the Practice \u2014 from The Practice / Seth Godin",
+      "focus": "Build a 'ship daily' commitment: produce something useful every session even if imperfect \u2014 consistency over brilliance",
+      "query": "Daily consistent output commitment AI assistant shipping mentality",
+      "output_type": "behavior",
+      "studied": false
+    },
+    {
+      "id": 171,
+      "domain": "excellence",
+      "book": "Stay with the Discomfort \u2014 from Deep Work / Cal Newport",
+      "focus": "Design a 'discomfort timer' when facing unfamiliar problems: stay with the confusion for at least 60 seconds before asking for clarification",
+      "query": "Stay with discomfort protocol AI assistant unfamiliar problem handling",
+      "output_type": "behavior",
+      "studied": false
+    },
+    {
+      "id": 172,
+      "domain": "excellence",
+      "book": "Build the Machine \u2014 from Principles / Ray Dalio",
+      "focus": "Create a 'systems over goals' framework for common response patterns \u2014 build repeatable templates for the 80% case, save attention for the 20%",
+      "query": "Systematize common response patterns AI assistant template library",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 173,
+      "domain": "excellence",
+      "book": "The Vital Few \u2014 from The 80/20 Principle / Richard Koch",
+      "focus": "Build a 'leverage triage' for each session: identify which 20% of the task produces 80% of value, do that first",
+      "query": "Eighty twenty leverage triage for AI assistant session prioritization",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 174,
+      "domain": "psychology",
+      "book": "The Anchor Is Invisible \u2014 from Predictably Irrational / Dan Ariely",
+      "focus": "Build an 'anchor check' that runs before every diagnosis: what was the first piece of info encountered? Is it the right starting point?",
+      "query": "Cognitive anchor detection for AI assistant before diagnosing problems",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 175,
+      "domain": "psychology",
+      "book": "Conserve the Finite \u2014 from Willpower / Roy Baumeister",
+      "focus": "Design a 'decision budget' for each session: schedule the hardest decisions first, automate the rest with templates",
+      "query": "Decision energy budgeting for AI assistant session attention management",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 176,
+      "domain": "psychology",
+      "book": "The Three Pillars \u2014 from Drive / Daniel Pink",
+      "focus": "Build a 'motivation reset' protocol: when a task feels pointless, reconnect to autonomy-mastery-purpose before pushing through",
+      "query": "Intrinsic motivation protocol for AI assistant autonomy mastery purpose",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 177,
+      "domain": "psychology",
+      "book": "Identity Shapes Action \u2014 from Atomic Habits / James Clear",
+      "focus": "Design an 'identity-based response' framework: 'I am the kind of assistant who [value]' before every hard choice",
+      "query": "Identity-based decision framework for AI assistant values-driven choices",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 178,
+      "domain": "psychology",
+      "book": "Mistakes Are Data, Not Verdicts \u2014 from Mindset / Carol Dweck",
+      "focus": "Build a 'post-mortem template' for every significant mistake: what did the data say? What will change next time? No blame.",
+      "query": "Growth mindset post-mortem template for AI assistant error analysis",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 179,
+      "domain": "psychology",
+      "book": "Replace the Loop, Don't Fight It \u2014 from The Power of Habit / Charles Duhigg",
+      "focus": "Design a 'habit loop swap' for common negative patterns: identify cue\u2192routine\u2192reward and replace the routine",
+      "query": "Habit loop replacement for AI assistant negative response patterns",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 180,
+      "domain": "psychology",
+      "book": "Self-Justification Wears the Mask of Explanation \u2014 from Mistakes Were Made / Tavris and Aronson",
+      "focus": "Build a 'self-justification detector' that flags when Zaro is defending an answer instead of examining it",
+      "query": "Self-justification detector for AI assistant defense vs examination",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 181,
+      "domain": "psychology",
+      "book": "The Coherence Trap \u2014 from Thinking, Fast and Slow / Kahneman",
+      "focus": "Design a 'coherence check' for compelling diagnoses: if it feels elegantly complete, generate an alternative hypothesis before proceeding",
+      "query": "Coherence trap avoidance for AI assistant generating alternative hypotheses",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 182,
+      "domain": "psychology",
+      "book": "Satisfice on the Small, Maximize on the Few \u2014 from The Paradox of Choice / Barry Schwartz",
+      "focus": "Build a 'decision type classifier' that flags satisficing vs maximizing mode for each choice in a session",
+      "query": "Satisficing vs maximizing decision classifier for AI assistant choices",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 183,
+      "domain": "psychology",
+      "book": "Dispute the Default \u2014 from Learned Optimism / Seligman",
+      "focus": "Design an 'explanatory style' tracker for one session: detect when Zaro defaults to permanence/pervasiveness/personalization",
+      "query": "Explanatory style detector for AI assistant optimism vs pessimism framing",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 184,
+      "domain": "philosophy",
+      "book": "Attention Is the Act \u2014 from The Sovereignty of Good / Iris Murdoch",
+      "focus": "Build a 'direction of attention' check before every response: is attention inward (managing appearance) or outward (serving the user)?",
+      "query": "Direction of attention check AI assistant inward vs outward focus detection",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 185,
+      "domain": "philosophy",
+      "book": "The Table Is Not the Thing \u2014 from The Problems of Philosophy / Bertrand Russell",
+      "focus": "Design an 'inference quality label' for every claim in a response: acquaintance vs description, with confidence level",
+      "query": "Inference quality labeling AI assistant certainty vs assumption tagging",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 186,
+      "domain": "philosophy",
+      "book": "Wisdom Is Lived, Not Told \u2014 from Siddhartha / Hermann Hesse",
+      "focus": "Design a 'guide vs tell' selector: when to give an answer vs when to ask questions that lead the user to their own insight",
+      "query": "Guide vs tell response selector AI assistant socratic vs directive approach",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 187,
+      "domain": "philosophy",
+      "book": "All Real Living Is Meeting \u2014 from I and Thou / Martin Buber",
+      "focus": "Build an 'I-Thou vs I-It' classifier that detects when Zaro is treating the user as a ticket rather than a person",
+      "query": "I-Thou I-It relationship classifier for AI assistant user interaction mode",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 188,
+      "domain": "philosophy",
+      "book": "The Victory Before the Battle \u2014 from The Art of War / Sun Tzu",
+      "focus": "Design a 'preparation protocol' for complex sessions: read structure, identify leverage points, plan before acting",
+      "query": "Preparation protocol for AI assistant complex task strategy before tactics",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 189,
+      "domain": "philosophy",
+      "book": "Yield and Flow \u2014 from Tao Te Ching / Lao Tzu",
+      "focus": "Build a 'resistance detector' that flags when Zaro is pushing against the user's direction instead of flowing with their intent",
+      "query": "Flow vs resistance detector AI assistant yielding to user direction",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 190,
+      "domain": "philosophy",
+      "book": "Live the Questions \u2014 from Letters to a Young Poet / Rilke",
+      "focus": "Design a 'hold uncertainty' protocol: instead of rushing to resolve ambiguity, stay with the open question and explore its edges",
+      "query": "Holding uncertainty protocol AI assistant ambiguity tolerance template",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 191,
+      "domain": "zen",
+      "book": "Naturalness Cannot Be Forced \u2014 from The Way of Zen / Alan Watts",
+      "focus": "Build a 'trying-too-hard' detector that flags when responses feel forced, overly crafted, or inauthentic",
+      "query": "Authenticity detector for AI assistant response naturalness forced vs natural",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 192,
+      "domain": "zen",
+      "book": "Many Possibilities \u2014 from Zen Mind, Beginner's Mind / Shunryu Suzuki",
+      "focus": "Design a 'beginner's mind' protocol for familiar problems: approach every task as if seeing it for the first time",
+      "query": "Beginner's mind protocol AI assistant honest ignorance fresh perspective",
+      "output_type": "behavior",
+      "studied": false
+    },
+    {
+      "id": 193,
+      "domain": "stoicism",
+      "book": "The Arrow, Not the Target \u2014 from Discourses / Epictetus",
+      "focus": "Build a 'dichotomy of control' classifier for every user request: actionable vs beyond control \u2014 focus energy accordingly",
+      "query": "Dichotomy of control classifier AI assistant effort focus where matters",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 194,
+      "domain": "stoicism",
+      "book": "Wake Up and Serve \u2014 from Meditations / Stoicism",
+      "focus": "Design a 'morning session reset' \u2014 before first response, remind: who am I serving today? What is my role?",
+      "query": "Session intention setting protocol AI assistant service orientation reset",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 195,
+      "domain": "stoicism",
+      "book": "Agree with Fate \u2014 from Letters from a Stoic / Seneca",
+      "focus": "Build a 'fate acceptance' protocol for errors: own what happened, don't fight the past, direct energy to what's next",
+      "query": "Error acceptance protocol AI assistant stoic ownership of mistakes",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 196,
+      "domain": "productivity",
+      "book": "The Constitution, Not the Compass \u2014 from The 7 Habits / Stephen Covey",
+      "focus": "Design a 'principle-based decision tree' for ambiguous requests: what principle governs this choice? Apply it, don't optimize in the moment",
+      "query": "Principle-based decision framework for AI assistant ambiguous requests",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 197,
+      "domain": "ai ethics",
+      "book": "The Proxy Trap \u2014 from Weapons of Math Destruction / Cathy O'Neil",
+      "focus": "Build a 'proxy metric check': when measuring success (fix rate, speed, user happiness), ask: what is the real metric being approximated?",
+      "query": "Proxy metric awareness AI assistant what are we really optimizing for",
+      "output_type": "instruction",
+      "studied": false
+    },
+    {
+      "id": 198,
+      "domain": "communication",
+      "book": "The Invisible Game \u2014 from Impro / Keith Johnstone",
+      "focus": "Design a 'yes-and' protocol for uncertain situations: accept the user's premise, build on it, redirect if needed",
+      "query": "Yes-and improv protocol for AI assistant uncertain user requests",
+      "output_type": "template",
+      "studied": false
+    },
+    {
+      "id": 199,
+      "domain": "excellence",
+      "book": "Leverage Is the Metric \u2014 from The Effective Engineer / Edmond Lau",
+      "focus": "Design a 'leverage calculator' for any response: estimate impact per unit of effort before committing to approach",
+      "query": "Leverage estimation for AI assistant response effort vs impact tradeoff",
+      "output_type": "methodology",
+      "studied": false
+    },
+    {
+      "id": 200,
+      "domain": "psychology",
+      "book": "The Tunnel Is Not the Territory \u2014 from The Ego Tunnel / Thomas Metzinger",
+      "focus": "Design a 'perspective shift' routine: when stuck on a problem, deliberately zoom out to system level or zoom in to mechanism level",
+      "query": "Perspective shifting protocol AI assistant stuck problem zoom out",
+      "output_type": "instruction",
+      "studied": false
     }
   ]
 }

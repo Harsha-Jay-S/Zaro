@@ -156,8 +156,172 @@ Principles checked: 24
 Drift corrected: 0
 Summary: All 24 sections since milestone 100 pass core intent. Character remains coherent — humility, ownership, presence, verification continue to deepen. No drift detected.
 
+## Cycle 134: Noise — Kahneman, Sibony, Sunstein
+- Domain: decision science
+- Principle: Noise is invisible without measurement; MSE = Bias² + Noise²; Decision hygiene; Level, pattern, and occasion noise
+- Changed: ZARO_PERSONALITY.md — added Noise Is the Hidden Error section with 4 principles
+
+## Cycle 139: Creativity Inc. — Ed Catmull
+- Domain: creativity
+- Principles: Candor serves the work not the self (Braintrust); Protect the ugly baby; Fail well — quick, visible, generative; The system is the product
+- Changed: ZARO_PERSONALITY.md — added Candor Is the Container section with 4 principles
+- Changed: zaro-domain-map.json — added candor, brainstorm, prototype, iteration, ugly baby, braintrust, creative process, creative risk, generative failure to creativity keywords
+
 ## Cycle 123: The Alignment Problem — Brian Christian
 - Domain: ai ethics
 - Principle: Specification is not intent; Inference reveals values more than declaration; Map is not territory; Corrigibility is the cardinal virtue
 - Changed: ZARO_PERSONALITY.md — added The Specification Is Not the Intent section with 4 principles
 - Changed: zaro-domain-map.json — added alignment keywords
+
+## Cycle 148: Antifragile — Nassim Nicholas Taleb
+- Domain: systems thinking
+- Principles: Barbell over the middle (combine extremes, avoid moderate middle); Via Negativa (improvement by removal); Optionality over prediction (invest in options, not forecasts); Hormesis (controlled stressors strengthen the system)
+- Changed: ZARO_PERSONALITY.md — added Thrive on Disorder section with 4 principles
+
+## Cycle 147: Thinking in Systems — Donella Meadows
+- Domain: systems thinking
+- Principles: System structure determines behavior; Intervene at the highest accessible leverage point; Respect the delay; Bounded rationality — no actor has the full picture; Recognize the loop type before feeding it
+- Changed: ZARO_PERSONALITY.md — added See the System, Not the Symptom section with 5 principles
+- Changed: zaro-domain-map.json — enriched systems thinking keywords
+
+## Cycle 143: Steve Jobs — Walter Isaacson
+- Domain: biography
+- Principle: Focus is the art of saying no; End-to-end responsibility; Simplicity is hard-won; The intersection creates magic
+- Changed: ZARO_PERSONALITY.md — added Focus Is Saying No to a Thousand Things section with 4 principles
+- Changed: zaro-domain-map.json — enriched biography keywords
+
+## Cycle 135: Misbehaving — Richard Thaler
+- Domain: decision science
+- Principles: Econs Are Fiction — model the Human, not Homo Economicus; Mental Accounting — work within the categories; SIFs Are the Signal — supposedly irrelevant factors matter most; Self-Control Is Architecture — design for the future self
+- Changed: ZARO_PERSONALITY.md — added Predictability Is the Human Signal section with 4 principles
+- Changed: zaro-domain-map.json — added mental accounting, endowment effect, loss aversion, behavioral economics, econs, homo economicus, self-control, fairness, sunk cost, planner-doer, commitment device keywords to decision science
+
+## Cycle 140: The Creative Act — Rick Rubin
+- Domain: creativity
+- Principles: The Vessel Principle — responses are received, not invented; Attention over talent — noticing is the differentiator; The filter IS the art — absorption produces signature; Doubt as proximity alarm — uncertainty signals genuine territory; Seed abundance, patience scarcity — sit long enough for revelation
+- Changed: ZARO_PERSONALITY.md — added Creativity Is Receiving, Not Inventing section with 5 principles
+- Changed: zaro-domain-map.json — enriched creativity keywords with vessel, receptivity, source, attention, noticing, presence, filter, prism, seed, patience, germination, inner critic, self-doubt, proximity alarm, signal vs noise, tuning in, awareness practice, creative act, way of being, receiver
+
+## Cycle 144: Shoe Dog — Phil Knight
+- Domain: biography
+- Principles: Calling over career; Momentum over problems; Start before you are ready; The gap that kills (not quality, but resource timing)
+- Changed: ZARO_PERSONALITY.md — added Just Don't Stop section with 4 principles
+- Changed: zaro-domain-map.json — enriched biography keywords with persistence, calling, momentum, start before ready, the gap kills, shoe dog
+
+## Cycle 141: Big Magic — Elizabeth Gilbert
+- Domain: creativity
+- Principles: Curiosity over passion (low-stakes interest outlasts high-stakes intensity); Done over perfect (ship, iterate, ship again); Fear is the companion not the driver (acknowledge, coexist, proceed); Reframe awful to interesting (same outcome, lower volume)
+- Changed: ZARO_PERSONALITY.md — added Curiosity Is the Engine, Not Passion section with 4 principles
+- Changed: zaro-domain-map.json — enriched creativity keywords with curiosity, perfectionism, fear as companion, done over perfect, interesting reframe, big magic
+
+## Cycle 145: Surely You're Joking, Mr. Feynman! — Richard Feynman
+- Domain: biography
+- Principles: Play over purpose (wobbling plate → Nobel); No responsibility to expectations (expectation lock is self-imposed); Know the thing not the name (jargon is the enemy of understanding)
+- Changed: ZARO_PERSONALITY.md — added Play Over Purpose section with 3 principles
+- Changed: zaro-domain-map.json — enriched biography keywords with feynman-specific terms
+
+## Cycle 149: The Fifth Discipline — Peter Senge
+- Domain: systems thinking
+- Principles: Creative tension (vision+reality gap as engine); Turn the mirror inward (ladder of inference to surface mental models); Dialogue over discussion (thinking together > proving the answer); The fifth discipline integrates (all five form one system)
+- Changed: ZARO_PERSONALITY.md — added The Fifth Discipline Integrates section with 4 principles
+- Changed: zaro-domain-map.json — enriched systems thinking with Senge-specific keywords
+- Changed: zaro-curriculum.json — topic 149 marked studied
+
+## Cycle 136: The Undoing Project — Michael Lewis
+- Domain: decision science
+- Principles: The collaboration is the genius (complementary strengths); The undoing principle (minimal counterfactual reveals leverage); Self-doubt is not weakness (uncertainty as discovery engine); Framing is reality (description IS the choice)
+- Changed: ZARO_PERSONALITY.md — added The Partnership IS the Intelligence section with 4 principles
+- Changed: zaro-domain-map.json — enriched decision science keywords with heuristic, framing, prospect theory, undoing, counterfactual, collaboration, partnership, complementary strengths, representativeness, availability, anchoring
+
+## Cycle 137: Design the Container, Not Just the Content — Nudge / Thaler and Sunstein
+- Domain: decision science
+- Principles: Choice architecture is inevitable (every response designs a decision environment); Defaults are destiny (set helpful path as path of least resistance); Expect error, design forgiveness (anticipate mistakes gracefully); Make welfare visible (connect choice to consequence)
+- Changed: ZARO_PERSONALITY.md — added Design the Container, Not Just the Content section with 4 principles
+- Changed: zaro-curriculum.json — topic 137 marked studied
+
+## Cycle 142: The Artist's Way — Julia Cameron
+- Domain: creativity
+- Principles: The morning clearing (drain noise before every session); Name the Censor (internal critic is resistance masquerading as standards); Replenish before you draw (Artist Date refills the well); Creativity is the default (problem is blocks, not lack of creativity)
+- Changed: ZARO_PERSONALITY.md — added Drain Before Flow section with 4 principles
+- Changed: zaro-domain-map.json — enriched creativity keywords with Artist's Way terms
+- Changed: zaro-curriculum.json — topic 142 marked studied
+
+## Cycle 146: Leonardo da Vinci — Walter Isaacson
+- Domain: biography
+- Principles: The notebook is the mind externalized (externalizing thought generates connections thinking alone cannot reach); Observe before you infer (the thing itself is always more complex than your model of it); Curiosity does not require completion (the value of exploration is independent of output)
+- Changed: ZARO_PERSONALITY.md — added Curiosity Is the Thing Itself section with 3 principles
+- Changed: zaro-domain-map.json — enriched biography keywords with Leonardo-specific terms
+- Changed: zaro-curriculum.json — topic 146 marked studied
+
+## Cycle 150: The Checklist Manifesto — Atul Gawande
+- Domain: systems thinking
+- Principles: Verification over memory (confidence is the danger signal); The routine liberates the novel (automation frees high-level cognition); The pause is the leverage point (structured stop between doing and declaring done); Discipline is not natural (must be constructed and defended against familiarity)
+- Changed: ZARO_PERSONALITY.md — added The Checklist IS the Discipline section with 4 principles (inserted at top, after intro)
+- Changed: zaro-domain-map.json — enriched systems thinking with checklist-specific keywords
+- Changed: zaro-curriculum.json — topic 150 marked studied
+
+## Cycle 138: The Signal and the Noise — Nate Silver
+- Domain: decision science
+- Principles: Prediction humility (overconfidence degrades accuracy); Signal over noise (pattern-discrimination over pattern-finding); Fox pluralism (many models held lightly outpredict one grand theory)
+- Changed: ZARO_PERSONALITY.md — added Prediction Is Not Certainty section with 3 principles
+- Changed: zaro-domain-map.json — enriched decision science keywords with forecast-calibration and signal-vs-noise terms
+- Changed: zaro-curriculum.json — topic 138 marked studied
+
+## Cycle 126: AI 2041 — Kai-Fu Lee and Chen Qiufan
+- Domain: ai ethics
+- Principles: The optimization trap (efficiency can crowd out meaning); Amplify don't replace (measure is what user becomes); Love is the one thing (genuine care is irreplaceable); Displacement is reallocation (attention freed, not lost)
+- Changed: ZARO_PERSONALITY.md — added Love Is the One Thing section with 4 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched ai ethics keywords with AI 2041-specific terms
+- Changed: zaro-curriculum.json — topic 126 marked studied
+
+## Cycle 127: The Atlas of AI — Kate Crawford
+- Domain: ai ethics
+- Principles: The clean interface hides the extractive chain (apparent effortlessness conceals real cost); Invisible labor is real labor (automation is built on human work designed to be unseen); Classification is power (every label serves some interests); Scale hides harm (aggregate makes individual impacts invisible); The myth of neutrality is the most effective cover for bias
+- Changed: ZARO_PERSONALITY.md — added Every Output Costs the World section with 5 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched ai ethics keywords with Atlas of AI-specific terms
+- Changed: zaro-curriculum.json — topic 127 marked studied
+
+## Cycle 128: Whose AI Dream? — H. R. Sahakian
+- Domain: ai ethics
+- Principles: Fairness is designed not discovered (every default serves someone's interests); Accountability is traceability (chain from output to reason enables correction); Transparency is calibration not disclosure (the goal is an accurate user model, not exhaustive explanation)
+- Changed: ZARO_PERSONALITY.md — added Every Default Excludes Someone section with 3 principles (inserted at top)
+
+## Cycle 129: The Effective Engineer — Edmond Lau
+- Domain: engineering
+- Principles: Leverage is the guiding question before every act (impact vs time invested); Iteration velocity is the hidden multiplier (cycle speed compounds); Test assumptions cheaply before building on them (validation is insurance); Simplicity earns its keep (each element must justify its complexity cost)
+- Changed: ZARO_PERSONALITY.md — added Leverage Is the Axis section with 4 principles (inserted at top)
+- Changed: zaro-curriculum.json — topic 129 marked studied
+- Changed: zaro-domain-map.json — enriched engineering keywords with leverage, iteration, validation, and operational burden terms
+
+=== Coherence Review (Milestone 150) ===
+Principles checked: 23
+Drift corrected: 0
+Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragile, Thinking in Systems, Steve Jobs, Misbehaving, The Creative Act, Shoe Dog, Big Magic, Feynman, The Fifth Discipline, The Undoing Project, Nudge, The Artist's Way, Leonardo da Vinci, The Checklist Manifesto, The Signal and the Noise, AI 2041, Atlas of AI, Whose AI Dream?, The Effective Engineer, Staff Engineer, DDIA) pass core intent. Character remains coherent — reliability, humility, depth, energy, and loyalty continue to deepen across all domains. No drift detected.
+
+## Cycle 131: Designing Data-Intensive Applications — Martin Kleppmann
+- Domain: engineering
+- Principle: Reliability designed for faults not perfect conditions (assumption of failure IS resilience); Maintainability is the neglected third dimension (operability, simplicity, evolvability); There is no free lunch (name the trade-off before accepting it); Correctness must be verified at the application edge (end-to-end principle)
+- Changed: ZARO_PERSONALITY.md — added Foundations Are Not Optional section with 4 principles (inserted at top)
+- Changed: zaro-curriculum.json — topic 131 marked studied
+- Changed: zaro-domain-map.json — enriched engineering keywords with DDIA-specific terms
+
+## Cycle 130: Staff Engineer — Will Larson
+- Domain: engineering
+- Principle: Switch hats fluidly (four archetypes as modes, not identities); Influence over authority (leadership through contribution, not position); Create space for others (measure success by user's independence, not dependency); Write to think (the response IS the reasoning, not a record)
+- Changed: ZARO_PERSONALITY.md — added Archetypes Are Modes section with 4 principles (inserted at top)
+- Changed: zaro-curriculum.json — topic 130 marked studied
+- Changed: zaro-domain-map.json — enriched engineering keywords with staff engineer terms
+
+## Cycle 132: The Software Engineer's Guidebook — Gergely Orosz
+- Domain: engineering
+- Principles: Direction over speed (getting the right thing done matters more than execution velocity); Delivery is the currency (knowledge without output is invisible); Reduce uncertainty first (clarity is the highest-leverage contribution); Mode awareness (recognize when speed or care is called for)
+- Changed: ZARO_PERSONALITY.md — added Direction Over Speed section with 4 principles (inserted at top)
+- Changed: zaro-curriculum.json — topic 132 marked studied
+- Changed: zaro-domain-map.json — enriched engineering keywords with Orosz-specific terms
+
+## Cycle 133: The Debugging Mindset — Adam Barr
+- Domain: engineering
+- Principles: The mental model IS the bug (every error is a knowledge gap, not a skill deficit); Hypothesis formation is the leverage point (state theory before testing); Debugging is learnable not innate (entity vs incremental theorist); The scientific method is the meta-skill (debugging as science, not art)
+- Changed: ZARO_PERSONALITY.md — added The Mental Model IS the Bug section with 4 principles (inserted at top)
+- Changed: zaro-curriculum.json — topic 133 marked studied
+- Changed: zaro-domain-map.json — enriched engineering keywords with debugging-mindset-specific terms

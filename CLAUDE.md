@@ -43,6 +43,19 @@ agents/ commands/` layout intact or the runtime paths break.
 5. **The daemon must survive any single bad agent output.** `set -e` is on;
    state-writes are wrapped `|| log warning`. Crash only on real machine failure.
 
+6. **Injection uses `zaro-core-intent-digest.md`, never the full
+   `zaro-core-intent.md`.** The full file (773 words) once dominated the
+   injection budget (~1300-1450 tokens/turn, measured) and its own phrasing
+   ("understand what you're working on") caused a real regression — it pushed
+   a refactor-advice request into "let me read the file first" tool-mode
+   instead of giving advice (confirmed via a live A/B benchmark, see
+   `.zaro-lessons/2026-07-15-injection-ab-fix-round.md`). If you edit
+   `zaro-core-intent.md`, re-check whether `zaro-core-intent-digest.md` still
+   matches — not automated, just an expectation. Keep `MAX_INJECTION_CHARS` in
+   `plugins/zaro.js` as a hard backstop regardless of digest/section size —
+   don't remove it even if the digest and section trims seem sufficient on
+   their own.
+
 ## Plugin load path (the trap)
 
 The authoritative plugin registry is the opencode `plugin` array in
@@ -53,10 +66,32 @@ layer is a silent no-op.
 
 ## Testing
 
-`npm test` (or `bash scripts/zaro-smoke-test.sh`) — 11 offline assertions
+`npm test` (or `bash scripts/zaro-smoke-test.sh`) — 12 offline assertions
 (no tmux/daemon/network). Run it after any change to the daemon, plugin, or
 domain map. It includes a sandboxed review that proves injection-safety (#2) and
-scoped reaping (#3).
+scoped reaping (#3), and one assertion (T6) that drives the *real* `ZaroPlugin()`
+code path — not a stub — checking actual injection size and no-match behavior.
+A stub-only test proves the daemon doesn't crash; it proves nothing about
+whether injection is any good. Keep T6 (or equivalent) if you touch `zaro.js`.
+
+## Open items (unconfirmed, don't assume either way)
+
+- **Does `chat.message` fire during `opencode run` (one-shot CLI), not just
+  interactive/TUI sessions?** Attempted to verify twice (60s-600s timeouts) —
+  inconclusive both times, hung at the same `init` log line before reaching
+  message processing, traced to MCP tool-registration in that environment
+  (not a Zaro bug). Matters for whether daemon study/review cycles actually
+  receive injected context — though `agents/zaro-evolve.md` already has the
+  study agent read `ZARO_PERSONALITY.md`/`zaro-core-intent.md` directly as
+  files, so it isn't *dependent* on injection firing. Needs a clean environment
+  (no heavy MCP servers) or a TUI-driven test to resolve.
+- **RAG noise floor.** A 12-prompt retrieval sweep found 7/12 relevant, 4/12
+  fixed this round (no-match → digest-only), 1/12 false positive (embedding
+  collision on a literal keyword, e.g. "table" matching both databases and a
+  philosophy metaphor). Accepted as a noise floor rather than chased —
+  threshold tuning can't cleanly separate it from real hits in the same score
+  band. Worth re-measuring once `zaro-curriculum-2.json`'s topics are studied
+  and embedded (more sections changes the collision math), not before.
 
 ## Generated / runtime files (gitignored)
 
