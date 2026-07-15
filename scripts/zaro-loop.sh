@@ -12,6 +12,9 @@ LOG="$CONFIG_DIR/ZARO_EVOLUTION_RUNNER.log"
 AGENT_FILE="$CONFIG_DIR/agents/zaro-evolve.md"
 PID_FILE="${TMPDIR:-/tmp}/zaro-daemon.pid"
 RUN_PGID_FILE="${TMPDIR:-/tmp}/zaro-run.pgid"   # process group of the in-flight opencode run
+LOCK_FILE="${TMPDIR:-/tmp}/zaro-run.lock"       # mutex around run_cycle/_run_coherence_review —
+                                                 # closes the race that silently lost 7 personality
+                                                 # sections to overlapping invocations (2026-07-16)
 ZARO_REPO="$HOME/Zaro"                    # public mirror — auto-synced after each cycle/review
 MODEL="opencode/deepseek-v4-flash-free"
 SESSION="zaro"
@@ -66,6 +69,29 @@ sync_personality_backup() {
 # an hourly/daily quota that only clears on its own schedule.
 is_rate_limited() {
     echo "$1" | grep -qiE "rate limit exceeded|AI_APICallError.*[Rr]ate limit"
+}
+
+# Serialize every entry point that can trigger a study cycle or coherence
+# review — daemon loop, `zaro once`, `zaro study N`, `zaro review`, or a
+# second independent process invoking this same script. All of them read,
+# and potentially write, ZARO_PERSONALITY.md; without this, two overlapping
+# invocations race and the second writer silently discards the first's new
+# section (confirmed: cycle 132 ran twice 2.5 minutes apart on 2026-07-15,
+# losing content — 7 sections lost total before this fix).
+#
+# IMPORTANT: only call this at entry points, never from inside run_cycle() or
+# _run_coherence_review() themselves — run_cycle calls _run_coherence_review
+# internally when a review is due, and that nested call runs under the lock
+# the entry point already acquired. Wrapping it again here would deadlock
+# (the child flock would wait forever for a lock its own parent holds).
+with_run_lock() {
+    (
+        flock -w "$RATE_LIMIT_BACKOFF" 200 || {
+            log "WARNING: could not acquire run lock — another cycle/review is in progress. Skipping this invocation."
+            exit 1
+        }
+        "$@"
+    ) 200>"$LOCK_FILE"
 }
 
 # Reap a whole process group (TERM then KILL). Scoped to ONE opencode run's
@@ -477,7 +503,7 @@ cmd_once() {
         log "All topics studied! Evolution complete."
         exit 0
     fi
-    run_cycle "$topic"
+    with_run_lock run_cycle "$topic"
 }
 
 cmd_study() {
@@ -501,7 +527,7 @@ for t in data['topics']:
         log "Topic ID $topic_id not found in curriculum"
         exit 1
     fi
-    run_cycle "$topic_json"
+    with_run_lock run_cycle "$topic_json"
 }
 
 cmd_reset() {
@@ -524,7 +550,7 @@ cmd_review() {
     local last_milestone
     last_milestone=$(get_last_review_milestone)
     local next_milestone=$((last_milestone + REVIEW_INTERVAL))
-    _run_coherence_review "$next_milestone"
+    with_run_lock _run_coherence_review "$next_milestone"
 }
 
 # ─── Internal: Run loop (called by tmux) ────────────────────────
@@ -557,7 +583,7 @@ _run_loop() {
         fi
 
         cycle=$((cycle + 1))
-        run_cycle "$topic"
+        with_run_lock run_cycle "$topic"
 
         if [ "$cycle" -lt "$MAX_CYCLES" ]; then
             local next

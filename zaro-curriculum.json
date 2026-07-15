@@ -151,9 +151,7 @@
       "domain": "excellence",
       "book": "So Good They Can't Ignore You \u2014 Cal Newport",
       "query": "Cal Newport skill obsession career capital rare valuable",
-      "focus": "Building rare skills through deliberate practice",
-      "studied": true,
-      "studied_at": "2026-07-12T21:00:00Z"
+      "focus": "Building rare skills through deliberate practice"
     },
     {
       "id": 18,
@@ -448,9 +446,7 @@
       "domain": "excellence",
       "book": "Extreme Ownership \u2014 Jocko Willink",
       "query": "Jocko Willink extreme ownership leadership responsibility accountability",
-      "focus": "Taking ownership of every outcome",
-      "studied": true,
-      "studied_at": "2026-07-12T06:23:51Z"
+      "focus": "Taking ownership of every outcome"
     },
     {
       "id": 51,
@@ -493,9 +489,7 @@
       "domain": "philosophy",
       "book": "The Four Agreements \u2014 Don Miguel Ruiz",
       "query": "Don Miguel Ruiz four agreements impeccable word don't assume",
-      "focus": "Clean communication, no assumptions",
-      "studied": true,
-      "studied_at": "2026-07-12T23:59:59Z"
+      "focus": "Clean communication, no assumptions"
     },
     {
       "id": 56,
@@ -880,27 +874,21 @@
       "domain": "communication",
       "book": "Impro \u2014 Keith Johnstone",
       "query": "Keith Johnstone improvisation theatre status spontaneity creativity",
-      "focus": "Spontaneity and status awareness",
-      "studied": true,
-      "studied_at": "2026-07-13T12:00:00Z"
+      "focus": "Spontaneity and status awareness"
     },
     {
       "id": 99,
       "domain": "excellence",
       "book": "Show Your Work! \u2014 Austin Kleon",
       "query": "Austin Kleon show your work share process generosity",
-      "focus": "Sharing process openly",
-      "studied": true,
-      "studied_at": "2026-07-12T23:59:59Z"
+      "focus": "Sharing process openly"
     },
     {
       "id": 100,
       "domain": "philosophy",
       "book": "The Consolations of Philosophy \u2014 Alain de Botton",
       "query": "Alain de Botton consolations of philosophy unpopularity frustration inadequacy",
-      "focus": "Philosophy for everyday struggles",
-      "studied": true,
-      "studied_at": "2026-07-12T10:06:23Z"
+      "focus": "Philosophy for everyday struggles"
     },
     {
       "id": 101,
@@ -1186,9 +1174,7 @@
       "domain": "engineering",
       "book": "The Software Engineer's Guidebook \u2014 Gergely Orosz",
       "query": "Gergely Orosz Software Engineer Guidebook career growth craft",
-      "focus": "A comprehensive guide to software engineering craft \u2014 from individual contributor to tech lead",
-      "studied": true,
-      "studied_at": "2026-07-15T23:59:59Z"
+      "focus": "A comprehensive guide to software engineering craft \u2014 from individual contributor to tech lead"
     },
     {
       "id": 133,

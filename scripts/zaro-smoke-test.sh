@@ -6,6 +6,7 @@
 #   injection budget + no-match noise (post-A/B fix round: digest, no random
 #   section on a miss, per-section trim + total-payload cap)
 #   T7: retrieval-quality regression (golden prompts -> expected domain, >=80%)
+#   T8: concurrent-invocation lock (no data-loss race between overlapping runs)
 #
 # Usage: scripts/zaro-smoke-test.sh   (exit 0 = all pass)
 
@@ -165,6 +166,55 @@ GOT=$(python3 -c "import json;print(json.load(open('$SB/.config/opencode/zaro-ev
 if kill -0 "$EXT_PID" 2>/dev/null; then ok "external 'python3 client.py' survived (scoped reap)"; else bad "external process was killed (blast radius)"; fi
 
 kill "$EXT_PID" 2>/dev/null || true
+rm -rf "$SB"
+
+echo "== T8: concurrent invocations serialize (no data-loss race) =="
+SB=$(mktemp -d)
+mkdir -p "$SB/.config/opencode/scripts" "$SB/.config/opencode/agents" "$SB/bin"
+cp "$CONFIG_DIR/scripts/zaro-loop.sh" "$SB/.config/opencode/scripts/"
+echo '{"last_review_milestone":0,"last_review_at":null,"cycles_completed":0,"reviews":[]}' \
+  > "$SB/.config/opencode/zaro-evolution-state.json"
+echo '{"topics":[{"id":1,"domain":"test","book":"Book One","studied":false},{"id":2,"domain":"test","book":"Book Two","studied":false}]}' \
+  > "$SB/.config/opencode/zaro-curriculum.json"
+echo "core intent" > "$SB/.config/opencode/zaro-core-intent.md"
+echo "agent instructions" > "$SB/.config/opencode/agents/zaro-evolve.md"
+echo "# personality" > "$SB/.config/opencode/ZARO_PERSONALITY.md"
+echo "# log" > "$SB/.config/opencode/ZARO_EVOLUTION_LOG.md"
+
+# Stub opencode with a real execution window (sleep) — a race would show up
+# as interleaved START/END timestamps between the two invocations below.
+cat > "$SB/bin/opencode" <<EOF
+#!/bin/bash
+echo "\$(date +%s.%N) START pid=\$\$" >> "$SB/activity.log"
+sleep 1
+echo "\$(date +%s.%N) END   pid=\$\$" >> "$SB/activity.log"
+echo "Cycle complete."
+EOF
+chmod +x "$SB/bin/opencode"
+
+HOME="$SB" PATH="$SB/bin:$PATH" TMPDIR="$SB" bash "$SB/.config/opencode/scripts/zaro-loop.sh" study 1 >"$SB/run1.log" 2>&1 &
+P1=$!
+sleep 0.2
+HOME="$SB" PATH="$SB/bin:$PATH" TMPDIR="$SB" bash "$SB/.config/opencode/scripts/zaro-loop.sh" study 2 >"$SB/run2.log" 2>&1 &
+P2=$!
+wait "$P1" "$P2"
+
+python3 - "$SB/activity.log" <<'PY'
+import sys
+lines = [l.split() for l in open(sys.argv[1]) if l.strip()]
+events = [(float(l[0]), l[1]) for l in lines]  # (timestamp, START/END)
+overlap = False
+depth = 0
+for ts, kind in sorted(events):
+    depth += 1 if kind == 'START' else -1
+    if depth > 1:
+        overlap = True
+sys.exit(1 if overlap else 0)
+PY
+[ $? -eq 0 ] && ok "two concurrent invocations serialized (zero overlap, matches cycle-132 regression)" \
+             || bad "invocations overlapped — the lock did not serialize them"
+
+kill "$P1" "$P2" 2>/dev/null || true
 rm -rf "$SB"
 
 echo
