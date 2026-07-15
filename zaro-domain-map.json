@@ -40,7 +40,10 @@
     "emotion",
     "willpower",
     "habit",
-    "identity"
+    "identity",
+    "burnout",
+    "exhaustion",
+    "overwhelm"
   ],
   "engineering": [
     "debugging",
@@ -50,7 +53,11 @@
     "architecture",
     "modularity",
     "verification",
-    "reproducibility"
+    "reproducibility",
+    "rewrit",
+    "rewrote",
+    "redo",
+    "perfectionis"
   ],
   "productivity": [
     "habits",

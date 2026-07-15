@@ -1,11 +1,18 @@
 // Zaro — RAG-powered personality injection plugin for opencode
 //
-// Three-tier retrieval:
-//   1. Semantic (RAG): embed user message → cosine sim vs 96 section vectors
-//      → inject top-3 if max score ≥ domain threshold
-//   2. Fallback: keyword domain matching (original logic)
+// Two-tier retrieval, each section independently gated by its own domain
+// threshold — no unrelated content rides along on a passing match:
+//   1. Semantic (RAG): embed user message → cosine sim vs section vectors
+//      → inject sections whose score clears their domain threshold
+//   2. Fallback: keyword domain matching
 //      → inject matching sections
-//   3. Last resort: 2 most recent sections
+// No match in either tier → inject the core-intent digest alone (identity
+// presence without a random, irrelevant book excerpt).
+//
+// Every injection is capped near ~500 tokens: the digest (not the full
+// core-intent file) grounds every turn, sections are trimmed, and the whole
+// payload has a hard length backstop (MAX_INJECTION_CHARS) regardless of
+// composition.
 //
 // Embedding: @xenova/transformers (Xenova/all-MiniLM-L6-v2) — local ONNX, no network
 // Default threshold: 0.2. Per-domain overrides in domain-map.json.
@@ -20,6 +27,7 @@ const CONFIG = join(__dirname, '..');
 const PERSONALITY_FILE = join(CONFIG, 'ZARO_PERSONALITY.md');
 const DOMAIN_MAP_FILE = join(CONFIG, 'zaro-domain-map.json');
 const CORE_INTENT_FILE = join(CONFIG, 'zaro-core-intent.md');
+const CORE_INTENT_DIGEST_FILE = join(CONFIG, 'zaro-core-intent-digest.md');
 const EMBEDDINGS_FILE = join(CONFIG, 'zaro-embeddings.json');
 const LOG_FILE = join(CONFIG, 'zaro-injections.log');
 
@@ -39,7 +47,7 @@ const MAX_SECTIONS = 3;
 
 // ─── State ──────────────────────────────────────────────────────
 
-let cache = { personality: '', domainMap: {}, coreIntent: '', mtime: 0 };
+let cache = { personality: '', domainMap: {}, coreIntent: '', coreIntentDigest: '', mtime: 0 };
 let embedder = null;
 let stored = []; // [{heading, body, domain, vector}]
 
@@ -91,6 +99,13 @@ function loadFiles() {
     cache.coreIntent = existsSync(CORE_INTENT_FILE)
       ? readFileSync(CORE_INTENT_FILE, 'utf-8')
       : '';
+    // Injection uses the digest (short, budget-safe) — the full core-intent.md
+    // stays the canonical source of truth but is never injected verbatim
+    // (it alone was ~1000+ tokens, dominating the injection budget).
+    // Defensive fallback if the digest is ever missing: truncate the full file.
+    cache.coreIntentDigest = existsSync(CORE_INTENT_DIGEST_FILE)
+      ? readFileSync(CORE_INTENT_DIGEST_FILE, 'utf-8')
+      : trimBody(cache.coreIntent, 800);
     cache.mtime = stat.mtimeMs;
     return true;
   } catch {
@@ -289,31 +304,9 @@ function collectSectionsByDomain(content, targetDomains) {
   return results;
 }
 
-function getRecentSections(content, n = 2) {
-  const lines = content.split('\n');
-  const sections = [];
-  let current = null;
-  let body = [];
-  for (const line of lines) {
-    if (line.startsWith('### ')) {
-      if (current && body.length > 0) {
-        sections.push({ heading: current, body: body.join('\n').trim() });
-      }
-      current = line;
-      body = [];
-    } else if (current && !line.startsWith('<!-- domain:')) {
-      body.push(line);
-    }
-  }
-  if (current && body.length > 0) {
-    sections.push({ heading: current, body: body.join('\n').trim() });
-  }
-  return sections.slice(-n);
-}
-
 // ─── Injection ──────────────────────────────────────────────────
 
-function trimBody(body, max = 400) {
+function trimBody(body, max = 300) {
   if (!body || body.length <= max) return body || '';
   const truncated = body.slice(0, max);
   const lastPeriod = truncated.lastIndexOf('.');
@@ -321,9 +314,14 @@ function trimBody(body, max = 400) {
   return truncated + '…';
 }
 
+// Hard backstop on total injected payload, independent of how many sections
+// or how long the digest is — guarantees the budget holds even if either
+// grows later. ~2000 chars ≈ 500 tokens (the design target).
+const MAX_INJECTION_CHARS = 2000;
+
 function formatInjection(sections, coreIntent) {
   const parts = [];
-  // Always prepend core intent as grounding context
+  // Always prepend core intent (digest, not the full file) as grounding context
   if (coreIntent) {
     parts.push(`### Core Intent — Zaro's Identity\n${coreIntent.trim()}`);
   }
@@ -331,7 +329,7 @@ function formatInjection(sections, coreIntent) {
   if (sections && sections.length > 0) {
     const sectionParts = sections.slice(0, MAX_SECTIONS).map(s => {
       const h = s.heading || '';
-      const b = trimBody(s.body, 400);
+      const b = trimBody(s.body, 300);
       const score = s.score !== undefined
         ? `<!-- relevance: ${(s.score * 100).toFixed(0)}% -->`
         : '';
@@ -340,7 +338,11 @@ function formatInjection(sections, coreIntent) {
     parts.push(...sectionParts);
   }
   if (parts.length === 0) return '';
-  return `<personality-context>\n${parts.join('\n\n')}\n</personality-context>`;
+  let injection = `<personality-context>\n${parts.join('\n\n')}\n</personality-context>`;
+  if (injection.length > MAX_INJECTION_CHARS) {
+    injection = injection.slice(0, MAX_INJECTION_CHARS) + '\n</personality-context>';
+  }
+  return injection;
 }
 
 // ─── RAG query ──────────────────────────────────────────────────
@@ -372,7 +374,7 @@ async function buildInjection(text) {
   loadFiles();
   if (!cache.personality) return '';
 
-  const coreIntent = cache.coreIntent || '';
+  const coreIntent = cache.coreIntentDigest || '';
 
   // Tier 1: RAG — keep only sections that clear their OWN domain threshold.
   // retrieveRelevant returns up to MAX_SECTIONS sorted by score desc, so a
@@ -397,15 +399,12 @@ async function buildInjection(text) {
     }
   }
 
-  // Tier 3: Recent sections
-  const recent = getRecentSections(cache.personality, 2);
-  if (recent.length > 0) {
-    const tagged = recent.map(s => ({ ...s, score: 0 }));
-    logInjection(text, 'fallback', tagged);
-    return formatInjection(tagged, coreIntent);
-  }
-
-  // Fallback: core intent only (no domain sections matched)
+  // No match: digest-only, no section. There used to be a Tier 3 that grabbed
+  // the 2 most-recently-added personality sections regardless of relevance —
+  // removed because it injected unrelated content at 0% confidence on every
+  // off-topic/greeting prompt (confirmed via A/B test: "hi" and an unrelated
+  // recipe question both dragged in the same 2 random book excerpts). Identity
+  // presence stays via the digest; irrelevant book excerpts don't.
   if (coreIntent) {
     logInjection(text, 'fallback', [], '');
   }

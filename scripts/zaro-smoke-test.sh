@@ -3,6 +3,8 @@
 # Verifies the finding-fix set without touching real Zaro state:
 #   #1 plugin registered   #2 apostrophe-safe daemon   #3 scoped process reaping
 #   #5 per-section RAG gate #6 full domain coverage     + all edited files valid
+#   injection budget + no-match noise (post-A/B fix round: digest, no random
+#   section on a miss, per-section trim + total-payload cap)
 #
 # Usage: scripts/zaro-smoke-test.sh   (exit 0 = all pass)
 
@@ -37,6 +39,26 @@ missing = sorted(cur - dm)
 sys.exit(0 if not missing else (print('missing:', missing) or 1))
 PY
 [ $? -eq 0 ] && ok "all curriculum domains routed" || bad "domains missing from map"
+
+echo "== T6: injection budget + no-match noise (real production ZaroPlugin, not a stub) =="
+node --input-type=module - "$CONFIG_DIR" <<'NODE'
+const configDir = process.argv[2];
+const { ZaroPlugin } = await import(configDir + '/plugins/zaro.js');
+const hooks = await ZaroPlugin();
+async function inject(text) {
+  const output = {};
+  await hooks['chat.message']({ parts: [{ type: 'text', text }] }, output);
+  return output.parts?.[0]?.text || '';
+}
+const onTopic = await inject('help me debug this failing test, I keep hitting the same error');
+const offTopic = await inject('what is a good recipe for pasta carbonara');
+const offTopicHasSection = /\n### (?!Core Intent)/.test(offTopic);
+console.log(`  on-topic: ${onTopic.length} chars | off-topic: ${offTopic.length} chars | off-topic has random section: ${offTopicHasSection}`);
+const passed = onTopic.length <= 2100 && offTopic.length <= 1200 && !offTopicHasSection;
+process.exit(passed ? 0 : 1);
+NODE
+[ $? -eq 0 ] && ok "on-topic injection under budget (~500 tokens), off-topic gets digest-only (no random section)" \
+             || bad "budget or no-match-noise regression — see output above"
 
 echo "== T4/T5 (#2, #3): sandbox review — apostrophes survive, external MCP survives =="
 SB=$(mktemp -d)
