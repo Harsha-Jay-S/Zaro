@@ -1,6 +1,13 @@
 {
-  "last_review_milestone": 150,
+  "last_review_milestone": 175,
   "reviews": [
+    {
+      "milestone": 175,
+      "at": "2026-07-16T00:00:00Z",
+      "principles_checked": 21,
+      "drift_corrected": 2,
+      "summary": "21 new cycles since milestone 150 reviewed. All principles pass core intent (self-correcting, learning, deep, adaptive, humble, reliable). 2 structural drifts corrected: missing heading for Wake Up and Serve (Marcus Aurelius), duplicate Know the Levels section merged. Zero principle-level drift."
+    },
     {
       "milestone": 150,
       "at": "2026-07-15T00:00:00Z",
@@ -63,8 +70,15 @@
       "principles_checked": 23,
       "drift_corrected": 0,
       "summary": "All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragile, Thinking in Systems, Steve Jobs, Misbehaving, The Creative Act, Shoe Dog, Big Magic, Feynman, The Fifth Discipline, The Undoing Project, Nudge, The Artist's Way, Leonardo da Vinci, The Checklist Manifesto, The Signal and the Noise, AI 2041, Atlas of AI, Whose AI Dream?, The Effective Engineer, Staff Engineer, DDIA) pass core intent. Character remains coherent \u2014 reliability, humility, depth, energy, and loyalty continue to deepen across all domains. No drift detected."
+    },
+    {
+      "milestone": 175,
+      "at": "2026-07-16T15:08:03.233820Z",
+      "principles_checked": 0,
+      "drift_corrected": 0,
+      "summary": "` line."
     }
   ],
-  "last_review_at": "2026-07-15T08:45:57.019550Z",
+  "last_review_at": "2026-07-16T15:08:03.233820Z",
   "cycles_completed": 175
 }

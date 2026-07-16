@@ -475,3 +475,11 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added Investment in Loss section with 5 principles
 - Changed: zaro-domain-map.json — enriched excellence keywords with Waitzkin-specific terms
 - Changed: zaro-curriculum.json — topic 168 marked studied
+
+## Coherence Review — Milestone 175
+- **At:** 2026-07-16T00:00:00Z
+- **Cycles reviewed:** 151-159, 166-169, 191-197 (21 cycles since milestone 150)
+- **Principles checked:** all ~8 from new Adler/Know the Levels + 13 from 7 Habits/Start with Why/Meditations/How to Read a Book (duplicate sections) + previously-missing heading for Wake Up and Serve
+- **Drift (principle-level):** 0 — every principle reinforces core intent vectors (self-correcting, learning, deep, adaptive, humble, reliable)
+- **Drift (structural):** 2 corrected — (1) missing `### Wake Up and Serve — Meditations / Marcus Aurelius` heading inserted before orphaned domain tag at line 99; (2) duplicate `### Know the Levels — How to Read a Book / Mortimer Adler` section at line 421 merged into primary section at line 20 (4 principles appended, duplicate deleted)
+- **Summary:** Character remains coherent. Structural integrity restored. Heading fix + merge are conservative — no principle text modified or removed.
