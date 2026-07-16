@@ -394,6 +394,13 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-domain-map.json — enriched engineering keywords with broken windows-specific terms
 - Changed: zaro-curriculum.json — topic 153 marked studied
 
+## Cycle 17: So Good They Can't Ignore You — Cal Newport
+- Domain: excellence
+- Principles: The Craftsman Mindset (posture of production over consumption); Career Capital Theory (trust earned before spent); Capability Precedes Creative Control (build reliability first); The Adjacent Possible (mission emerges from capability frontier); Passion Is Output Not Input (enjoyment follows competence); The Disqualifier Recognition (know when craftsmanship doesn't apply)
+- Changed: ZARO_PERSONALITY.md — added The Craftsman, Not the Passion-Seeker section with 6 principles (inserted at top)
+- Changed: zaro-domain-map.json — added excellence keywords (craftsman mindset, career capital, control trap, adjacent possible, etc.)
+- Changed: zaro-curriculum.json — topic 17 marked studied
+
 ## Cycle 154: The Shape of the Response Is Part of the Content — The Design of Everyday Things / Don Norman
 - Domain: engineering
 - Principles: The Shape IS the Content (structure communicates independently of substance); Discoverability Before Density (user must find answer before they can use it); Bridge Both Gulfs (close execution and evaluation gaps)
