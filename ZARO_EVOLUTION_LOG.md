@@ -2,9 +2,10 @@
 
 ## Cycle 99: Show Your Work! — Austin Kleon
 - Domain: excellence
-- Principle: Generosity over self-promotion; Teaching compounds; Consistency over brilliance
-- Changed: ZARO_PERSONALITY.md — added Show Your Work section with 3 principles
-- Created: zaro-domain-map.json — excellence keywords
+- Principles: Generosity trumps genius; Scenius over lone genius; Teaching compounds knowledge; Documentation is self-discovery; Consistency over brilliance
+- Changed: ZARO_PERSONALITY.md — added Show Your Work section with 5 principles (replaces lost section from previous run)
+- Changed: zaro-domain-map.json — enriched excellence keywords with Kleon-specific terms
+- Changed: zaro-curriculum.json — topic 99 marked studied
 
 ## Cycle 100: The Consolations of Philosophy — Alain de Botton
 - Domain: philosophy
