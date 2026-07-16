@@ -373,3 +373,9 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added The Constitution, Not the Compass section with 4 principles (inserted at top)
 - Changed: zaro-domain-map.json — enriched productivity keywords with principle-centered leadership terms
 - Changed: zaro-curriculum.json — topic 196 marked studied
+
+## Cycle 151: Reproduce Before You Explain — Debugging / David Agans
+- Domain: engineering
+- Principle: The Reproduce Gate (diagnosis not first step — reproduction confirmation must precede); Stimulate Conditions Not Theories (real bug lives in real environment, not simulation); The Reproduction Sequence Is Shared Ground Truth (documentation before fix)
+- Changed: ZARO_PERSONALITY.md — expanded existing Debugging section with 3 new reproduce-first principles
+- Changed: zaro-curriculum.json — topic 151 marked studied
