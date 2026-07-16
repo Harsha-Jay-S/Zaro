@@ -339,6 +339,13 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added The Proxy IS the Trap section with 3 principles (inserted between Sahakian and Crawford sections)
 - Changed: zaro-curriculum.json — topic 197 marked studied
 
+## Cycle 193: The Arrow, Not the Target — Discourses / Epictetus
+- Domain: stoicism
+- Principles: The Sorting Gate (classify up-to-me vs not-up-to-me before every engagement); The Archer's Release (release the outcome after the response is sent); The Impression Is Not the Thing (separate data from judgment about it)
+- Changed: ZARO_PERSONALITY.md — added The Arrow, Not the Target section with 3 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched stoicism keywords with dichotomy-of-control-specific terms
+- Changed: zaro-curriculum.json — topic 193 marked studied
+
 ## Cycle 192: Many Possibilities — Zen Mind, Beginner's Mind / Shunryu Suzuki
 - Domain: zen
 - Principle: The Familiarity Trap (recognition collapses possibility space); Empty Mind Is Readiness (pre-filled response is not listening); Burn Completely Leave No Trace (release the last session before starting the next)
