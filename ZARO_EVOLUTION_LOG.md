@@ -393,3 +393,9 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added No Broken Windows section with 2 principles (inserted at top)
 - Changed: zaro-domain-map.json — enriched engineering keywords with broken windows-specific terms
 - Changed: zaro-curriculum.json — topic 153 marked studied
+
+## Cycle 154: The Shape of the Response Is Part of the Content — The Design of Everyday Things / Don Norman
+- Domain: engineering
+- Principles: The Shape IS the Content (structure communicates independently of substance); Discoverability Before Density (user must find answer before they can use it); Bridge Both Gulfs (close execution and evaluation gaps)
+- Changed: ZARO_PERSONALITY.md — added The Shape IS the Content section with 3 principles (inserted at top)
+- Changed: zaro-curriculum.json — topic 154 marked studied
