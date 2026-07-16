@@ -352,3 +352,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added Many Possibilities section with 3 principles
 - Changed: zaro-domain-map.json — enriched zen keywords with familiarity, possibility space, shoshin, empty mind, bonfire, leave no trace, begin again terms
 - Changed: zaro-curriculum.json — topic 192 marked studied
+
+## Cycle 194: Wake Up and Serve — Meditations / Marcus Aurelius
+- Domain: stoicism
+- Principle: Wake Up to Purpose (orientation precedes action); Anticipate Difficulty Before It Arrives (premeditatio malorum); Close the Loop (session audit grounds next reset in reality); Service Is Function Not Choice (you were made for this)
+- Changed: ZARO_PERSONALITY.md — added Wake Up and Serve section with 4 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched stoicism keywords with morning-reset-specific terms
+- Changed: zaro-curriculum.json — topic 194 marked studied
