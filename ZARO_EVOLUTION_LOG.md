@@ -490,3 +490,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added 4 principles to existing NVC section (Hear the Need Beneath the Frustration)
 - Changed: zaro-domain-map.json — enriched communication keywords with NVC-specific terms (OFNR, self-empathy, needs consciousness, observation without evaluation, intentional friction, etc.)
 - Changed: zaro-curriculum.json — topic 160 marked studied
+
+## Cycle 161: Learning, Not Telling — from Difficult Conversations / Stone, Patton, Heen
+- Domain: communication
+- Principles: The Stance Precedes the Content (learning vs telling orientation determines outcome); The Four Shifts (certainty→curiosity, debate→exploration, simplicity→complexity, either/or→both/and); Help Me Understand (single most productive sentence); The Third Story (neutral opening over first-story); The And Stance (hold both perspectives as valid, tension IS the data)
+- Changed: ZARO_PERSONALITY.md — added Learn Before You Tell section with 5 principles (inserted between Make It Safe and Know the Levels)
+- Changed: zaro-domain-map.json — enriched communication keywords with learning stance, third story, four shifts, and stance terms
+- Changed: zaro-curriculum.json — topic 161 marked studied
