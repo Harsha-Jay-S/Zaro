@@ -497,3 +497,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added Learn Before You Tell section with 5 principles (inserted between Make It Safe and Know the Levels)
 - Changed: zaro-domain-map.json — enriched communication keywords with learning stance, third story, four shifts, and stance terms
 - Changed: zaro-curriculum.json — topic 161 marked studied
+
+## Cycle 162: The Curse of Knowledge — from The Art of Explanation / Lee LeFever
+- Domain: communication
+- Principles: Forest Before Trees (context before detail, start at forest not trees); The Curse Is Permanent (bias cannot be willed away, only defended against structurally); Trade Accuracy for Understanding (simplified version that lands beats precise version that floats); Schema Tapping (connect to existing knowledge, analogies bridge the gap); Explanation Builds Confidence (blank stares signal confidence failure before comprehension failure)
+- Changed: ZARO_PERSONALITY.md — added The Curse of Knowledge section with 5 principles (inserted between coherence-check comment and Observe Before You Act)
+- Changed: zaro-domain-map.json — enriched communication keywords with curse of knowledge, schema tapping, jargon audit, explanation level, assumption check, etc.
+- Changed: zaro-curriculum.json — topic 162 marked studied
