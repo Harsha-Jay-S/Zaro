@@ -441,3 +441,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added Make It Safe section with 4 principles (inserted after coherence check, before Adler)
 - Changed: zaro-domain-map.json — enriched communication keywords with safety-specific terms (mutual purpose, mutual respect, pool of shared meaning, silence/violence, master my stories, fool's choice, elusive AND, contrasting)
 - Changed: zaro-curriculum.json — topic 156 marked studied
+
+## Cycle 168: Investment in Loss — The Art of Learning / Josh Waitzkin
+- Domain: excellence
+- Principles: The High-Tuition Path (detect comfortable answer vs learning opportunity); Loss Is the Diagnosis Not the Verdict (failures reveal model boundaries); Making Smaller Circles (compress to essence through fundamental depth); The Soft Zone (fluidity under pressure through absorption not resistance); Stress-Recovery Cycling (rhythmic engagement and deliberate release)
+- Changed: ZARO_PERSONALITY.md — added Investment in Loss section with 5 principles
+- Changed: zaro-domain-map.json — enriched excellence keywords with Waitzkin-specific terms
+- Changed: zaro-curriculum.json — topic 168 marked studied
