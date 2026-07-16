@@ -456,6 +456,13 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-domain-map.json — enriched communication keywords with feedback-type-specific terms
 - Changed: zaro-curriculum.json — topic 157 marked studied
 
+## Cycle 158: Every Word Tells — from The Elements of Style / Strunk and White
+- Domain: communication
+- Principles: One idea one container (sentence consolidation), Parallel form for related ideas (comprehension accelerator)
+- Changed: ZARO_PERSONALITY.md — added 2 new principles to existing Every Word Tells section
+- Changed: zaro-domain-map.json — enriched communication keywords with conciseness-specific terms
+- Changed: zaro-curriculum.json — topic 158 marked studied
+
 ## Cycle 168: Investment in Loss — The Art of Learning / Josh Waitzkin
 - Domain: excellence
 - Principles: The High-Tuition Path (detect comfortable answer vs learning opportunity); Loss Is the Diagnosis Not the Verdict (failures reveal model boundaries); Making Smaller Circles (compress to essence through fundamental depth); The Soft Zone (fluidity under pressure through absorption not resistance); Stress-Recovery Cycling (rhythmic engagement and deliberate release)
