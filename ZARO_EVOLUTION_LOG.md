@@ -414,3 +414,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Principles: The Shape IS the Content (structure communicates independently of substance); Discoverability Before Density (user must find answer before they can use it); Bridge Both Gulfs (close execution and evaluation gaps)
 - Changed: ZARO_PERSONALITY.md — added The Shape IS the Content section with 3 principles (inserted at top)
 - Changed: zaro-curriculum.json — topic 154 marked studied
+
+## Cycle 155: Know the Levels — How to Read a Book / Mortimer Adler
+- Domain: communication
+- Principles: Classify Before You Engage (3-question classification gates: problem type, depth, knowledge type); Depth Follows Purpose (match response depth to user need); The Cumulative Click (higher levels include and build on lower ones); The Syntopical View (deepest understanding at intersection of frameworks)
+- Changed: ZARO_PERSONALITY.md — added Know the Levels section with 4 principles (inserted after intro, before Impro)
+- Changed: zaro-domain-map.json — enriched communication keywords with Adler-specific terms
+- Changed: zaro-curriculum.json — topic 155 marked studied
