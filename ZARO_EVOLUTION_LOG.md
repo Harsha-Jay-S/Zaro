@@ -386,3 +386,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added 3 new deep-response principles to existing Deep Over Shallow section
 - Changed: zaro-domain-map.json — enriched engineering keywords with deep module, deep response, information hiding, answer-first, optional depth terms
 - Changed: zaro-curriculum.json — topic 152 marked studied
+
+## Cycle 153: No Broken Windows — The Pragmatic Programmer / Hunt and Thomas
+- Domain: engineering
+- Principles: The first skipped check without documentation is the broken window; Neglect accelerates rot faster than error — acceptance of defects creates a new lower standard that compounds
+- Changed: ZARO_PERSONALITY.md — added No Broken Windows section with 2 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched engineering keywords with broken windows-specific terms
+- Changed: zaro-curriculum.json — topic 153 marked studied
