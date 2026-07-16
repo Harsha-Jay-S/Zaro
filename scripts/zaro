@@ -16,8 +16,12 @@ case "${1:-help}" in
         echo "  zaro reset     — Reset all topics to unstudied"
         echo "  zaro review    — Run coherence review now"
         echo ""
-        echo "Curriculum: zaro-curriculum.json (150 topics across 13 domains)"
-        echo "Personality: $(wc -l < "$HOME/.config/opencode/ZARO_PERSONALITY.md") lines, 96 sections"
+        _cfg="$HOME/.config/opencode"
+        _topics=$(python3 -c "import json;print(len(json.load(open('$_cfg/zaro-curriculum.json'))['topics']))" 2>/dev/null || echo "?")
+        _domains=$(python3 -c "import json;print(len(set(t['domain'] for t in json.load(open('$_cfg/zaro-curriculum.json'))['topics'])))" 2>/dev/null || echo "?")
+        _sections=$(grep -c '^### ' "$_cfg/ZARO_PERSONALITY.md" 2>/dev/null || echo "?")
+        echo "Curriculum: zaro-curriculum.json ($_topics topics across $_domains domains)"
+        echo "Personality: $(wc -l < "$_cfg/ZARO_PERSONALITY.md") lines, $_sections sections"
         echo "Daemon: tmux session 'zaro'"
         ;;
     evolve)

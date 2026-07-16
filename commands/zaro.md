@@ -1,35 +1,37 @@
-Zaro's 24/7 personality evolution engine. Studies 100 wisdom books via websearch and improves ZARO_PERSONALITY.md — one principle per cycle.
+Zaro's 24/7 personality evolution engine. Studies 200 wisdom books via websearch and appends the principles it extracts (as many as each book genuinely offers) to ZARO_PERSONALITY.md.
 
-## Arguments
-- `once` — Run one cycle now via task subagent (in-session)
-- `daemon [N]` — Start tmux session `zaro` running the loop, N=seconds between cycles (default 3600 = 24 cycles/day)
-- `stop` — Kill the tmux daemon
-- `status` — Show curriculum progress and daemon state
-- `reset` — Restart curriculum (all topics unstudied)
+## Arguments (each maps to a `zaro-loop.sh` subcommand)
+- `once` — Run one study cycle now (`zaro-loop.sh once`)
+- `daemon [N]` — Start the tmux daemon loop (`zaro-loop.sh start [N]`), N=seconds between cycles (default 3600 = 24 cycles/day)
+- `stop` — Kill the tmux daemon (`zaro-loop.sh stop`)
+- `status` — Show curriculum progress and daemon state (`zaro-loop.sh status`)
+- `reset` — Restart curriculum, all topics unstudied (`zaro-loop.sh reset`)
 
 ## I execute the script like this:
 ```
-~/.config/opencode/scripts/zaro-loop.sh <arg> [N]
+~/.config/opencode/scripts/zaro-loop.sh <subcommand> [N]
 ```
+(note: the `daemon` argument runs the `start` subcommand — they're the same thing.)
 
 ## How each mode works
 
-### `once` mode (in-session)
-I spawn a `general` subagent via the task tool. The agent:
-1. Loads `brainstorming` skill for deep exploration of the topic
-2. Uses `caveman` skill for token efficiency
-3. Reads AGENTS.md and curriculum, finds next topic
-4. Websearches book teachings, extracts 3-5 principles
-5. Edits ZARO_PERSONALITY.md with principles
-6. Marks topic studied in curriculum
-7. Logs to ZARO_EVOLUTION_LOG.md
+### `once` mode
+Runs `zaro-loop.sh once`, which executes a single study cycle in-process (an
+`opencode run` with `agents/zaro-evolve.md` as the prompt — not a separate task
+subagent). The agent:
+1. Loads `brainstorming` for deep exploration; `caveman` for token efficiency
+2. Reads core-intent, ZARO_PERSONALITY.md and curriculum, finds next topic
+3. Websearches book teachings, extracts every principle passing the insight + distinctness gates (no fixed count)
+4. Edits ZARO_PERSONALITY.md with principles, then verifies the write landed
+5. Marks topic studied in curriculum
+6. Logs to ZARO_EVOLUTION_LOG.md
 
 ### `daemon` mode (24/7 tmux)
 I run `zaro-loop.sh start [N]` which creates a tmux session that loops:
 ```
-pick next topic → opencode run --agent zaro --model opencode/deepseek-v4-flash-free --auto → sleep N → repeat
+pick next topic → opencode run --model opencode/deepseek-v4-flash-free --auto --print-logs "<Mode:study header> + agents/zaro-evolve.md" → sleep N → repeat
 ```
-Each `opencode run` loads the superpowers plugin automatically (from opencode.json config), so the subagent has full skill access.
+The agent prompt is the contents of `agents/zaro-evolve.md` passed inline (not a `--agent` flag). Each `opencode run` loads the plugins registered in opencode.json automatically, so the subagent has full skill access. Study/review cycles are serialized by a file lock, and the personality file auto-backs up to the ~/Zaro git mirror after each.
 
 ### `stop`
 I run `zaro-loop.sh stop` which sends SIGINT then kills the tmux session.

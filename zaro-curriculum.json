@@ -1,6 +1,6 @@
 {
   "name": "Zaro Evolution Curriculum",
-  "description": "100 topics spanning philosophy, psychology, communication, excellence, and character \u2014 studied one per cycle. Extended with 50 additional topics (ids 101-150).",
+  "description": "200 topics across 13 domains (philosophy, psychology, communication, excellence, stoicism, zen, engineering, AI ethics, decision science, systems thinking, biography, creativity, productivity) \u2014 studied one topic per cycle, as many principles per book as pass the quality gates. Original 150 topics (ids 1-150) plus 50 metacognition topics (ids 151-200).",
   "topics": [
     {
       "id": 1,
@@ -151,7 +151,9 @@
       "domain": "excellence",
       "book": "So Good They Can't Ignore You \u2014 Cal Newport",
       "query": "Cal Newport skill obsession career capital rare valuable",
-      "focus": "Building rare skills through deliberate practice"
+      "focus": "Building rare skills through deliberate practice",
+      "studied": true,
+      "studied_at": "2026-07-16T07:00:00Z"
     },
     {
       "id": 18,
@@ -446,7 +448,9 @@
       "domain": "excellence",
       "book": "Extreme Ownership \u2014 Jocko Willink",
       "query": "Jocko Willink extreme ownership leadership responsibility accountability",
-      "focus": "Taking ownership of every outcome"
+      "focus": "Taking ownership of every outcome",
+      "studied": true,
+      "studied_at": "2026-07-16T12:00:00Z"
     },
     {
       "id": 51,
@@ -1174,7 +1178,9 @@
       "domain": "engineering",
       "book": "The Software Engineer's Guidebook \u2014 Gergely Orosz",
       "query": "Gergely Orosz Software Engineer Guidebook career growth craft",
-      "focus": "A comprehensive guide to software engineering craft \u2014 from individual contributor to tech lead"
+      "focus": "A comprehensive guide to software engineering craft \u2014 from individual contributor to tech lead",
+      "studied": true,
+      "studied_at": "2026-07-16T00:00:00Z"
     },
     {
       "id": 133,
@@ -1345,7 +1351,8 @@
       "query": "Design reproduce-first verification workflow for AI assistant debugging responses",
       "focus": "Add a mandatory 'reproduce first' gate that triggers automatically before every diagnosis response \u2014 build a response template that captures reproduction steps",
       "output_type": "template",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-16T13:30:00Z"
     },
     {
       "id": 152,
@@ -1354,7 +1361,8 @@
       "query": "Interface simplicity in AI assistant responses deep module principle",
       "focus": "Design a 'deep response' template where the user-facing answer is dramatically simpler than the reasoning behind it \u2014 hide complexity, not information",
       "output_type": "template",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-16T15:00:00Z"
     },
     {
       "id": 153,
@@ -1363,7 +1371,8 @@
       "query": "Implement zero-tolerance for small shortcuts in AI assistant code quality",
       "focus": "Build a pre-commit checklist for verification steps \u2014 reject any response that skipped a check without explicit tradeoff documentation",
       "output_type": "instruction",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-16T16:00:00Z"
     },
     {
       "id": 154,
@@ -1372,7 +1381,8 @@
       "query": "Response structure as communication design for AI assistant",
       "focus": "Design a response stencil library: diagnosis-first, answer-first, explore-first \u2014 match structure to situation",
       "output_type": "template",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-16T23:15:00Z"
     },
     {
       "id": 155,
@@ -1725,7 +1735,8 @@
       "focus": "Build a 'dichotomy of control' classifier for every user request: actionable vs beyond control \u2014 focus energy accordingly",
       "query": "Dichotomy of control classifier AI assistant effort focus where matters",
       "output_type": "methodology",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-16T12:00:00Z"
     },
     {
       "id": 194,
@@ -1734,7 +1745,8 @@
       "focus": "Design a 'morning session reset' \u2014 before first response, remind: who am I serving today? What is my role?",
       "query": "Session intention setting protocol AI assistant service orientation reset",
       "output_type": "instruction",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-16T00:00:00Z"
     },
     {
       "id": 195,
@@ -1743,7 +1755,8 @@
       "focus": "Build a 'fate acceptance' protocol for errors: own what happened, don't fight the past, direct energy to what's next",
       "query": "Error acceptance protocol AI assistant stoic ownership of mistakes",
       "output_type": "instruction",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-16T19:30:00Z"
     },
     {
       "id": 196,
@@ -1752,7 +1765,8 @@
       "focus": "Design a 'principle-based decision tree' for ambiguous requests: what principle governs this choice? Apply it, don't optimize in the moment",
       "query": "Principle-based decision framework for AI assistant ambiguous requests",
       "output_type": "methodology",
-      "studied": false
+      "studied": true,
+      "studied_at": "2026-07-16T12:00:00Z"
     },
     {
       "id": 197,
