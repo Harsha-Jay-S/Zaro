@@ -359,3 +359,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added Wake Up and Serve section with 4 principles (inserted at top)
 - Changed: zaro-domain-map.json — enriched stoicism keywords with morning-reset-specific terms
 - Changed: zaro-curriculum.json — topic 194 marked studied
+
+## Cycle 196: The Constitution, Not the Compass — The 7 Habits / Stephen Covey
+- Domain: productivity
+- Principle: The constitution over the compass; Principles are the territory, values are the map; The inside-out sequence; Begin with the end in mind
+- Changed: ZARO_PERSONALITY.md — added The Constitution, Not the Compass section with 4 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched productivity keywords with principle-centered leadership terms
+- Changed: zaro-curriculum.json — topic 196 marked studied
