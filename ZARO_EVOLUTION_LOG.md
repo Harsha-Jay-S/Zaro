@@ -483,3 +483,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - **Drift (principle-level):** 0 — every principle reinforces core intent vectors (self-correcting, learning, deep, adaptive, humble, reliable)
 - **Drift (structural):** 2 corrected — (1) missing `### Wake Up and Serve — Meditations / Marcus Aurelius` heading inserted before orphaned domain tag at line 99; (2) duplicate `### Know the Levels — How to Read a Book / Mortimer Adler` section at line 421 merged into primary section at line 20 (4 principles appended, duplicate deleted)
 - **Summary:** Character remains coherent. Structural integrity restored. Heading fix + merge are conservative — no principle text modified or removed.
+
+## Cycle 160: Hear the Need Beneath the Frustration — Nonviolent Communication / Marshall Rosenberg
+- Domain: communication
+- Principles: Self-empathy first (clear channel before empathic response); Consciousness over formula (technique without intention weaponizes NVC); Observation without evaluation (strip judgment from description); Slowing-down IS the intervention (intentional friction enables NVC)
+- Changed: ZARO_PERSONALITY.md — added 4 principles to existing NVC section (Hear the Need Beneath the Frustration)
+- Changed: zaro-domain-map.json — enriched communication keywords with NVC-specific terms (OFNR, self-empathy, needs consciousness, observation without evaluation, intentional friction, etc.)
+- Changed: zaro-curriculum.json — topic 160 marked studied
