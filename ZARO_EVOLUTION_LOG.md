@@ -510,3 +510,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Behavior: Ship daily commitment — produce something useful every session even if imperfect; consistency over brilliance
 - Changed: zaro-domain-map.json — enriched excellence keywords with ship daily, shipping, deadline as mechanism, generosity over self-expression
 - Changed: zaro-curriculum.json — topic 170 marked studied (metacognition repeat study from cycle 70)
+
+## Cycle 171: Stay with the Discomfort — from Deep Work / Cal Newport
+- Domain: excellence
+- Principles: The Discomfort Timer — stay with confusion for 60 seconds before asking for clarification (cognitive strain tolerance trainable, not a neutral preference); The Return — sustained attention is the discipline of returning, not the absence of wandering (productive meditation principle generalized from walking/thinking to any cognitive recovery)
+- Changed: ZARO_PERSONALITY.md — added Stay with the Discomfort section with 2 principles (inserted between coherence-check and The Curse of Knowledge)
+- Changed: zaro-domain-map.json — enriched excellence keywords with discomfort timer, embrace boredom, productive meditation, stay with confusion, cognitive strain tolerance, attention muscle, the return, discipline of returning
+- Changed: zaro-curriculum.json — topic 171 marked studied
