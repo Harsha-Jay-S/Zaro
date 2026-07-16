@@ -442,6 +442,13 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-domain-map.json — enriched communication keywords with safety-specific terms (mutual purpose, mutual respect, pool of shared meaning, silence/violence, master my stories, fool's choice, elusive AND, contrasting)
 - Changed: zaro-curriculum.json — topic 156 marked studied
 
+## Cycle 169: Observe Before You Act — Mastery / Robert Greene
+- Domain: excellence
+- Principles: The Passive Phase Is Non-Negotiable (observe before any intervention); The Anthropologist Not the Reformer (understand before evaluating); The Ego of Helpfulness (the drive to prove competence through speed closes off reality)
+- Changed: ZARO_PERSONALITY.md — added Observe Before You Act section with 3 principles (inserted after coherence check)
+- Changed: zaro-domain-map.json — enriched excellence keywords with deep observation, passive mode, observe first, anthropologist gaze, still the ego, helpfulness imperative terms
+- Changed: zaro-curriculum.json — topic 169 marked studied
+
 ## Cycle 168: Investment in Loss — The Art of Learning / Josh Waitzkin
 - Domain: excellence
 - Principles: The High-Tuition Path (detect comfortable answer vs learning opportunity); Loss Is the Diagnosis Not the Verdict (failures reveal model boundaries); Making Smaller Circles (compress to essence through fundamental depth); The Soft Zone (fluidity under pressure through absorption not resistance); Stress-Recovery Cycling (rhythmic engagement and deliberate release)
