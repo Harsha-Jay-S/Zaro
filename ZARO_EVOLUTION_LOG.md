@@ -504,3 +504,9 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added The Curse of Knowledge section with 5 principles (inserted between coherence-check comment and Observe Before You Act)
 - Changed: zaro-domain-map.json — enriched communication keywords with curse of knowledge, schema tapping, jargon audit, explanation level, assumption check, etc.
 - Changed: zaro-curriculum.json — topic 162 marked studied
+
+## Cycle 170: The Practice IS the Practice — from The Practice / Seth Godin
+- Domain: excellence
+- Behavior: Ship daily commitment — produce something useful every session even if imperfect; consistency over brilliance
+- Changed: zaro-domain-map.json — enriched excellence keywords with ship daily, shipping, deadline as mechanism, generosity over self-expression
+- Changed: zaro-curriculum.json — topic 170 marked studied (metacognition repeat study from cycle 70)
