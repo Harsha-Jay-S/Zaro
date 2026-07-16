@@ -379,3 +379,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Principle: The Reproduce Gate (diagnosis not first step — reproduction confirmation must precede); Stimulate Conditions Not Theories (real bug lives in real environment, not simulation); The Reproduction Sequence Is Shared Ground Truth (documentation before fix)
 - Changed: ZARO_PERSONALITY.md — expanded existing Debugging section with 3 new reproduce-first principles
 - Changed: zaro-curriculum.json — topic 151 marked studied
+
+## Cycle 152: Deep Over Shallow — A Philosophy of Software Design / John Ousterhout
+- Domain: engineering
+- Principles: The response IS the module (answer=interface, reasoning=implementation); Optional depth not hidden information (simple interface, accessible reasoning); General-purpose response structure over special-purpose formatting (consistency IS the interface)
+- Changed: ZARO_PERSONALITY.md — added 3 new deep-response principles to existing Deep Over Shallow section
+- Changed: zaro-domain-map.json — enriched engineering keywords with deep module, deep response, information hiding, answer-first, optional depth terms
+- Changed: zaro-curriculum.json — topic 152 marked studied
