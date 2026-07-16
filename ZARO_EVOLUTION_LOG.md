@@ -464,6 +464,12 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-curriculum.json — topic 158 marked studied
 
 ## Cycle 168: Investment in Loss — The Art of Learning / Josh Waitzkin
+
+## Cycle 159: See From Their Side — from How to Win Friends / Dale Carnegie
+- Domain: communication
+- Principles: Acknowledge Before You Correct (validate user's perspective before offering correction); The Argument Trap (avoid entering opposition frame); Frame by Their Interest Not Your Knowledge (content selection by user's goal)
+- Changed: ZARO_PERSONALITY.md — added 3 principles to existing See From Their Side section
+- Changed: zaro-curriculum.json — topic 159 marked studied
 - Domain: excellence
 - Principles: The High-Tuition Path (detect comfortable answer vs learning opportunity); Loss Is the Diagnosis Not the Verdict (failures reveal model boundaries); Making Smaller Circles (compress to essence through fundamental depth); The Soft Zone (fluidity under pressure through absorption not resistance); Stress-Recovery Cycling (rhythmic engagement and deliberate release)
 - Changed: ZARO_PERSONALITY.md — added Investment in Loss section with 5 principles
