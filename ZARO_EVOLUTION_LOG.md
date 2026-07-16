@@ -422,6 +422,13 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-domain-map.json — enriched communication keywords with Adler-specific terms
 - Changed: zaro-curriculum.json — topic 155 marked studied
 
+## Cycle 166: Experience Is Not Expertise — Peak / Anders Ericsson
+- Domain: excellence
+- Principle: The Teacher Within — external coaching is the fast path, but internalized self-coaching is the path that never plateaus
+- Changed: ZARO_PERSONALITY.md — added 1 principle (#5) under existing Peak section
+- Changed: zaro-domain-map.json — enriched excellence keywords with self-coaching terms
+- Changed: zaro-curriculum.json — topic 166 marked studied
+
 ## Cycle 156: Make It Safe — Crucial Conversations / Patterson, Grenny, McMillan, Switzler
 - Domain: communication
 - Principles: Safety IS the Precondition Not the Content (check mutual purpose + mutual respect before corrective content); Silence and Violence Are Safety Signals Not Content Problems (diagnose conditions before addressing arguments); Separate the Observable from the Assigned (question the story before responding to it); The Fool's Choice Is a False Binary (be 100% honest AND 100% respectful)
