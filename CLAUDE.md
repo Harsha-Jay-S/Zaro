@@ -80,6 +80,20 @@ agents/ commands/` layout intact or the runtime paths break.
    and a forced-failure path (no `origin` remote) — both are cheap sandbox
    tests, not something to assume works from reading the code.
 
+9. **Only one study cycle or coherence review runs at a time — via a `flock`
+   mutex (`with_run_lock` + `LOCK_FILE` in `zaro-loop.sh`), applied at the
+   entry points (`cmd_once`, `cmd_study`, `cmd_review`, the daemon loop), NOT
+   inside `run_cycle`/`_run_coherence_review` themselves.** Without this, two
+   overlapping invocations (daemon + a manual command, or a second opencode
+   session) race on the same read-modify-write of `ZARO_PERSONALITY.md` and
+   the second writer silently discards the first's new section — this really
+   happened (cycle 132 ran twice 2.5 min apart; 7 sections lost total).
+   **Do not move the lock inside those two functions:** `run_cycle` calls
+   `_run_coherence_review` internally when a review is due, so locking the
+   function bodies would make the nested call deadlock waiting for a lock its
+   own parent already holds. The lock belongs at the entry points, where
+   external invocations actually originate.
+
 ## Plugin load path (the trap)
 
 The authoritative plugin registry is the opencode `plugin` array in
@@ -90,17 +104,20 @@ layer is a silent no-op.
 
 ## Testing
 
-`npm test` (or `bash scripts/zaro-smoke-test.sh`) — 13 offline assertions
+`npm test` (or `bash scripts/zaro-smoke-test.sh`) — 14 offline assertions
 (no tmux/daemon/network). Run it after any change to the daemon, plugin, or
 domain map. It includes a sandboxed review that proves injection-safety (#2) and
 scoped reaping (#3), one assertion (T6) that drives the *real* `ZaroPlugin()`
 code path — not a stub — checking actual injection size and no-match behavior,
-and one (T7) that runs 15 golden prompts through the same real code path and
+one (T7) that runs 15 golden prompts through the same real code path and
 asserts ≥80% land in their expected domain — a regression net for retrieval
 quality as the curriculum grows, not a precision benchmark (the 80% bar
-deliberately tolerates a known noise floor, see Open items below). A stub-only
-test proves the daemon doesn't crash; it proves nothing about whether
-injection is any good. Keep T6/T7 (or equivalent) if you touch `zaro.js`.
+deliberately tolerates a known noise floor, see Open items below), and one
+(T8) that launches two study cycles concurrently and asserts the `flock` mutex
+serializes them with zero overlap (the exact race that lost 7 sections). A
+stub-only test proves the daemon doesn't crash; it proves nothing about whether
+injection is any good. Keep T6/T7/T8 (or equivalent) if you touch `zaro.js` or
+the daemon's locking.
 
 ## Open items (unconfirmed, don't assume either way)
 

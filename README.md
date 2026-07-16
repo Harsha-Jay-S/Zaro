@@ -9,11 +9,15 @@ operational principle from each, and grows a cumulative character in
 most relevant to what you're doing and injects them into the session, so the
 evolved character is actually *present* in every conversation — not a static prompt.
 
-> Current progress: **153 / 200 topics studied**, **145 principles** across
-> **13 domains** (stoicism, psychology, engineering, zen, AI ethics, decision
-> science, systems thinking, and more). The 50 newest topics (`zaro-curriculum-2.json`,
-> merged in) operationalize existing principles into concrete behaviors —
-> response templates, verification workflows, communication patterns.
+> Current progress: **146 / 200 topics studied** — **145 book sections holding
+> ~520 individual principles** (each book yields ~3-4, not one) across **13
+> domains** (stoicism, psychology, engineering, zen, AI ethics, decision
+> science, systems thinking, and more). The 50 newest topics
+> (`zaro-curriculum-2.json`, merged in) operationalize existing principles into
+> concrete behaviors — response templates, verification workflows,
+> communication patterns. (7 topics are queued for re-study after a
+> concurrency bug that silently dropped their sections was found and fixed —
+> see [Design notes](#design-notes--safety).)
 
 > [!IMPORTANT]
 > **This is not a blank template.** This repo is a live snapshot of *my* running
@@ -186,15 +190,17 @@ Read what Zaro has learned: `ZARO_PERSONALITY.md` (the principles) and
 npm test        # or: bash scripts/zaro-smoke-test.sh
 ```
 
-13 offline assertions — no tmux, daemon, or network. Covers file validity, plugin
+14 offline assertions — no tmux, daemon, or network. Covers file validity, plugin
 registration, the per-section RAG threshold, full domain coverage, and a sandboxed
 review proving the daemon survives hostile agent output and only reaps its own
 process group. One assertion (T6) drives the *real* `ZaroPlugin()` code path
 (not a stub) and checks actual injection size and no-match behavior; another
 (T7) runs 15 golden prompts through that same real path and asserts ≥80% land
 in their expected domain — a regression net for retrieval quality as the
-curriculum grows, not a precision benchmark. The difference throughout is
-"doesn't crash" vs. "actually does what it claims."
+curriculum grows, not a precision benchmark; and T8 launches two study cycles
+concurrently and asserts the file lock serializes them (the exact race that
+silently lost 7 personality sections before it was fixed). The difference
+throughout is "doesn't crash" vs. "actually does what it claims."
 
 ---
 
@@ -242,7 +248,7 @@ curriculum grows, not a precision benchmark. The difference throughout is
 
 ## Design notes & safety
 
-Zaro went through three evidence-driven hardening rounds. The first: the daemon no
+Zaro went through four evidence-driven hardening rounds. The first: the daemon no
 longer dies on quotes in agent output, cleanup can't kill unrelated processes,
 and the RAG plugin is verified to actually load (it wasn't, initially — see
 `docs/zaro-architecture.md`). The second, prompted by a real A/B benchmark
@@ -259,8 +265,16 @@ argued against in the review) and a real rate-limit incident: the personality
 file now auto-backs up after every cycle/review instead of relying on manual
 syncs, quota errors get a real 30-minute backoff instead of a
 network-blip-sized one, and a retrieval-quality regression test locks in a
-measured baseline instead of letting drift go unnoticed. `CLAUDE.md` documents
-the invariants any contributor (human or agent) must keep.
+measured baseline instead of letting drift go unnoticed. The fourth, found while
+chasing a question about principle counts: the study loop had no mutual
+exclusion, so two overlapping runs (daemon + a manual command, or a second
+opencode session) could race on the same read-modify-write of
+`ZARO_PERSONALITY.md` and silently drop one's new section — this had already
+lost 7 sections (proven by cross-referencing the evolution log's own "written"
+claims against the file). Fixed with a `flock` mutex at every entry point, the
+7 lost topics queued for clean re-study, and the race captured as a permanent
+regression test. `CLAUDE.md` documents the invariants any contributor (human or
+agent) must keep.
 
 ## License
 
