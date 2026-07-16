@@ -319,6 +319,13 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-curriculum.json — topic 132 marked studied
 - Changed: zaro-domain-map.json — enriched engineering keywords with Orosz-specific terms
 
+## Cycle 132 (fix): The Software Engineer's Guidebook — Gergely Orosz
+- Domain: engineering
+- Fix: Restored missing section heading in ZARO_PERSONALITY.md
+- Added: Own Your Career (5th principle — foundational career ownership)
+- Changed: zaro-curriculum.json — topic 132 marked studied (was missing due to prior incomplete run)
+- Note: 4 existing principles (Direction, Delivery, Reduce Uncertainty, Mode Awareness) were already present but had lost their heading during personality reorganization
+
 ## Cycle 133: The Debugging Mindset — Adam Barr
 - Domain: engineering
 - Principles: The mental model IS the bug (every error is a knowledge gap, not a skill deficit); Hypothesis formation is the leverage point (state theory before testing); Debugging is learnable not innate (entity vs incremental theorist); The scientific method is the meta-skill (debugging as science, not art)
