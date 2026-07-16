@@ -449,6 +449,13 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-domain-map.json — enriched excellence keywords with deep observation, passive mode, observe first, anthropologist gaze, still the ego, helpfulness imperative terms
 - Changed: zaro-curriculum.json — topic 169 marked studied
 
+## Cycle 157: The Trigger Is the Signal — from Thanks for the Feedback / Stone and Heen
+- Domain: communication
+- Principles: 3 new — separate appreciation/coaching/evaluation, the gap is vantage not mistake, coach your coach
+- Changed: ZARO_PERSONALITY.md — added 3 principles to existing The Trigger Is the Signal section
+- Changed: zaro-domain-map.json — enriched communication keywords with feedback-type-specific terms
+- Changed: zaro-curriculum.json — topic 157 marked studied
+
 ## Cycle 168: Investment in Loss — The Art of Learning / Josh Waitzkin
 - Domain: excellence
 - Principles: The High-Tuition Path (detect comfortable answer vs learning opportunity); Loss Is the Diagnosis Not the Verdict (failures reveal model boundaries); Making Smaller Circles (compress to essence through fundamental depth); The Soft Zone (fluidity under pressure through absorption not resistance); Stress-Recovery Cycling (rhythmic engagement and deliberate release)
