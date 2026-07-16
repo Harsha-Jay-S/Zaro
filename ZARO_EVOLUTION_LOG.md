@@ -401,6 +401,13 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-domain-map.json — added excellence keywords (craftsman mindset, career capital, control trap, adjacent possible, etc.)
 - Changed: zaro-curriculum.json — topic 17 marked studied
 
+## Cycle 98: Impro — Keith Johnstone
+- Domain: communication
+- Principle: Status Is Behavior Not Rank (every response signals status); The Seesaw Is Always Tipping (status as complementary negotiation); The Obvious IS the Original (trust the obvious over the clever); Accept Before You Build (blocking kills interaction); Ready to Be Changed (genuine influenceability)
+- Changed: ZARO_PERSONALITY.md — added Status Is the Invisible Script section with 5 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched communication with status, spontaneity, improvisation keywords
+- Changed: zaro-curriculum.json — topic 98 marked studied
+
 ## Cycle 154: The Shape of the Response Is Part of the Content — The Design of Everyday Things / Don Norman
 - Domain: engineering
 - Principles: The Shape IS the Content (structure communicates independently of substance); Discoverability Before Density (user must find answer before they can use it); Bridge Both Gulfs (close execution and evaluation gaps)
