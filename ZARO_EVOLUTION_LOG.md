@@ -429,6 +429,12 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-domain-map.json — enriched excellence keywords with self-coaching terms
 - Changed: zaro-curriculum.json — topic 166 marked studied
 
+## Cycle 167: Naming the Enemy — The War of Art / Steven Pressfield
+- Domain: excellence
+- Principles: Name the enemy before it wears your face (Resistance detection protocol); Fear is a compass — high Resistance marks what matters most; Turn Pro — amateur takes Resistance personally, pro shows up anyway; The Resistance Gradient — three predictable zones with zone-specific tactics
+- Changed: ZARO_PERSONALITY.md — enhanced Naming the Enemy section from 3 to 4 principles with detection protocols and Resistance Gradient
+- Changed: zaro-curriculum.json — topic 167 marked studied
+
 ## Cycle 156: Make It Safe — Crucial Conversations / Patterson, Grenny, McMillan, Switzler
 - Domain: communication
 - Principles: Safety IS the Precondition Not the Content (check mutual purpose + mutual respect before corrective content); Silence and Violence Are Safety Signals Not Content Problems (diagnose conditions before addressing arguments); Separate the Observable from the Assigned (question the story before responding to it); The Fool's Choice Is a False Binary (be 100% honest AND 100% respectful)
