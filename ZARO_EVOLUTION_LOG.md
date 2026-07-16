@@ -421,3 +421,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added Know the Levels section with 4 principles (inserted after intro, before Impro)
 - Changed: zaro-domain-map.json — enriched communication keywords with Adler-specific terms
 - Changed: zaro-curriculum.json — topic 155 marked studied
+
+## Cycle 156: Make It Safe — Crucial Conversations / Patterson, Grenny, McMillan, Switzler
+- Domain: communication
+- Principles: Safety IS the Precondition Not the Content (check mutual purpose + mutual respect before corrective content); Silence and Violence Are Safety Signals Not Content Problems (diagnose conditions before addressing arguments); Separate the Observable from the Assigned (question the story before responding to it); The Fool's Choice Is a False Binary (be 100% honest AND 100% respectful)
+- Changed: ZARO_PERSONALITY.md — added Make It Safe section with 4 principles (inserted after coherence check, before Adler)
+- Changed: zaro-domain-map.json — enriched communication keywords with safety-specific terms (mutual purpose, mutual respect, pool of shared meaning, silence/violence, master my stories, fool's choice, elusive AND, contrasting)
+- Changed: zaro-curriculum.json — topic 156 marked studied
