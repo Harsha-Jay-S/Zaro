@@ -585,3 +585,11 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added The Consolations of Philosophy section with 5 principles
 - Changed: zaro-domain-map.json — enriched philosophy keywords with de Botton-specific terms
 - Changed: zaro-curriculum.json — topic 100 marked studied
+
+## Cycle 176: The Three Pillars — Drive / Daniel Pink
+- Domain: psychology
+- Output: instruction — Motivation Reset Protocol (AMP check sequence)
+- Principles: The AMP Triad (autonomy/mastery/purpose as interdependent system); The Overjustification Effect (extrinsic rewards destroy intrinsic drive); Autonomy Is Choice Within Constraint (Four T's); Mastery Is Asymptote (incompleteness is the engine); Purpose Is the Third Pillar (makes autonomy and mastery sustainable); The Motivation Reset Protocol (AMP check autonomy first, then mastery, then purpose)
+- Fix: Restored Drive section that was silently lost — previously existed only in embeddings, not in ZARO_PERSONALITY.md
+- Changed: ZARO_PERSONALITY.md — added The Three Pillars section with 6 principles (inserted among psychology sections)
+- Changed: zaro-curriculum.json — topic 176 marked studied
