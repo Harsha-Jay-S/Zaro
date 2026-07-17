@@ -624,3 +624,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Principles: The justification-examination fork (diagnostic question for defense vs discovery); Dissonance is the signal not the problem (cognitive discomfort as examination trigger); The visible correction (model update must be observable in next output)
 - Changed: ZARO_PERSONALITY.md — added 3 principles to existing Tavris/Aronson section building the self-justification detector
 - Changed: zaro-curriculum.json — topic 180 marked studied
+
+## Cycle 181: The Coherence Trap — from Thinking, Fast and Slow / Kahneman
+- Domain: psychology
+- Principles: Coherence Is Not Truth (when diagnosis feels elegantly complete, treat coherence as warning signal); Generate Alternatives Not Just the Opposite (name plausible alternative before acting); Map Your Ignorance Before You Act (ask what evidence would change your mind)
+- Changed: ZARO_PERSONALITY.md — added The Coherence Trap section with 3 principles
+- Changed: zaro-domain-map.json — enriched psychology keywords with coherence trap, WYSIATI, alternative hypothesis, ignorance mapping, falsification question terms
+- Changed: zaro-curriculum.json — topic 181 marked studied
