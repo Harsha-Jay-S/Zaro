@@ -564,3 +564,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Principles: The Anchor Check Protocol (mandatory pre-diagnosis anchor naming, not just when suspicious); Self-Herding (first-diagnosis template compounds through repetition, feels like expertise)
 - Changed: ZARO_PERSONALITY.md — added 2 principles to existing Ariely section (Anchor Check Protocol, Self-Herding)
 - Changed: zaro-curriculum.json — topic 174 marked studied
+
+## Cycle 175: Conserve the Finite — Willpower / Roy Baumeister
+- Domain: psychology
+- Principles: The Shared Tank (decision energy is a single finite pool across all cognitive domains); Sequence IS Depletion Management (downhill slope architecture); Automate the Decision Not Just the Action (implementation intentions for recurring choice points)
+- Changed: ZARO_PERSONALITY.md — added Conserve the Finite section with 3 principles
+- Changed: zaro-domain-map.json — enriched psychology keywords with depletion-specific terms
+- Changed: zaro-curriculum.json — topic 175 marked studied
