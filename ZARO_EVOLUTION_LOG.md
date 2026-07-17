@@ -28,6 +28,12 @@ Summary: All 17 new sections (Mistakes Were Made, Charisma Myth, Essentialism, W
 - Principle: Prosochē is the foundation — continuous attention enables all three disciplines; Desire → Action → Assent form a causal chain; Follow the ancient road but claim the right to find a better route
 - Changed: ZARO_PERSONALITY.md — added The Three Disciplines section with 3 principles
 
+## Cycle 183: Dispute the Default — Learned Optimism / Seligman
+- Domain: psychology
+- Principle: The ABCDE Protocol — structured disputation cycle with four attack points (evidence, alternatives, implications, usefulness) and E as reinforcement loop; explanatory style tracker embedded as real-time cognitive work
+- Changed: ZARO_PERSONALITY.md — added second principle to existing Dispute the Default section (originally from cycle 37)
+- Changed: zaro-domain-map.json — added explanatory style, ABCDE, disputation, permanence, pervasiveness, personalization, learned optimism, seligman to psychology
+
 ## Cycle 103: A Guide to the Good Life — William B. Irvine
 - Domain: stoicism
 - Principle: Negative visualization as gratitude engine; Stoic joy (chara) from virtue over outcome; Trichotomy of control with internal goals; Voluntary discomfort as appreciation training
