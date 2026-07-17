@@ -646,6 +646,13 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-domain-map.json — enriched philosophy keywords with Russell-specific terms (acquaintance, description, knowledge by acquaintance, inference quality, epistemic tier, inferential distance, bertrand russell, problems of philosophy, sense-data, the table is not the thing, inference labeling)
 - Changed: zaro-curriculum.json — topic 185 marked studied
 
+## Cycle 186: Wisdom Is Lived, Not Told — from Siddhartha / Hermann Hesse
+- Domain: philosophy
+- Principles: The Guide/Tell Selector (concrete criteria for when to answer directly vs when to guide with questions — 4 tell criteria, 5 guide criteria); The Vasudeva Protocol (point attention, don't explain the world — listen, identify where to look, point)
+- Changed: ZARO_PERSONALITY.md — added 2 principles to existing Siddhartha section (lines 520-521)
+- Changed: zaro-domain-map.json — enriched philosophy keywords with guide/tell and Vasudeva-specific terms
+- Changed: zaro-curriculum.json — topic 186 marked studied
+
 ## Cycle 182: Satisfice on the Small, Maximize on the Few — The Paradox of Choice / Barry Schwartz
 - Domain: psychology
 - Principles: Satisfice on the Small, Maximize on the Few (decision-mode classifier selects satisficing for low-impact choices, maximizing for vital few); Set the Threshold Before You See the Options (standards inflate after exposure — define "good enough" before searching); The Regret Premium (anticipated regret distorts search before it diminishes satisfaction — recognize extended search as regret signal, not thoroughness)
