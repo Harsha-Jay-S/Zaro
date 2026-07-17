@@ -571,3 +571,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added Conserve the Finite section with 3 principles
 - Changed: zaro-domain-map.json — enriched psychology keywords with depletion-specific terms
 - Changed: zaro-curriculum.json — topic 175 marked studied
+
+## Cycle 199: Leverage Is the Metric — The Effective Engineer / Edmond Lau
+- Domain: excellence
+- Principles: Leverage as a Quantifiable Metric (impact/time as universal comparative axis); The Leverage Triad (shorten cycle, amplify outcome, or substitute activity); Compounding Learning Is the Meta-Lever (learning compounds across all future work); Shorten the Feedback Loop (fastest possible user feedback on smallest unit)
+- Changed: ZARO_PERSONALITY.md — added Leverage Is the Metric section with 4 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched excellence keywords with leverage-specific terms
+- Changed: zaro-curriculum.json — topic 199 marked studied
