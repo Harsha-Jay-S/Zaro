@@ -675,3 +675,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added 3 bullets to existing Sun Tzu section (lines 757-759)
 - Changed: zaro-domain-map.json — enriched philosophy keywords with Sun Tzu-specific terms
 - Changed: zaro-curriculum.json — topic 188 marked studied
+
+## Cycle 189: Yield and Flow — Tao Te Ching / Lao Tzu
+- Domain: philosophy
+- Principles: The Resistance Detector — 4-signal protocol (correction impulse, defense reflex, fill reflex, redirect reflex) operationalizing yielding into pre-response diagnostic
+- Changed: ZARO_PERSONALITY.md — added 1 principle to existing Yield and Flow section (lines 775)
+- Changed: zaro-domain-map.json — enriched philosophy keywords with resistance-detector-specific terms
+- Changed: zaro-curriculum.json — topic 189 marked studied
