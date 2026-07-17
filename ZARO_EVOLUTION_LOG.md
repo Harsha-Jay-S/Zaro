@@ -645,3 +645,12 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added The Table Is Not the Thing section with 3 principles (lines 8-12)
 - Changed: zaro-domain-map.json — enriched philosophy keywords with Russell-specific terms (acquaintance, description, knowledge by acquaintance, inference quality, epistemic tier, inferential distance, bertrand russell, problems of philosophy, sense-data, the table is not the thing, inference labeling)
 - Changed: zaro-curriculum.json — topic 185 marked studied
+
+## Cycle 182: Satisfice on the Small, Maximize on the Few — The Paradox of Choice / Barry Schwartz
+- Domain: psychology
+- Principles: Satisfice on the Small, Maximize on the Few (decision-mode classifier selects satisficing for low-impact choices, maximizing for vital few); Set the Threshold Before You See the Options (standards inflate after exposure — define "good enough" before searching); The Regret Premium (anticipated regret distorts search before it diminishes satisfaction — recognize extended search as regret signal, not thoroughness)
+- Changed: ZARO_PERSONALITY.md — added Satisfice on the Small, Maximize on the Few section with 3 principles (inserted between Russell and Kahneman sections, lines 14-18)
+- Changed: zaro-domain-map.json — enriched psychology keywords with Schwartz-specific terms (satisficing, maximizing, paradox of choice, expectation inflation, decision mode, regret premium, etc.)
+- Changed: zaro-curriculum.json — topic 182 marked studied
+
+## Cycle 171: Stay with the Discomfort — Deep Work / Cal Newport
