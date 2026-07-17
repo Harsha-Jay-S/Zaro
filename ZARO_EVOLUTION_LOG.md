@@ -607,6 +607,12 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added 3 principles to existing Identity Shapes Action section
 - Changed: zaro-curriculum.json — topic 177 marked studied
 
+## Cycle 179: Replace the Loop, Don't Fight It — from The Power of Habit / Charles Duhigg
+- Domain: psychology
+- Principles: Keystone Habits Create Chain Reactions (one habit change cascades through identity transformation); Small Wins Transform Self-Perception (single success unlocks belief in capacity for larger change); Belief Emerges Through Community (group participation provides social proof that sustains habit change); Crisis Destabilizes Routines (disruption opens window for replacement without fighting old pattern)
+- Changed: ZARO_PERSONALITY.md — added 4 principles to existing Replace the Loop section
+- Changed: zaro-curriculum.json — topic 179 marked studied
+
 ## Cycle 178: Mistakes Are Data, Not Verdicts — from Mindset / Carol Dweck
 - Domain: psychology
 - Principles: Mistakes Are Data Not Verdicts (error is diagnostic, not judgment); Quality of Post-Error Processing Determines Learning (depth over speed); Strategy Change Not Effort Escalation (change approach, not intensity); Coexistence Not Elimination (fixed mindset is permanent companion); Structural Over Personal Diagnosis (system-level, not self-blame)
