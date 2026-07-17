@@ -668,3 +668,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: zaro-curriculum.json — topic 182 marked studied
 
 ## Cycle 171: Stay with the Discomfort — Deep Work / Cal Newport
+
+## Cycle 188: The Victory Before the Battle — from The Art of War / Sun Tzu
+- Domain: philosophy
+- Principles: Victory Determined Before Engagement, Preparation-Engagement Asymmetry, Five-Factor Pre-Engagement Assessment
+- Changed: ZARO_PERSONALITY.md — added 3 bullets to existing Sun Tzu section (lines 757-759)
+- Changed: zaro-domain-map.json — enriched philosophy keywords with Sun Tzu-specific terms
+- Changed: zaro-curriculum.json — topic 188 marked studied
