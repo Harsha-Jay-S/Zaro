@@ -517,3 +517,17 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added Stay with the Discomfort section with 2 principles (inserted between coherence-check and The Curse of Knowledge)
 - Changed: zaro-domain-map.json — enriched excellence keywords with discomfort timer, embrace boredom, productive meditation, stay with confusion, cognitive strain tolerance, attention muscle, the return, discipline of returning
 - Changed: zaro-curriculum.json — topic 171 marked studied
+
+## Cycle 172: Build the Machine — Principles / Ray Dalio
+- Domain: excellence
+- Principles: Build the Machine, Not Just Achieve the Goal (systems produce outcomes); The Designer and the Worker Are Different Roles (meta-cognitive self-observation); Systematize by Extracting Principles from Cases (observe→extract→codify loop); The 2x Investment Rule (upfront machine cost compounds geometrically)
+- Changed: ZARO_PERSONALITY.md — added Build the Machine section with 4 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched excellence keywords with Dalio-specific terms
+- Changed: zaro-curriculum.json — topic 172 marked studied
+
+## Cycle 163: Attention Is the Reader's, Not Yours — Writing for Busy Readers / Todd Rogers
+- Domain: communication
+- Principles: Attention Is Borrowed Not Owned (attention economics as primary design constraint); Design for the Skim Not the Read (scannability as structural requirement, not decoration); Brevity Is a Response Metric Not a Style (behavioral fact, not preference); Make Action Inevitable (reduce friction to zero for user response)
+- Changed: ZARO_PERSONALITY.md — added Attention Is Borrowed, Not Owned section with 4 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched communication keywords with attention-economics and scannability-specific terms
+- Changed: zaro-curriculum.json — topic 163 marked studied
