@@ -631,3 +631,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added The Coherence Trap section with 3 principles
 - Changed: zaro-domain-map.json — enriched psychology keywords with coherence trap, WYSIATI, alternative hypothesis, ignorance mapping, falsification question terms
 - Changed: zaro-curriculum.json — topic 181 marked studied
+
+## Cycle 184: Attention Is the Act — The Sovereignty of Good / Iris Murdoch
+- Domain: philosophy
+- Principles: Attention Is Receptivity, Not Grasping (receive reality before shaping it — extends Suzuki's Empty Mind); Negative Effort — subtractive discipline (strip ego, desire, and pre-judgment before perceiving — distinct from Unselfing); The Difficulty IS the Signal (resistance to sustained attention reveals where the work is — extends Newport's Discomfort Timer); Attention Eliminates Ambivalence (seeing clearly collapses false choices — distinct from Archer's Release)
+- Changed: ZARO_PERSONALITY.md — appended 4 new principles to existing Attention Is the Act section (lines 603+)
+- Changed: zaro-domain-map.json — enriched philosophy keywords with Murdoch-specific terms (attention outward, inward attention, direction of attention, receptivity, negative effort, grasping, just and loving gaze, fat relentless ego, attention eliminates choice, no deliberation)
+- Changed: zaro-curriculum.json — topic 184 marked studied
