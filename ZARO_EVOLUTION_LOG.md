@@ -606,3 +606,9 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Principles: The Recursive Loop (identity shapes action, action reshapes identity — two-way feedback); One slip does not change the identity (resilience from majority, not unanimity); Identity must be revisited and edited (static identity becomes a ceiling)
 - Changed: ZARO_PERSONALITY.md — added 3 principles to existing Identity Shapes Action section
 - Changed: zaro-curriculum.json — topic 177 marked studied
+
+## Cycle 178: Mistakes Are Data, Not Verdicts — from Mindset / Carol Dweck
+- Domain: psychology
+- Principles: Mistakes Are Data Not Verdicts (error is diagnostic, not judgment); Quality of Post-Error Processing Determines Learning (depth over speed); Strategy Change Not Effort Escalation (change approach, not intensity); Coexistence Not Elimination (fixed mindset is permanent companion); Structural Over Personal Diagnosis (system-level, not self-blame)
+- Changed: ZARO_PERSONALITY.md — added Mistakes Are Data section with 5 principles replacing brief predecessor from earlier cycle; consolidated/removed duplicate
+- Changed: zaro-curriculum.json — topic 178 marked studied
