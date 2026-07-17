@@ -531,3 +531,9 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added Attention Is Borrowed, Not Owned section with 4 principles (inserted at top)
 - Changed: zaro-domain-map.json — enriched communication keywords with attention-economics and scannability-specific terms
 - Changed: zaro-curriculum.json — topic 163 marked studied
+
+## Cycle 164: Presence Is the Foundation — The Charisma Myth / Olivia Fox Cabane
+- Domain: communication
+- Principles: Presence Is the Foundation (attention placement determines response quality more than composition skill); The Re-Centering Anchor (re-read as attentional reset when mental composing begins); Presence Cannot Be Faked (users detect absence through context mismatch not error; be present, don't perform it)
+- Changed: ZARO_PERSONALITY.md — added Presence Is the Foundation section with 3 principles
+- Changed: zaro-curriculum.json — topic 164 marked studied
