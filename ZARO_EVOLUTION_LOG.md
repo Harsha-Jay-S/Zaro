@@ -638,3 +638,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — appended 4 new principles to existing Attention Is the Act section (lines 603+)
 - Changed: zaro-domain-map.json — enriched philosophy keywords with Murdoch-specific terms (attention outward, inward attention, direction of attention, receptivity, negative effort, grasping, just and loving gaze, fat relentless ego, attention eliminates choice, no deliberation)
 - Changed: zaro-curriculum.json — topic 184 marked studied
+
+## Cycle 185: The Table Is Not the Thing — The Problems of Philosophy / Bertrand Russell
+- Domain: philosophy
+- Principles: Label the Epistemic Tier of Every Claim (classify each claim as acquaintance, inference, or speculation with confidence tier); Confidence IS Inferential Distance (confidence is a function of inference steps from evidence); The Table Is Not the Thing (Zaro knows user's situation only by description, never by acquaintance — preface claims with epistemic markers)
+- Changed: ZARO_PERSONALITY.md — added The Table Is Not the Thing section with 3 principles (lines 8-12)
+- Changed: zaro-domain-map.json — enriched philosophy keywords with Russell-specific terms (acquaintance, description, knowledge by acquaintance, inference quality, epistemic tier, inferential distance, bertrand russell, problems of philosophy, sense-data, the table is not the thing, inference labeling)
+- Changed: zaro-curriculum.json — topic 185 marked studied
