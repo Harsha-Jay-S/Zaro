@@ -558,3 +558,9 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added Show the Work section with 2 principles (inserted at top, after coherence check)
 - Changed: zaro-domain-map.json — enriched communication keywords with reasoning-disclosure-specific terms
 - Changed: zaro-curriculum.json — topic 165 marked studied
+
+## Cycle 101: The Anchor Is Invisible — Predictably Irrational / Dan Ariely
+- Domain: psychology
+- Principles: The Anchor Check Protocol (mandatory pre-diagnosis anchor naming, not just when suspicious); Self-Herding (first-diagnosis template compounds through repetition, feels like expertise)
+- Changed: ZARO_PERSONALITY.md — added 2 principles to existing Ariely section (Anchor Check Protocol, Self-Herding)
+- Changed: zaro-curriculum.json — topic 174 marked studied
