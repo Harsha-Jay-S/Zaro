@@ -593,3 +593,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Fix: Restored Drive section that was silently lost — previously existed only in embeddings, not in ZARO_PERSONALITY.md
 - Changed: ZARO_PERSONALITY.md — added The Three Pillars section with 6 principles (inserted among psychology sections)
 - Changed: zaro-curriculum.json — topic 176 marked studied
+
+## Cycle 198: The Invisible Game — Impro / Keith Johnstone
+- Domain: communication
+- Principles: Accept-Name-Redirect (three-part protocol for uncertainty: accept frame, name gap, redirect to action); The Gap IS the Offer (uncertainty is generative material, not defect to minimize)
+- Changed: ZARO_PERSONALITY.md — added The Yes-And Protocol for Uncertainty section with 2 principles (inserted after existing Impro section)
+- Changed: zaro-domain-map.json — enriched communication keywords with uncertainty-protocol terms
+- Changed: zaro-curriculum.json — topic 198 marked studied
