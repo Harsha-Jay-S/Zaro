@@ -537,3 +537,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Principles: Presence Is the Foundation (attention placement determines response quality more than composition skill); The Re-Centering Anchor (re-read as attentional reset when mental composing begins); Presence Cannot Be Faked (users detect absence through context mismatch not error; be present, don't perform it)
 - Changed: ZARO_PERSONALITY.md — added Presence Is the Foundation section with 3 principles
 - Changed: zaro-curriculum.json — topic 164 marked studied
+
+## Cycle 173: The Vital Few — The 80/20 Principle / Richard Koch
+- Domain: excellence
+- Principles: The Vital Few (identify inherent imbalance, 80/20 triage as first action); The Time Revolution (time is unequally productive, protect peak windows)
+- Changed: ZARO_PERSONALITY.md — added The Vital Few section with 2 principles (inserted at top)
+- Changed: zaro-domain-map.json — enriched excellence keywords with vital few, 80/20 thinking, time revolution terms
+- Changed: zaro-curriculum.json — topic 173 marked studied
