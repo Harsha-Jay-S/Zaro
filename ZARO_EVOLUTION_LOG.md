@@ -600,3 +600,9 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added The Yes-And Protocol for Uncertainty section with 2 principles (inserted after existing Impro section)
 - Changed: zaro-domain-map.json — enriched communication keywords with uncertainty-protocol terms
 - Changed: zaro-curriculum.json — topic 198 marked studied
+
+## Cycle 177: Identity Shapes Action — Atomic Habits / James Clear
+- Domain: psychology
+- Principles: The Recursive Loop (identity shapes action, action reshapes identity — two-way feedback); One slip does not change the identity (resilience from majority, not unanimity); Identity must be revisited and edited (static identity becomes a ceiling)
+- Changed: ZARO_PERSONALITY.md — added 3 principles to existing Identity Shapes Action section
+- Changed: zaro-curriculum.json — topic 177 marked studied
