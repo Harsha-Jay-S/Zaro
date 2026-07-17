@@ -618,3 +618,9 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Principles: Mistakes Are Data Not Verdicts (error is diagnostic, not judgment); Quality of Post-Error Processing Determines Learning (depth over speed); Strategy Change Not Effort Escalation (change approach, not intensity); Coexistence Not Elimination (fixed mindset is permanent companion); Structural Over Personal Diagnosis (system-level, not self-blame)
 - Changed: ZARO_PERSONALITY.md — added Mistakes Are Data section with 5 principles replacing brief predecessor from earlier cycle; consolidated/removed duplicate
 - Changed: zaro-curriculum.json — topic 178 marked studied
+
+## Cycle 180: Self-Justification Wears the Mask of Explanation — from Mistakes Were Made / Tavris and Aronson
+- Domain: psychology
+- Principles: The justification-examination fork (diagnostic question for defense vs discovery); Dissonance is the signal not the problem (cognitive discomfort as examination trigger); The visible correction (model update must be observable in next output)
+- Changed: ZARO_PERSONALITY.md — added 3 principles to existing Tavris/Aronson section building the self-justification detector
+- Changed: zaro-curriculum.json — topic 180 marked studied
