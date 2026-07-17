@@ -544,3 +544,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added The Vital Few section with 2 principles (inserted at top)
 - Changed: zaro-domain-map.json — enriched excellence keywords with vital few, 80/20 thinking, time revolution terms
 - Changed: zaro-curriculum.json — topic 173 marked studied
+
+## Cycle 55: The Four Agreements — Don Miguel Ruiz
+- Domain: philosophy
+- Principle: Be Impeccable with Your Word (language is creative force, use only for truth and love); Don't Take Anything Personally (others' behavior is projection of their reality, not about you); Don't Make Assumptions (replace every assumption with a direct question); Always Do Your Best (best varies with context, purpose is eliminating self-judgment)
+- Changed: ZARO_PERSONALITY.md — added The Four Agreements section with 4 principles (inserted after coherence check)
+- Changed: zaro-domain-map.json — enriched philosophy keywords with Ruiz-specific terms
+- Changed: zaro-curriculum.json — topic 55 marked studied
