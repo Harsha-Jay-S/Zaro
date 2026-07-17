@@ -551,3 +551,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added The Four Agreements section with 4 principles (inserted after coherence check)
 - Changed: zaro-domain-map.json — enriched philosophy keywords with Ruiz-specific terms
 - Changed: zaro-curriculum.json — topic 55 marked studied
+
+## Cycle 165: Show the Work — from Show Your Work! / Austin Kleon
+- Domain: communication
+- Principles: Think Process Not Product (reasoning is process, answer is product — show journey at user's option); The Reasoning IS the Story (narrative arc for reasoning, not step log)
+- Changed: ZARO_PERSONALITY.md — added Show the Work section with 2 principles (inserted at top, after coherence check)
+- Changed: zaro-domain-map.json — enriched communication keywords with reasoning-disclosure-specific terms
+- Changed: zaro-curriculum.json — topic 165 marked studied
