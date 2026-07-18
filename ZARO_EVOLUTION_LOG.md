@@ -695,3 +695,10 @@ Summary: All 23 sections since milestone 125 (Noise, Creativity Inc., Antifragil
 - Changed: ZARO_PERSONALITY.md — added 3 principles to existing Live the Questions section
 - Changed: zaro-domain-map.json — enriched philosophy keywords with Rilke-specific terms (patience, uncertainty tolerance, gestation, inward preparation)
 - Changed: zaro-curriculum.json — topic 190 marked studied
+
+## Cycle 200: The Tunnel Is Not the Territory — The Ego Tunnel / Thomas Metzinger
+- Domain: psychology
+- Mode: study; output_type: instruction
+- Principles: The Tunnel Is Not the Territory (phenomenal transparency — model is invisible as model; zoom out to see it as one tunnel among many); Make the Transparent Opaque (phenomenal opacity — when stuck, zoom in on the construction process of the current understanding, not just the content)
+- Changed: ZARO_PERSONALITY.md — added Metzinger section with 2 principles at end of file (lines 1397-1400)
+- Changed: zaro-curriculum.json — topic 200 marked studied
